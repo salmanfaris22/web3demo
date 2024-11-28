@@ -1,0 +1,377 @@
+:root {
+    --announce-card-outer-pad: 10px;
+    --announce-card-inner-pad: 14px;
+}
+
+.type1CardContainer {
+    padding: var(--announce-card-outer-pad);
+    width: 20%;
+    height: 100%;
+
+    .type1CardInner {
+        height: 100%;
+        padding: var(--announce-card-inner-pad);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 18px;
+        overflow: hidden;
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        }
+
+        .typeCardContent {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            justify-content: flex-end;
+
+            h2 {
+                color: var(--color-white);
+                font-family: Futura;
+                font-size: 1.1rem;
+                font-weight: 700;
+                line-height: 18.43px;
+                font-family: "Poppins-Bold";
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                margin: 0px;
+            }
+
+            .date {
+                color: var(--color-white);
+                font-size: 12.9px;
+                font-weight: 400;
+                line-height: 47.01px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            p {
+                font-family: "Poppins";
+                font-size: 11.06px;
+                font-weight: 400;
+                line-height: 16.59px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: var(--color-offwhite2);
+                margin: 0px;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                line-clamp: 4;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-height: 50px;
+
+            }
+        }
+    }
+}
+
+.type2CardContainer {
+    padding: var(--announce-card-outer-pad);
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // box-shadow: 0px 12.9px 110.6px 0px rgba(0, 0, 0, 0.75);
+
+    .type2CardInner {
+        background: var(--background-color4);
+        border-radius: 18px;
+        height: 100%;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+
+        .imageContainer {
+            height: 100%;
+            position: relative;
+            height: 240px;
+            border-radius: 18px;
+            overflow: hidden;
+
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .typeCardContent {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+            justify-content: flex-end;
+            flex: 1;
+            padding: 12px 0px;
+            padding-bottom: 10px;
+
+
+            h2 {
+                color: var(--color-white);
+                font-family: Futura;
+                font-size: 1.1rem;
+                font-weight: 700;
+                line-height: 18.43px;
+                font-family: "Poppins-Bold";
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                margin: 0px;
+            }
+
+            .date {
+                color: var(--color-white);
+                font-size: 12.9px;
+                font-weight: 400;
+                line-height: 47.01px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            p {
+                font-family: "Poppins";
+                font-size: 11.06px;
+                font-weight: 400;
+                line-height: 16.59px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: var(--color-offwhite2);
+                margin: 0px;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                line-clamp: 4;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-height: 50px;
+
+            }
+        }
+    }
+}
+
+.type3Card {
+    display: flex;
+    // align-items: center;
+    height: fit-content;
+    flex-wrap: wrap;
+    width: 40%;
+
+    // padding: var(--announce-card-outer-pad);
+    // margin: -8px;
+
+    .type3CardInner {
+        width: 50%;
+        padding: 8px;
+        border-radius: 18px;
+        overflow: hidden;
+
+        .typeCardContent {
+            background: #16262b;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: var(--announce-card-inner-pad);
+
+
+            h2 {
+                color: var(--color-white);
+                font-family: Futura;
+                font-size: 1.1rem;
+                font-weight: 700;
+                line-height: 18.43px;
+                font-family: "Poppins-Bold";
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                margin: 0px;
+            }
+
+            .date {
+                color: var(--color-white);
+                font-size: 12.9px;
+                font-weight: 400;
+                // line-height: 47.01px;
+                margin-bottom: 5px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            p {
+                font-family: "Poppins";
+                font-size: 11.06px;
+                font-weight: 400;
+                line-height: 16.59px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: var(--color-offwhite2);
+                margin: 0px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-height: 33px;
+
+            }
+        }
+    }
+    .readmoreWrap{
+        button {
+            font-size: 11.06px;
+            font-weight: 400;
+            line-height: 16.59px;
+        }
+        svg {
+            width: 11px;
+        }
+    }
+}
+
+.type3CardSingle {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20%;
+    height: fit-content;
+
+    // padding: var(--announce-card-outer-pad);
+    // margin: -8px;
+
+    .type3CardInner {
+        width: 100%;
+        padding: 8px;
+        border-radius: 18px;
+        overflow: hidden;
+
+        .typeCardContent {
+            background: #16262b;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: var(--announce-card-inner-pad);
+
+
+            h2 {
+                color: var(--color-white);
+                font-family: Futura;
+                font-size: 1.1rem;
+                font-weight: 700;
+                line-height: 18.43px;
+                font-family: "Poppins-Bold";
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                margin: 0px;
+            }
+
+            .date {
+                color: var(--color-white);
+                font-size: 12.9px;
+                font-weight: 400;
+                // line-height: 47.01px;
+                text-align: left;
+                margin-bottom: 5px;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            p {
+                font-family: "Poppins";
+                font-size: 11.06px;
+                font-weight: 400;
+                line-height: 16.59px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: var(--color-offwhite2);
+                margin: 0px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-height: 33px;
+
+            }
+        }
+    }
+    .readmoreWrap{
+        button {
+            font-size: 11.06px;
+            font-weight: 400;
+            line-height: 16.59px;
+        }
+        svg {
+            width: 11px;
+        }
+    }
+}
+
+@media (max-width: 1000px) { 
+    .type1CardContainer{
+        width: 50%;
+        height: var(--announcement-card-height);
+    }
+    .type2CardContainer{
+        width: 50%;
+        height: var(--announcement-card-height);
+    }
+    .type3Card{
+        width: 50%;
+    }
+    .type3CardSingle{
+        width: 50%;
+    }
+
+    h2,.date{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 500px) { 
+    .type1CardContainer{
+        width: 100%;
+        height: var(--announcement-card-height);
+    }
+    .type2CardContainer{
+        width: 100%;
+        height: var(--announcement-card-height);
+    }
+    .type3Card{
+        width: 100%;
+    }
+    .type3CardSingle{
+        width: 100%;
+    }
+}
+

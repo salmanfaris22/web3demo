@@ -1,0 +1,145 @@
+.container {
+  /* Your styles here */
+  display: flex;
+  padding-top: 120px;
+  @media (max-width:768px) {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+
+  align-items: center;
+  padding-bottom: 11.5vw;
+}
+
+.ltr {
+  padding: 10px;
+  position: relative;
+  width: 50%;
+
+  @media (max-width:768px) {
+    top: unset !important;
+    min-width: 240px
+  }
+
+  &:nth-child(1) {
+    @media (min-width:768px) {
+      width: 17%;
+
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width:768px) {
+      width: 22%;
+    }
+
+    .textBox {
+      div {
+        text-align: center;
+
+        &:nth-child(1) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width:768px) {
+      width: 22%;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width:768px) {
+      width: 17%;
+    }
+
+    .textBox {
+      div {
+        &:nth-child(1) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &:nth-child(5) {
+    @media (min-width:768px) {
+      width: 20%;
+
+    }
+
+    .textBox {
+      div {
+        text-align: center;
+
+        &:nth-child(1) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &:nth-child(odd) {
+    position: relative;
+  }
+
+  .big {
+    width: 100%;
+    position: relative;
+    top: 105%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.textBox {
+  position: absolute;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main {
+    font-family: 'Inter-Medium';
+    font-size: 3.02rem;
+    font-weight: 600;
+    line-height: 3.02rem;
+    text-align: left;
+    color: var(--color-orange);
+  }
+
+  .red {
+    color: var(--color-orange);
+  }
+
+  .white {
+    color: var(--color-white);
+  }
+
+  .sub {
+    font-family: 'Inter';
+    font-size: 1.62rem;
+    /* 23.22px converted to rem */
+    font-weight: 400;
+    line-height: 2.4rem;
+    /* 42.22px converted to rem */
+    text-align: left;
+
+  }
+
+  .descript {
+    font-family: "Inter";
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+
+  }
+}

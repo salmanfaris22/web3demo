@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+
+    button {
+        color: var(--color-white);
+        background-color: transparent;
+
+        &.calcBtnSelected {
+            background-color: var(--neo-lime);
+            color: var(--color-black);
+        }
+
+        border: 0.4px solid rgba(233, 230, 230, 1);
+
+    }
+}

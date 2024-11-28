@@ -1,0 +1,103 @@
+.sectionDes {
+  margin-top: 30px;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: -0.453786700963974px;
+  font-size: 1.45rem;
+  color: var(--color-white);
+}
+.numbeWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  .numberItem {
+    margin-right: 15px;
+    width: 16%;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+.sectionHead {
+  color: var(--color-green);
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: -0.453786700963974px;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.des {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  letter-spacing: -0.4647326171398163px;
+  text-align: left;
+  color: var(--color-white);
+  margin-top: 14px;
+  padding-bottom: 10px;
+}
+.section {
+  margin-top: 50px;
+}
+.checkboxWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 160px;
+}
+
+.checkboxSection {
+  width: 33%;
+  @media (min-width: 1800px) {
+    width: 27%;
+  }
+}
+.checkBoxItem {
+  margin-bottom: 20px;
+}
+
+.checkboxWrap2 {
+  flex-direction: row;
+  height: auto;
+  .checkboxSection {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .numbeWrap {
+    display: block;
+    margin-top: 50px;
+    .numberItem {
+      margin-right: 0px;
+      width: 100%;
+      margin-bottom: 14px;
+    }
+  }
+  .checkboxWrap {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  .checkboxSection {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sectionHead {
+    font-size: 1.3rem;
+  }
+  .checkboxWrap {
+    margin-top: 15px;
+  }
+  .des {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-top: 10px;
+  }
+}

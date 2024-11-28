@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+  .selectedNews {
+    margin-bottom: 70px;
+    @media (min-width: 768px) {
+      width: 30%;
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 80px;
+      column-gap: 70px;
+      width: 100%;
+
+      // justify-content: space-between;
+    }
+    @media (max-width: 1000px) {
+      margin-bottom: 30px;
+    }
+
+    .imageContainer {
+      border-radius: 18px;
+      overflow: hidden;
+      width: 100%;
+      height: 310px;
+
+      @media (min-width: 1024px) {
+        width: 500px;
+        height: 310px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    h2 {
+      font-family: "Poppins";
+      color: rgba(201, 201, 201, 1);
+      font-size: 1.29rem;
+      font-weight: 400;
+      line-height: 3.64rem;
+      text-align: left;
+    }
+
+    h3 {
+      font-family: "Poppins";
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: left;
+      color: var(--light-gray);
+    }
+
+    p {
+      font-family: "Poppins";
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+
+      color: var(--color-offwhite2);
+    }
+  }
+
+  .selectedNewsInfo {
+    position: relative;
+
+    @media (min-width: 1014px) {
+      width: 44%;
+    }
+  }
+
+  .uploadedOn {
+    position: absolute;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 3.64rem;
+    text-align: left;
+    color: var(--neo-lime);
+    top: 50%;
+    right: -120px;
+
+    @media (max-width: 1280px) {
+      // display: none;
+      position: relative;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      top: 0px;
+      right: 0px;
+    }
+  }
+}

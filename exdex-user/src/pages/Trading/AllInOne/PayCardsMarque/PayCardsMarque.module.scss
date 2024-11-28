@@ -1,0 +1,30 @@
+.container {
+  /* Your styles here */
+  display: flex;
+  align-items: center;
+  background: var(--color-green);
+  justify-content: center;
+  margin: 50px 0px;
+  position: relative;
+  z-index: 11;
+}
+
+.cardWrapper {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.cards {
+  overflow: hidden;
+}
+
+.cardWrap {
+  width: 100px;
+
+  img {
+    width: 100%;
+  }
+}

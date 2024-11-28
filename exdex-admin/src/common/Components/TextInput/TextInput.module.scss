@@ -1,0 +1,15 @@
+.container {
+  input {
+    padding: 11px 25px;
+    background: var(--light-green);
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+    &::placeholder {
+      font-size: 1rem;
+      font-family: "Poppins-SemiBold";
+      font-weight: 500;
+      line-height: 1.987rem;
+    }
+  }
+}

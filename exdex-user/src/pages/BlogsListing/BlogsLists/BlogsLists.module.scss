@@ -1,0 +1,62 @@
+.listPageWrapper {
+  padding-top: 30px;
+
+  .container {
+    /* Your styles here */
+
+    .tabsContainer {
+      margin-bottom: 25px;
+      @media (min-width:768px) {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0px;
+      }
+
+      .tabClass {
+        font-size: 14px;
+        min-width: 80px;
+        padding: 6px 12px;
+        margin-bottom: 12px;
+      }
+
+      .search {
+        input {
+          background-color: var(--global-dark-background);
+          border: 1.2px soliud rgba(73, 73, 73, 1);
+          border-radius: 36px;
+          min-width: 250px;
+        }
+      }
+    }
+
+    .blogRow{
+      display: flex;
+      flex-wrap: wrap;
+     
+   
+        margin:0px  -10px;
+       @media (min-width:1451px) {
+        margin:0px  -25px;
+       }
+    }
+
+    .blogCardWrapper {
+      width: 33.33%;
+
+      @media (max-width:768px) {
+        width: 50%;
+      }
+      @media (max-width:500px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+
+
+
+  
+}

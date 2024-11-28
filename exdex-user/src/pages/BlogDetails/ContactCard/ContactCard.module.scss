@@ -1,0 +1,91 @@
+.container {
+    padding: 25px 25px;
+    
+
+    .usersCount {
+        color: var(--color-white);
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 34.2px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 22px 0px;
+    }
+
+    .registerNow {
+        button {
+            font-size: 1.1rem;
+            padding: 10px 30px;
+            border-radius: 8px;
+        }
+    }
+
+    .headings {
+        display: none;
+        @media (min-width:1024px) {
+            display: block;
+        }
+        margin-top: 35px;
+
+        .heading {
+            padding-bottom: 35px;
+            padding-left: 25px;
+            position: relative;
+            .content {
+                font-size: 1.1rem;
+                color: rgba(132, 142, 156, 1);
+                line-height: 28px;
+                cursor: pointer;
+                position: relative;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                transition: all .3s;
+                &:hover{
+                    color: var(--color-white);
+                }
+
+                //    overflow-y: hidden;
+
+
+            }
+
+            &:last-child {
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 8px;
+                width: 8px;
+                transform: rotate(-45deg);
+                background: var(--neo-lime-dark);
+                left: 3px;
+                top: 8px;
+                border: 1px solid rgba(71, 77, 87, 1);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 90%;
+                width: 3px;
+                // transform: rotate(-40deg);
+                background: var(--neo-lime-dark);
+                left: 5px;
+                top: 17px;
+            }
+        }
+
+
+    }
+
+}

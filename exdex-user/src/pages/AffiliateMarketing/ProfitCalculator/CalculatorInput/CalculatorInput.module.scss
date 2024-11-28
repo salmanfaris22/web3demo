@@ -1,0 +1,52 @@
+.levelInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  .levelName {
+    font-family: "Poppins-Medium", sans-serif;
+    font-size: 1.49rem;
+    /* Converted from 20.85px */
+    font-weight: 500;
+    line-height: 2.23rem;
+    /* Converted from 31.28px */
+    letter-spacing: 0.125em;
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .comission {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.16rem; /* Converted from 16.22px */
+    font-weight: 400; /* Regular weight */
+    line-height: 1.74rem; /* Converted from 24.33px */
+    text-align: left;
+    color: var(--light-green);
+  }
+
+  input {
+    @media (max-width: 425px) {
+      max-width: 85px;
+    }
+    color: var(--color-white);
+    text-align: center;
+    height: 50px;
+    margin: 0px 18px;
+    padding: 7px;
+    border-radius: 9.16px;
+    max-width: 115px;
+    border: 1px solid rgba(184, 184, 184, 0.34);
+    &:focus {
+      border: 1px solid var(--color-green);
+      border-color: var(--neo-lime);
+    }
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

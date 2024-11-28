@@ -1,0 +1,101 @@
+
+@import "../../../../../../exdextypography.scss";
+.appreciate {
+  @include responsive-font-size();
+
+    &__container {
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      padding: 4.3em 0;
+      align-items: center;
+      font-family: "Poppins-Medium";
+      h4{
+        color: #fff;
+        font-size:1.5em;
+        margin: 0px;
+    }
+    }
+  
+    &__heart {
+      cursor: pointer;
+  
+      img {
+        height: 60px;
+        width: auto;
+      }
+  
+      .selected {
+        fill: #ccfd50;
+      }
+    }
+  
+    &__count {
+      display: flex;
+  
+      img {
+        height: 3.14em;
+        width: auto;
+        padding: 0.63em;
+        vertical-align: middle;
+      }
+  
+      &__heart,
+      &__views,
+      &__comments {
+        padding: 1rem;
+        font-size: .8em;
+        color: #c1c1c2;
+      }
+    }
+  
+    &__published {
+      font-size: .8em;
+      color: #c1c1c2;
+    }
+
+  }
+  
+  @media screen and (max-width: 790px) {
+    .appreciate {
+      &__container {
+        padding: 5.3em 0;
+  
+        h4 {
+          color: #ccfc50;
+          text-align: center;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-top: 1.2em;
+        }
+      }
+  
+      &__count {
+        &__heart,
+        &__views,
+        &__comments {
+          color: rgba(255, 255, 255, 0.70);
+          font-size: .96em;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+  
+        img {
+          width: auto;
+          height: 2em;
+          padding: 0 1em;
+        }
+      }
+  
+      &__published {
+        font-size: .96em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  

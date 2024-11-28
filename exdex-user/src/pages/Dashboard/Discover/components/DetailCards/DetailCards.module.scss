@@ -1,0 +1,36 @@
+.detailOuter {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--btn-color);
+}
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.04px;
+  text-align: left;
+}
+.val {
+  font-family: "Poppins-Medium";
+  font-size: 29.38px;
+  font-weight: 500;
+  line-height: 44.08px;
+  text-align: left;
+}
+.details {
+  margin-left: 15px;
+}
+@media only screen and (max-width: 800px) {
+  .detailOuter {
+    padding: 15px;
+  }
+}
+
+// @media only screen and (max-width: 600px) {
+//   .val {
+//     padding: 26px;
+//   }
+// }

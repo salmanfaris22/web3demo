@@ -1,0 +1,350 @@
+.paymentSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+}
+.deposit {
+  min-width: 0;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  color: var(--color-white);
+  font-family: "Poppins-Bold";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.itemHead {
+  color: var(--color-white);
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+  line-height: 27px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.selector {
+  width: 100%;
+}
+.cardInner {
+  padding: 20px;
+}
+.depositOuter {
+  position: relative;
+  z-index: 10;
+}
+.depositOuter,
+.networkOuter {
+  width: 100%;
+}
+.networkOuter {
+  margin-top: 20px;
+}
+.depositOuter2 {
+  margin-top: 10px;
+}
+.smallTextWrap {
+  color: var(--color-light-gray-small);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+  font-size: 12px;
+  span:nth-child(1) {
+    margin-right: 7px;
+  }
+  .white {
+    font-family: Poppins-SemiBold;
+    color: var(--color-white);
+    text-align: right;
+  }
+  .grey {
+    color: var(--color-light-gray-small);
+  }
+}
+.copy {
+  cursor: pointer;
+}
+.selector {
+  position: relative;
+  input {
+    background-color: var(--light-green);
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    padding-right: 92px;
+    padding-left: 15px;
+  }
+  .generateBtn {
+    color: var(--background-color);
+    background-color: var(--color-green);
+    border-radius: 0px 8px 8px 0px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-family: "Poppins-Medium";
+    cursor: pointer;
+    &.generateBtnDisabled {
+      opacity: 0.8;
+      cursor: not-allowed;
+    }
+  }
+  .addInp {
+    padding-right: 50px;
+    margin-bottom: 10px;
+  }
+}
+.qrWrap {
+  background-color: var(--light-green);
+  border-radius: 8px;
+  border: 1px solid var(--color-green);
+  padding: 10px 15px 10px 12px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.qrLeft {
+  width: 82px;
+  height: 82px;
+  border-radius: 3px;
+  background-color: var(--background-color2);
+  padding: 5px;
+}
+.qrRight {
+  margin-left: 25px;
+  width: calc(100% - 107px);
+}
+.address {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 12px;
+  width: 100%;
+  .addLabel {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .addressDetail {
+    width: calc(100% - 16px);
+  }
+  .addVal {
+    font-family: Poppins-Light;
+    font-size: 14px;
+    margin-top: 4px;
+    color: var(--dark-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+.time {
+  text-align: right;
+  color: var(--color-qr-gray);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  .counterWrap {
+    width: 34px;
+    text-align: right;
+    margin-right: 3px;
+  }
+}
+.cursor {
+  cursor: pointer;
+}
+.iconsInput {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  z-index: 100;
+  &.spanIp {
+    width: 70px;
+  }
+  img {
+    margin-right: 7px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  span {
+    font-family: "Poppins-SemiBold";
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.81px;
+    text-align: left;
+    margin-right: 10px;
+    &:last-child {
+      cursor: pointer;
+    }
+  }
+}
+.confirmButton {
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  font-size: 12px;
+  font-family: Poppins-Medium;
+}
+.confirmButton2 {
+  height: 40px;
+}
+.withdrawBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  &.pad {
+    padding: 157px 0px 0px;
+  }
+  &.pad2 {
+    padding: 33px 0px 0px;
+  }
+}
+.coinOuter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.coinWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .coinWrap {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins-Medium";
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 50.78px;
+    color: var(--color-white);
+    margin-right: 20px;
+  }
+  .coinLabel {
+    font-family: "Poppins-Medium";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: var(--color-white);
+  }
+}
+.quantityWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input {
+    font-family: "Poppins-SemiBold";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-white);
+    width: 94px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid var(--color-qr-gray);
+  }
+
+  .quantity {
+    color: var(--light-green);
+    font-size: 13px;
+    line-height: 21px;
+    text-align: left;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 15px 0px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-green);
+  }
+}
+.midWrap {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background-color: var(--light-green);
+  position: relative;
+}
+
+.descktopSwiper{
+  display: block;
+}
+.mobileSwiper{
+  display: none;
+}
+@media only screen and (max-width: 1340px) {
+  .paymentSection {
+    flex-wrap: wrap;
+  }
+  .deposit {
+    width: -moz-calc(50% - 5px);
+    width: -webkit-calc(50% - 5px);
+    width: -o-calc(50% - 5px);
+    width: calc(50% - 5px);
+    flex: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .paymentSection {
+    display: block;
+  }
+  .deposit {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 100%;
+  }
+  .descktopSwiper{
+    display: none;
+  }
+  .mobileSwiper{
+    display: block;
+  }
+}
+
+

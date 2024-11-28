@@ -1,0 +1,56 @@
+.packageWrap {
+  padding: 30px 50px 30px;
+  @media (max-width: 1200px) {
+    padding: 30px 10px;
+  }
+  @media (min-width: 1450px) {
+    max-width: calc(90vw + 60px);
+    margin: auto;
+  }
+}
+.tabOut {
+}
+.packageBody {
+  border-top: 0.67px solid rgba(255, 255, 255, 0.1);
+}
+.packageInner {
+  padding: 30px 20px;
+}
+.detailBody {
+  margin: 0 -20px -30px;
+  background: linear-gradient(
+    0.52deg,
+    rgba(165, 160, 160, 0.12) 60.1%,
+    #96835b 75.01%,
+    rgba(165, 160, 160, 0.12) 89.82%,
+    rgba(165, 160, 160, 0.12) 79.85%
+  );
+  border-radius: 0px 0px 20px 20px;
+  padding: 0px 20px 30px;
+}
+@media only screen and (max-width: 1150px) {
+  .detailBody {
+    background: linear-gradient(
+      0.52deg,
+      rgba(165, 160, 160, 0.12) 81.1%,
+      #96835b 89.01%,
+      rgba(165, 160, 160, 0.12) 97.82%,
+      rgba(165, 160, 160, 0.12) 88.85%
+    );
+  }
+}
+@media only screen and (max-width: 650px) {
+  .packageBody {
+    border: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .packageInner {
+    padding: 30px 15px;
+  }
+  .detailBody {
+    margin: 0 -15px -30px;
+    padding: 0px 15px 30px;
+  }
+}

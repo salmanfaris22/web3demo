@@ -1,0 +1,13 @@
+.loading {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--color-offwhite);
+}
+.dark {
+  background-color: var(--background-color);
+  height: 100vh;
+}

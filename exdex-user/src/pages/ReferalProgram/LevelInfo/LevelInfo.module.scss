@@ -1,0 +1,104 @@
+.container {
+  padding-top: 100px;
+  max-width: 1400px;
+  margin: 0 auto;
+  @media (max-width: 800px) {
+    padding-top: 20px;
+  }
+  h2 {
+    font-size: 4rem;
+    font-family: "Poppins-Bold";
+    font-weight: 700;
+    line-height: 6.43rem;
+    color: var(--light-green);
+    text-transform: uppercase;
+    @media (max-width: 800px) {
+      font-size: 40px;
+      line-height: 54px;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+    /* 28px */
+    font-weight: 400;
+    line-height: 3.24rem;
+    color: var(--color-white);
+  }
+
+  .levelInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    .levelCard {
+      color: var(--color-black);
+      border-radius: 13px;
+      padding: 18px 18px 24px 24px;
+      margin-bottom: 15px;
+      width: 48%;
+
+      @media (min-width: 768px) {
+        width: 19%;
+      }
+
+      &:nth-child(1) {
+        background: var(--color-orange);
+      }
+
+      &:nth-child(2) {
+        background: var(--light-green);
+      }
+
+      &:nth-child(3) {
+        background: var(--color-white);
+      }
+
+      &:nth-child(4) {
+        background: var(--color-yellow);
+      }
+
+      &:nth-child(5) {
+        background: var(--neo-lime);
+      }
+    }
+
+    .levelName {
+      font-size: 1.22rem;
+      /* 17.06px */
+      font-weight: 500;
+      line-height: 1.83rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .comission {
+    }
+
+    .comissionPercentage {
+      font-family: "Poppins-SemiBold";
+      font-size: 2.92rem;
+      /* 40.93px */
+      font-weight: 600;
+      line-height: 4.39rem;
+      /* 61.4px */
+      text-align: left;
+    }
+
+    .comissionFooter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Poppins";
+      font-size: 1.1rem;
+      /* 15.35px */
+      font-weight: 400;
+      line-height: 1.65rem;
+      /* 23.03px */
+      text-align: left;
+    }
+  }
+}

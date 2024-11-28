@@ -1,0 +1,51 @@
+.container {
+    @media only screen and (min-width: 1051px) {
+        display: none
+    }
+    
+
+    .closeIcon{
+        position: sticky;
+        right: 10px;
+        z-index: 15;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    position: relative;
+    width: 100%;
+    // height: 100%;
+    background: rgb(21, 37, 42);
+    padding: 20px;
+    top: 20px;
+    left: 0;
+    z-index: 11;
+    color: var(--color-white);
+
+    .header {
+        color: var(--color-white);
+        font-family: "Poppins-Medium";
+        font-weight: 500;
+        line-height: 37.78px;
+        text-align: left;
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .dataValueWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 19px;
+        margin-bottom: 26px;
+    }
+
+    .packageDetailWrap {
+        margin-top: 50px;
+    }
+}

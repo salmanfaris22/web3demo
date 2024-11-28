@@ -1,0 +1,52 @@
+.container {
+  min-width: calc((100% / 5) - 10px);
+  text-align: center;
+  .levelName {
+    color: rgba(194, 194, 194, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    /* Converted from 17.19px */
+    font-weight: 400;
+    /* Regular weight */
+    line-height: 1.84rem;
+    /* Converted from 25.79px */
+    letter-spacing: -0.01em;
+    /* Letter spacing in em */
+    text-align: center;
+    /* Center alignment */
+  }
+
+  button {
+    color: rgba(194, 194, 194, 1);
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-size: 1.2rem;
+    /* Converted from 22px */
+    font-weight: 500;
+    /* Medium weight */
+    line-height: 2.36rem;
+    /* Converted from 33px */
+    text-align: center;
+    /* Center alignment */
+    background: transparent;
+    border: 1px solid rgba(72, 72, 72, 1);
+    border-radius: 45px;
+    width: 100%;
+  }
+}
+
+.active {
+  button {
+    color: var(--color-black);
+    background: var(--neo-lime);
+  }
+}
+.dot {
+  font-size: 1.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+  min-height: 28px;
+  padding-top: 6px;
+}

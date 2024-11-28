@@ -1,0 +1,361 @@
+.basicOuter {
+  padding: 30px;
+  @media (min-width: 1450px) {
+    max-width: calc(90vw + 60px);
+    margin: auto;
+  }
+}
+.body {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left {
+  position: sticky;
+  top: 20px;
+  width: 230px;
+}
+.right {
+  width: -moz-calc(100% - 250px);
+  width: -webkit-calc(100% - 250px);
+  width: -o-calc(100% - 250px);
+  width: calc(100% - 250px);
+  margin-bottom: 30px;
+}
+.filterItem {
+  color: var(--color-white);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding: 15px 15px 15px 20px;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 3px;
+    height: 100%;
+    top: 0px;
+    background-color: transparent;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 0.5px;
+    bottom: 0px;
+    background-color: var(--light-blue);
+    opacity: 0.3;
+  }
+  &:hover {
+    color: var(--color-green);
+    // &::after {
+    //   background-color: var(--color-green);
+    // }
+  }
+  &.active {
+    color: var(--color-green);
+    // &::after {
+    //   background-color: var(--color-green);
+    // }
+  }
+  &:last-child {
+    &::before {
+      opacity: 0;
+    }
+  }
+}
+.head {
+  font-family: "Poppins-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 37.23px;
+  text-align: left;
+}
+.description {
+  font-size: 16px;
+  line-height: 27.08px;
+  text-align: left;
+  color: var(--color-gray-font);
+  margin-bottom: 20px;
+  margin-top: 5px;
+  max-width: 730px;
+}
+.profileDetails {
+  color: var(--color-white);
+  padding: 20px 30px;
+  @media (max-width:700px){
+    padding: 20px;
+  }
+}
+.imageWrapper {
+  width: 100%;
+  height: 215px;
+  background-image: url("../../../../../public/assets/images/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 9px;
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.camIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--light-gray);
+  background-color: var(--color-light-border);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  input {
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    opacity: 0;
+  }
+}
+
+.profileImage {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -65px;
+  position: absolute;
+  left: 30px;
+  .camIcon {
+    border: 2px solid var(--dark-color3);
+    right: 0px;
+    bottom: -5px;
+  }
+}
+.bodyWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.bodyLeft {
+  width: 195px;
+  margin-top: 70px;
+}
+.bodyRight {
+  width: -moz-calc(100% - 225px);
+  width: -webkit-calc(100% - 225px);
+  width: -o-calc(100% - 225px);
+  width: calc(100% - 225px);
+  margin-top: 30px;
+}
+.verified {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-green);
+  margin-bottom: 20px;
+  font-size: 18px;
+  img {
+    margin-right: 10px;
+  }
+}
+.subText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.69px;
+  text-align: center;
+  color: var(--color-splitter);
+}
+.bodyLeft {
+  width: 195px;
+}
+.formOuter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.formField {
+  width: 47.5%;
+  margin-bottom: 25px;
+  position: relative;
+}
+.dateImg {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+}
+.texteditor {
+  border-radius: 6px;
+  border: 0.56px solid rgba(255, 255, 255, 0.3);
+}
+.label {
+  color: var(--color-tag-background);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.formHead {
+  font-family: "Poppins-SemiBold";
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 27.08px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.addressWrap {
+  margin-top: 20px;
+  color: var(--color-white);
+}
+.addressInner {
+  padding: 40px 30px 20px;
+}
+.deviceWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.deviceItem {
+  margin-bottom: 20px;
+  width: 350px;
+  border: 0.56px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  max-width: 30%;
+  min-width: 250px;
+  .deviceLeft {
+    margin-right: 20px;
+  }
+  .name {
+    margin-bottom: 10px;
+    font-family: "Poppins-Medium";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23.69px;
+    text-align: left;
+  }
+  .des {
+    font-size: 15px;
+    line-height: 23.69px;
+    text-align: left;
+  }
+  .currentDevice {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: var(--color-tag-background);
+    margin-top: 10px;
+    img {
+      margin-right: 5px;
+    }
+  }
+  .menuWrap {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    .menuOptions {
+      position: absolute;
+      right: 0px;
+      top: -2px;
+      background: var(--color-background-header);
+      padding: 6px 20px;
+      border-radius: 5px;
+      display: none;
+    }
+    &:hover {
+      .menuOptions {
+        display: block;
+      }
+    }
+  }
+}
+.togOuter {
+  margin-top: 40px;
+}
+.toggleField {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .toggleText {
+    margin-left: 40px;
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 27.08px;
+    text-align: left;
+  }
+}
+.btnWrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .saveBtn {
+    padding: 8px 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .basicOuter {
+    padding: 30px 10px;
+  }
+  
+}
+@media only screen and (max-width: 1100px) {
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .bodyWrap {
+    display: block;
+  }
+  .bodyRight {
+    width: 100%;
+  }
+  .addressInner{
+    padding: 40px 20px 20px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .formOuter {
+    display: block;
+  }
+  .formField{
+    width: 100%;
+  }
+  .toggleField{
+    .toggleText{
+      margin-left: 20px;
+      font-size: 14px;
+    }
+  }
+}
+

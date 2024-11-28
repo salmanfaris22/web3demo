@@ -1,0 +1,76 @@
+.container {
+  background: var(--dark-color2);
+  padding: 20px 70px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  color: var(--medium-gray);
+  margin-top: -60px;
+  @media (max-width: 1150px) {
+    padding: 20px 20px;
+  }
+  @media (max-width: 1024px) {
+    margin-top: 0px;
+  }
+
+  h2,
+  h3 {
+    font-family: "Poppins";
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-align: left;
+    margin: 0px;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: "Poppins-Bold";
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-size: 1.4479rem;
+    font-weight: 400;
+    line-height: 2.0443rem;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .moneyCardInner {
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding-top: 35px;
+  }
+}
+
+.avatarContainer {
+  position: relative;
+  margin-bottom: 25px;
+  height: 275px;
+  img {
+    position: absolute;
+  }
+  img {
+    &:nth-child(1) {
+      width: 130px;
+      left: calc(50% - 65px);
+      z-index: 10;
+      bottom: 10px;
+    }
+    &:nth-child(2) {
+      width: 90px;
+      left: calc(50% - 45px);
+      bottom: 80px;
+      z-index: 5;
+    }
+    &:nth-child(3) {
+      width: 60px;
+      left: calc(50% - 30px);
+      bottom: 128px;
+    }
+  }
+}

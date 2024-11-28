@@ -1,0 +1,47 @@
+.bubbleWrap {
+  padding: 30px;
+  width: 100%;
+}
+.feed {
+  border-top: 0.67px solid rgba(255, 255, 255, 0.1);
+}
+.feedTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins-Medium";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  color: var(--color-white);
+  padding: 15px 0px;
+  .des{
+    display: inline-block;
+  }
+  .mob{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .bubbleWrap {
+    padding: 20px;
+  }
+  .feedTop {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .bubbleWrap {
+    padding: 15px;
+  }
+  .feedTop {
+    font-size: 14px;
+    .des{
+      display: none;
+    }
+    .mob{
+      display: inline-block;
+    }
+  }
+}

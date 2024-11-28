@@ -1,0 +1,55 @@
+.svgContainer {
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  @media (max-width:1300px) {
+   padding: 0px 14px;
+  }
+
+  svg {
+    display: none;
+
+    @media (min-width:1300px) {
+      display: block;
+    }
+
+    margin: 0 auto;
+    // margin-top: 220px;
+  }
+}
+
+.aboutUsWrapper {
+  @media (max-width:1299px) {
+  width: 100% !important;
+  height: 100% !important;
+  margin-bottom: 50px;
+}
+  @media (min-width:1300px) {
+    position: absolute;
+    height: 215px;
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: auto;
+    height: auto;
+  }
+
+
+}
+
+.line{
+  @media (min-width:1300px) {
+    display: none 
+  }
+  width: 1px;
+  left: 18px;
+  height: 100%;
+  position: absolute;
+  background-image: url('../../../../public//assets//images/line.svg');
+  background-size: cover;
+}

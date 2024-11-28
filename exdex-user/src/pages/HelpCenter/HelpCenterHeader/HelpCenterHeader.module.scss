@@ -1,0 +1,44 @@
+.container {
+  text-align: center;
+  padding: 40px 0px;
+  color: var(--color-white);
+  background: var(--global-dark-background);
+  margin-top: 55px;
+  width: 100%;
+
+  h1 {
+    font-size: 1.16rem;
+    font-weight: 400;
+    line-height: 1.74rem;
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    margin-top: 20px;
+    font-family: "Poppins-SemiBold";
+    font-size: 2.98rem;
+    /* 41.77px */
+    font-weight: 500;
+    line-height: 4.48rem;
+    /* 62.66px */
+  }
+
+  .searchWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .myHelpTickets {
+    margin-top: 45px;
+
+    a {
+      color: var(--neo-lime);
+      font-size: 1.33rem;
+      /* 18.57px */
+      font-weight: 400;
+      line-height: 1.99rem;
+    }
+  }
+}

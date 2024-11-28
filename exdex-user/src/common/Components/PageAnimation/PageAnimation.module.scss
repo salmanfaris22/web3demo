@@ -1,0 +1,29 @@
+.animation {
+  position: relative;
+  transform: translateY(300px);
+  opacity: 0;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
+  width: 100%;
+}
+.fullHeight {
+  height: 100%;
+}
+.left {
+  transform: translateY(0px);
+  transform: translateX(-100px);
+}
+.right {
+  transform: translateY(0px);
+  transform: translateX(100px);
+}
+.top {
+  transform: translateY(-300px);
+}
+.animationClass {
+  transform: translateY(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}

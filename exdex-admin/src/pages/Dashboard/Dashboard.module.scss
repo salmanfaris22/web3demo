@@ -1,0 +1,29 @@
+.bodyWrap {
+  height: 100vh;
+  overflow: auto;
+}
+.dashboard {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  top: 25px;
+}
+.contentWrap {
+  width: -moz-calc(100% - 110px);
+  width: -webkit-calc(100% - 110px);
+  width: -o-calc(100% - 110px);
+  width: calc(100% - 110px);
+}
+.dashSide {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+@media only screen and (max-width: 1200px) {
+  .dashboard {
+    width: calc(100%);
+    position: relative;
+    left: 0px;
+  }
+}

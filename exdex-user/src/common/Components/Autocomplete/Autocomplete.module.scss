@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    input {
+      padding: 14px 25px;
+      background: var(--light-green);
+      border-radius: 3px;
+      width: 100%;
+      &::placeholder {
+        font-size: 1.2rem;
+        font-family: "Poppins";
+        font-weight: 500;
+        line-height: 1.987rem;
+      }
+    }
+
+    .lisBox {
+        z-index: 100;
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        top: 109%;
+        max-height: 200px;
+        border-radius: 5px;
+        overflow-y: auto;
+      }
+    
+      .lisItem {
+        padding: 15px;
+        padding: 15px;
+        border: 1px solid #eee;
+        cursor: pointer;
+        transition: all .2s;
+        &:hover {
+          background: var(--light-green);
+        }
+      }
+    
+      .selectedListItem {
+        background: var(--light-green);
+      }
+  }

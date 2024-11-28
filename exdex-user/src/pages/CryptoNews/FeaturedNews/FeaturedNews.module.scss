@@ -1,0 +1,41 @@
+.container {
+  .title {
+    margin-top: 110px;
+    font-family: "Poppins-Semibold";
+    font-size: 1.57rem;
+    font-weight: 500;
+    line-height: 3.64rem;
+    text-align: left;
+    width: 100%;
+    color: var(--color-white);
+    margin-bottom: 50px;
+    @media (max-width: 1000px) {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  .newsContainer {
+    padding: 15px;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-width: 1024px) {
+      width: 25%;
+    }
+
+    @media (max-width: 770px) {
+      padding: 0px;
+    }
+  }
+
+  .newsWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0px -15px 30px -15px;
+    @media (max-width: 1200px) {
+      margin: 0px 0px 30px;
+    }
+  }
+}

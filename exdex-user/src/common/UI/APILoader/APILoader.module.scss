@@ -1,0 +1,41 @@
+.fadeContinuous {
+    text-align: center;
+  
+    img {
+      width: 200px;
+    }
+  
+    > div {
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      animation: fadeInOut 2s ease-in-out infinite;
+    }
+  
+    /* Adjust duration for quicker animation */
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0.2;
+      /* Start slightly visible */
+    }
+  
+    50% {
+      opacity: 0.6;
+      /* More visible at the midpoint */
+    }
+  
+    100% {
+      opacity: 0.2;
+      /* End slightly visible */
+    }
+  }
+  
+  .fadeWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+  }
+  

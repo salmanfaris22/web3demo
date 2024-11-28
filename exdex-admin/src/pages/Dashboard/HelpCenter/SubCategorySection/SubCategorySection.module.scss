@@ -1,0 +1,15 @@
+.container {
+  .ticketCardWrapper {
+    border-radius: 10px;
+    background: var(--global-dark-background);
+    h1 {
+      color: var(--color-white);
+      margin-top: 0px;
+    }
+  }
+}
+
+
+.breadCrumb {
+  padding: 20px 0px;
+}

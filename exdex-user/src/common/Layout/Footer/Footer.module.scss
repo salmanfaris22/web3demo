@@ -1,0 +1,133 @@
+.footer {
+  background: linear-gradient(238.6deg, #1e2f35 1.87%, #0a0a0a 95.11%);
+  padding: 45px 30px 0px 30px;
+  font-family: "Inter-Medium";
+  // margin-top: 35px;
+  border-radius: 30px 30px 0px 0px;
+  @media (max-width:1200px){
+    padding: 45px 10px 0px 10px;
+  }
+}
+
+.footerFirst {
+  display: block;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
+
+.footerWrap {
+  @media (min-width: 1450px) {
+    max-width: 90vw;
+    margin: auto;
+  }
+}
+
+.footerLogo {
+  @media (max-width: 1023px) {
+    margin-bottom: 36px;
+    max-width: 100px;
+  }
+
+  background: url("../../../../public/assets/images/footer/logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30vw;
+  aspect-ratio: 1;
+  max-width: 150px;
+
+  @media (min-width: 768px) {
+    width: 10vw;
+    aspect-ratio: 1;
+    max-width: 150px;
+  }
+}
+
+.footerSignup {
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
+}
+
+.coyRights {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--color-white);
+  font-size: 13px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+
+  @media (max-width: 768px) {
+    padding: 25px;
+
+    span {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 11px;
+    }
+
+    flex-wrap: wrap;
+    justify-content: center;
+    span {
+      width: 100%;
+    }
+
+    .copyRightsLogo {
+      order: 3;
+    }
+  }
+
+  span {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.copyRightsLogo {
+  max-width: 450px;
+  width: 35%;
+
+  @media (min-width: 768px) {
+    position: relative;
+    bottom: -20px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.topLinks {
+  margin-top: 80px;
+  justify-content: flex-end;
+  column-gap: 10px;
+  padding: 10px 0px;
+  span {
+    border-right: 1px solid rgba(85, 85, 86, 1);
+    padding-right: 10px;
+    &:last-child {
+      border: none;
+    }
+  }
+  @media (max-width: 768px) {
+    column-gap: 0px;
+    justify-content: center;
+    margin-top: 10px;
+    span {
+      border: none;
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.slickWrapper {
+    max-width: 70vw;
+    height: 100%;
+    width: 47em;
+}
+
+.signalCard {
+    width: 100%;
+    padding: 2em;
+}
+
+.smartCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+.activeHeading {
+    margin-top: 1.5em !important;
+    color: #fff;
+    font-size:1.5em !important;
+}
+@media screen and (max-width: 800px) {
+    .activeHeading{
+    font-size: 1.8em;
+    color: var(--color-white);
+    font-family: "Poppins-Medium";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 132%;
+    text-transform: capitalize;
+    }
+    .smartCard{
+        padding: 0.5em;
+    }
+    .slickWrapper{
+        max-width: 81vw;
+    }
+    .signalCard {
+        padding: 0.5em;
+    }
+
+}

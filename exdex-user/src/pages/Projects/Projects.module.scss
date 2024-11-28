@@ -1,0 +1,41 @@
+@import "../../exdextypography.scss";
+
+.outer {
+  // background: url("../../../public/assets/images/backgrounds/gradientBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  font-size: 16px;
+  // margin-bottom: -35px;
+  padding-bottom: 30px;
+  padding-top: 1rem;
+  max-width: 1580px;
+  margin: 0 auto;
+
+  > * {
+    @include responsive-font-size();
+  }
+
+  // background: var(--background-color);
+
+  .hcardWrap {
+    margin-bottom: 30px;
+    @media (max-width: 820px) {
+      margin-left: 10px;
+    }
+  }
+
+  .otherProjectWrap {
+    margin-bottom: 25px;
+  }
+}
+.wrap {
+  background-color: var(--background-color4);
+  border-radius: 16px;
+  padding: 10px 0px 30px;
+  @media (min-width: 1200px) {
+    padding: 20px 20px 40px;
+    margin: 0px 20px;
+  }
+}

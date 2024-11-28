@@ -1,0 +1,237 @@
+.container {
+  background: var(--global-dark-background);
+  padding: 25px 15px;
+  border-radius: 16px;
+  margin-top: -17px;;
+  position: relative;
+  z-index: 2;
+  @media (min-width: 768px) {
+    padding: 25px 35px;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    padding-top: 70px;
+
+    @media (min-width: 500px) {
+      padding-top: 80px;
+    }
+
+    th {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 15px 5px;
+      color: var(--light-green);
+      text-align: left;
+
+      @media (min-width: 500px) {
+        font-size: 1.1rem;
+        line-height: 1rem;
+        padding: 24px 16px;
+      }
+
+      &:nth-child(1) {
+        width: 15%;
+      }
+      
+      &:nth-child(2) {
+        width: 25%;
+        text-align: right;
+      }
+      
+      &:nth-child(3) {
+        width: 25%;
+        text-align: right;
+      }
+
+      &:nth-child(4) {
+        width: 20%;
+        text-align: center;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(5) {
+        text-align: center;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    tr {
+      td {
+        padding: 15px 5px;
+        color: var(--light-green);
+        font-size: 1.43rem;
+        font-weight: 700;
+        line-height: 1.43rem;
+        text-align: left;
+        font-family: "Poppins-Bold";
+
+        @media (min-width: 500px) {
+          padding: 10px 16px;
+        }
+
+        &:nth-child(1) {
+          display: flex;
+          align-items: center;
+
+          > .icon {
+            width: 22px;
+            height: 22px;
+            margin-right: 12px;
+           flex-shrink: 0;
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          text-align: right;
+          width: 25%;
+        }
+
+        &:nth-child(3) {
+          color: var(--color-green);
+
+          &.low {
+            color: var(--color-orange);
+          }
+        }
+
+        &:nth-child(4) {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+
+        &:nth-child(5) {
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+
+        &:last-child {
+          text-align: right;
+          button {
+            padding: 6px 36px;
+            font-size: 1rem;
+            line-height: 2rem;
+          }
+        }
+
+        .graph {
+          height: 30px;
+          max-width: 80px;
+        }
+      }
+    }
+  }
+}
+
+.tabRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+
+
+  @media (min-width: 500px) {
+    padding-bottom: 25px;
+  }
+
+  .tabSingle {
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: "Poppins-SemiBold";
+    font-weight: 500;
+    line-height: 14px;
+    text-align: center;
+    color: var(--color-white);
+    position: relative;
+    transition: all .4s;
+    border-radius: 44px;
+    margin-bottom: 8px;
+    &.activeBtn{
+      border: 1px solid var(--color-green);
+    }
+    padding: 8px 20px;
+    @media (min-width: 500px) {
+      font-size: 1.1rem;
+      min-width: 110px;
+      padding: 10px 20px;
+    }
+
+    .new {
+      color: var(--leaf-green);
+      position: absolute;
+      top: 8px;
+      right: 6px;
+      font-size: 0.714rem;
+    }
+  }
+}
+
+.viewMore {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+  color: var(--color-orange);
+
+  svg {
+    margin-left: 12px;
+  }
+}
+
+
+.tableState{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.fxLogo1{
+  margin-left: 10px;
+}
+.qtLogo{
+  margin-right: 25px !important;
+
+}
+
+.fxLogo2{
+  margin-top: -10px;
+  display: block;
+}
+
+.logo{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.tradeMarque{
+  position: absolute !important;
+  width: 100vw !important;
+  overflow-x: visible;
+}

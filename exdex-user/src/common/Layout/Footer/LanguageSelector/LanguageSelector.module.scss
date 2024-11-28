@@ -1,0 +1,28 @@
+.container {
+  padding: 15px 30px;
+  background: var(--color-orange);
+  border-radius: 16px;
+  margin-top: 25px;
+  ul {
+    display: inline-flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    li:nth-child(1) {
+      margin-right: 30px;
+      @media (max-width: 786px) {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+    }
+    li {
+      margin-right: 40px;
+      font-size: 1.2rem;
+      @media (max-width: 786px) {
+        margin-bottom: 10px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+.checkboxOuter {
+  padding: 30px;
+}
+.checkboxInner {
+  border-radius: 16px;
+  background-color: var(--global-dark-background);
+  max-width: 1400px;
+  margin: auto;
+}
+.top {
+    background-color: var(--dark-gray-background);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px 40px;
+  color: var(--color-white);
+  font-family: Poppins-Medium;
+  .status {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    margin: 25px 0px 15px;
+  }
+  .transactionDetails {
+    font-size: 1.4rem;
+    color: var(--color-light-white);
+    font-family: Poppins;
+  }
+  &.bg {
+    background-image: url("../../../../../../public/assets/images/payment/banner.png");
+  }
+}
+.bottom {
+  padding: 30px 50px;
+  padding-bottom: 70px;
+}
+.sectionHead {
+  color: var(--color-offwhite3);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.sectionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-tag-background);
+  font-size: 1.3rem;
+  margin-bottom: 22px;
+}
+.sectionMain {
+  color: var(--color-white);
+  font-family: Poppins-SemiBold;
+  font-size: 2rem;
+}
+.sectionWrap {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-left: 0pc;
+  border-right: 0pc;
+  padding: 28px 0px;
+}
+.bottomInner {
+  max-width: 730px;
+  margin: auto;
+  padding: 30px 0px 50px;
+}
+.btnWrap {
+  width: 545px;
+  margin: auto;
+  max-width: 90%;
+}
+
+.btnInner {
+  background-color: var(--color-green);
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: "Poppins-Medium";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-left: 10px;
+  }
+}
+.mobShow {
+  display: none;
+}
+@media only screen and (max-width: 1280px) {
+}
+@media only screen and (max-width: 1140px) {
+}
+@media only screen and (max-width: 1000px) {
+  .checkboxInner {
+    padding: 0px;
+  }
+  .top {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .checkboxOuter {
+    padding: 20px;
+  }
+  .top {
+    border-radius: 8px 8px 0px 0px;
+  }
+  .mobShow {
+    display: block;
+  }
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+  }
+  .checkboxInner {
+    border-radius: 8px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .top {
+    padding: 40px 20px 30px;
+    .statusImage {
+      width: 70px;
+    }
+    .status {
+      font-size: 2.25rem;
+      margin: 15px 0px 7px;
+    }
+  }
+
+  .bottomInner {
+    padding: 20px 0px 30px;
+  }
+  .bottom {
+    padding: 30px 20px;
+  }
+  .sectionHead {
+    margin-bottom: 0px;
+  }
+  .sectionWrap {
+    border-top: 0px;
+    padding: 25px 0px 5px;
+  }
+}

@@ -1,0 +1,57 @@
+.container {
+  padding: 12px 8px 12px 12px;
+  border-radius: 6.5px;
+  position: relative;
+  margin-bottom: 16px;
+
+  .percentage {
+    color: var(--color-black);
+    font-family: 'Poppins-Medium', sans-serif;
+    /* Ensure the Poppins font is loaded */
+    font-size: 1.86rem;
+    /* Converted from 25.99px */
+    font-weight: 500;
+    line-height: 2.79rem;
+    /* Converted from 38.99px */
+    text-align: left;
+    /* Left text alignment */
+
+    &.lightTheme {
+      color: var(--color-white);
+    }
+  }
+
+  .text {
+    color: var(--color-black);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.49px;
+    text-align: left;
+
+    &.lightTheme {
+      color: var(--color-white);
+    }
+  }
+
+  .percentageOfChange {
+    position: absolute;
+    font-family: "Poppins-Medium";
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 9.46px;
+    color: var(--color-white);
+    text-align: center;
+    min-width: 45px;
+    top: 12px;
+    right: 12px;
+    padding: 6.5px;
+    border-radius: 2.17px;
+    &.increase{
+      background: var(--leaf-green);
+    }
+    &.decrease{
+      background: var(--color-orange);
+    }
+
+  }
+}

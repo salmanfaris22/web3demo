@@ -1,0 +1,115 @@
+:root {
+  --gap: 30px;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --gap: 15px;
+  }
+  .howItWorkCard {
+    padding: 25px;
+    margin-bottom: var(--gap);
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--gap);
+  height: 100%;
+  @media (max-width: 600px) {
+    display: block;
+  }
+
+  .howItWorkCard {
+    border-radius: 16px;
+    color: var(--color-black);
+    padding: 25px;
+
+    &.cardLightTheme {
+      color: var(--color-white);
+      .learnMore {
+        img {
+          filter: invert(1);
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      background: var(--color-pink);
+      margin-bottom: var(--gap);
+    }
+
+    &:nth-child(2) {
+      background: var(--global-dark-background);
+      width: calc(50% - calc(var(--gap) / 2));
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(3) {
+      background: var(--color-yellow);
+      width: calc(50% - calc(var(--gap) / 2));
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    .learnMore {
+      margin-top: 65px;
+      font-size: 0.98rem; /* 13.79px */
+      font-weight: 500;
+      line-height: 1.48rem;
+      font-family: "Poppins-Semibold";
+
+      img {
+        margin-left: 12px;
+      }
+    }
+
+    h2 {
+      font-family: "Poppins-SemiBold";
+      font-size: 1.48rem; /* 20.68px */
+      font-weight: 600;
+      line-height: 2.22rem; /* 31.02px */
+      text-align: left;
+    }
+
+    p {
+      font-size: 0.86rem; /* 12.06px */
+      font-weight: 400;
+      line-height: 1.29rem; /* 18.09px */
+      text-align: left;
+    }
+  }
+
+  &.cardSet2 {
+    .howItWorkCard {
+      &:nth-child(1) {
+        background: var(--light-green);
+        width: calc(50% - calc(var(--gap) / 2));
+        margin-bottom: var(--gap);
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        background: var(--color-white);
+        width: calc(50% - calc(var(--gap) / 2));
+        margin-bottom: var(--gap);
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+      }
+
+      &:nth-child(3) {
+        background: var(--neo-lime);
+        width: 100%;
+        margin-bottom: 0px;
+        // height: 100%;
+      }
+    }
+  }
+}

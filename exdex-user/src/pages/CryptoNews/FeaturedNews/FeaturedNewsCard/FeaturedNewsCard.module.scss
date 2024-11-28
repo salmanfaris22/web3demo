@@ -1,0 +1,41 @@
+.container {
+  .imageContiner {
+    width: 100%;
+    height: 16.1vw;
+    min-height: 310px;
+    max-height: 350px;
+    border-radius: 18px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  h3 {
+    font-family: "Poppins-Semibold";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 3.64rem;
+    text-align: left;
+    color: rgba(201, 201, 201, 1);
+  }
+
+  h4 {
+    color: rgba(216, 216, 216, 1);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    font-family: "Poppins-Semibold";
+  }
+
+  p {
+    color: var(--color-offwhite);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+}

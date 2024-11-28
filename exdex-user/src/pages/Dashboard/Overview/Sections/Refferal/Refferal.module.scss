@@ -1,0 +1,70 @@
+.visitWrap {
+  height: 100%;
+}
+.refferalInner {
+  padding: 20px;
+}
+.head {
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.63px;
+  text-align: left;
+  color: var(--color-white);
+}
+.refferalList {
+  margin-top: 25px;
+}
+.refferalItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+.profileDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profilePic {
+  text-transform: capitalize;
+  font-size: 17px;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+}
+.name {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.43px;
+  text-align: left;
+  color: var(--color-light-white);
+}
+.des {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.23px;
+  text-align: left;
+  color: var(--color-gray-font);
+  text-transform: capitalize;
+  text-align: right;
+}
+.commission {
+  .name {
+    text-align: right;
+  }
+}

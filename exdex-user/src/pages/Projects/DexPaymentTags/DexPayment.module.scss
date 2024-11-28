@@ -1,0 +1,105 @@
+.paymentWrap {
+  width: 100%;
+  background-image: url("../../../../public/assets/images/tag/tagBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 101% 101%;
+  border-radius: 16px;
+  border: 1px solid var(--color-green);
+  padding: 30px 40px 70px;
+  max-width: 90vw;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.planTitle {
+  font-family: "Poppins-SemiBold";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40.65px;
+  text-align: left;
+  color: var(--color-white);
+  margin-bottom: 35px;
+}
+.paymentInnerWrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 70px;
+}
+@media only screen and (max-width: 1150px) {
+  .paymentWrap {
+    padding: 30px 30px 30px;
+  }
+  .paymentInnerWrap {
+    gap: 50px;
+  }
+  .planTitle {
+    padding: 0px 30px 20px;
+  }
+}
+.warning {
+  width: 100%;
+  background: var(--color-orange);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: var(--color-white);
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  padding-left: 30px;
+  margin: 50px auto 0px;
+  font-family: "Poppins";
+  max-width: 90vw;
+  span {
+    font-family: "Poppins-Medium";
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 0, 21, 1);
+    border-radius: 50%;
+    left: 8px;
+    top: 12px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .paymentInnerWrap {
+    gap: 30px;
+    justify-content: flex-start;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    padding: 20px 0px 0px;
+    // &.center {
+    //   justify-content: center;
+    // }
+  }
+  .paymentInnerWrap::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .planTitle {
+    font-size: 25px;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  .paymentWrap {
+    padding: 20px 20px 20px;
+    margin: 20px auto;
+  }
+  .paymentInnerWrap {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .paymentWrap {
+    padding: 20px 15px 20px;
+  }
+}

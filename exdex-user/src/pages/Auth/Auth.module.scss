@@ -1,0 +1,163 @@
+.globalOuter {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/assets/images/bgAuth.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 101% 102%;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-image: url("../../../public/assets/images/loginBg.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 50%;
+    max-height: 75vh;
+  }
+
+  @media (max-width: 750px) {
+    background-size: cover;
+  }
+  @media (max-width: 1150px) {
+    &::after {
+      display: none;
+    }
+  }
+}
+.authWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+  cursor: pointer;
+  z-index: 10;
+}
+.authLeft {
+  width: 870px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3%;
+  position: relative;
+  height: 100vh;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-image: url("../../../public/assets/images/bulb.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+  }
+  .imgWrap {
+    max-width: 100%;
+    position: relative;
+
+    img {
+      margin-top: 127px;
+      max-width: 100%;
+    }
+  }
+}
+.authRight {
+  padding: 30px 0px;
+  width: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// @media only screen and (max-width: 1450px) {
+//   .authRight {
+//     width: 40%;
+//     margin-right: 4%;
+//   }
+// }
+@media only screen and (max-width: 1600px) {
+  .authLeft {
+    width: 770px;
+    .imgWrap {
+      img {
+        margin-top: 170px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .authLeft {
+    width: 670px;
+    .imgWrap {
+      img {
+        margin-top: 238px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .authRight {
+    width: 500px;
+  }
+  .authLeft {
+    width: 600px;
+    .imgWrap {
+      img {
+        margin-top: 260px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .authLeft {
+    display: none;
+  }
+  .authWrap {
+    display: block;
+  }
+  .logo {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-bottom: -80px;
+    img {
+      width: 180px;
+    }
+  }
+  .authRight {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .authRight {
+    width: 100%;
+    margin: auto;
+    padding: 30px 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .authWrap {
+    padding: 0px;
+    height: 100%;
+  }
+}

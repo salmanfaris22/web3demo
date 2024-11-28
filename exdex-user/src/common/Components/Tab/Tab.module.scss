@@ -1,0 +1,183 @@
+.tabOuter {
+  display: flex;
+  justify-content: flex-start;
+}
+.tab {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--tab-background);
+  color: var(--color-white);
+  border-radius: 12px;
+  font-family: "Poppins-Medium";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.48px;
+  text-align: left;
+
+  .tabItem {
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      color: var(--color-black);
+      background-color: var(--color-green);
+    }
+
+    &.active {
+      color: var(--color-black);
+      background-color: var(--color-green);
+    }
+  }
+}
+.activeTab {
+  display: none;
+}
+.line,
+.lineBot {
+  border-radius: 0px;
+  .tab {
+    background-color: transparent;
+    color: var(--color-tag-background);
+    font-size: 14px;
+    border-radius: 0px;
+  }
+  .tabItem {
+    border-radius: 0px;
+    color: var(--color-white);
+    padding: 0px 5px 20px;
+    margin: 0px 30px 0px 0px;
+    border-bottom: 2px solid transparent;
+    font-family: "Poppins";
+    font-size: 15px;
+    img {
+      margin-right: 7px;
+      filter: invert(1);
+    }
+    &:hover {
+      color: var(--color-black);
+      background-color: transparent;
+      color: var(--color-green);
+      border-bottom: 2px solid var(--color-green);
+    }
+
+    &.active {
+      color: var(--color-black);
+      background-color: transparent;
+      color: var(--color-green);
+      border-bottom: 2px solid var(--color-green);
+    }
+  }
+}
+.lineBot {
+  .tabItem {
+    padding: 0px 5px 10px;
+  }
+}
+.button {
+  border-radius: 0px;
+  .tab {
+    background-color: transparent;
+    color: var(--color-tag-background);
+    font-size: 14px;
+    border-radius: 0px;
+  }
+  .tabItem {
+    height: 34px;
+    color: var(--color-white);
+    padding: 0px 20px 0px;
+    margin: 0px 10px 0px 0px;
+    border-bottom: 2px solid transparent;
+    font-family: "Poppins";
+    border-radius: 30px;
+    font-size: 14px;
+    border: 1px solid var(--color-green);
+    &:hover {
+      color: var(--dark-color);
+      background-color: var(--color-green);
+    }
+    &.active {
+      color: var(--dark-color);
+      background-color: var(--color-green);
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+    @media (max-width: 650px) {
+      height: 29px;
+      padding: 0px 15px 0px;
+      font-size: 12px;
+    }
+    @media (max-width: 550px) {
+      height: 25px;
+      padding: 0px 9px 0px;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .line,
+  .lineBot {
+    display: block;
+    position: relative;
+    .activeTab {
+      display: block;
+      background-color: var(--background-color3);
+      border-radius: 12px;
+      color: var(--color-green);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: left;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      min-width: 280px;
+      img {
+        transition-duration: 400ms;
+        transform: rotate(0deg);
+      }
+    }
+    .tab {
+      display: block;
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      z-index: -10;
+      background: var(--background-color);
+      border-radius: 10px;
+      top: 152px;
+      padding: 10px 0px;
+      transition-duration: 400ms;
+      opacity: 0;
+    }
+    .tabItem {
+      padding: 10px;
+      margin: 0px;
+      &:hover {
+        border-bottom: 2px solid transparent;
+      }
+      &.active {
+        border-bottom: 2px solid transparent;
+      }
+    }
+  }
+  .showPop {
+    .activeTab {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+    .tab {
+      z-index: 10;
+      top: 52px;
+      opacity: 1;
+    }
+  }
+}

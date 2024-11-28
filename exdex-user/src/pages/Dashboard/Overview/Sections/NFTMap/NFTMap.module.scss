@@ -1,0 +1,138 @@
+.container {
+  // padding: 35px;
+  height: 100%;
+
+  .nftMapContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    display: none;
+
+    @media (min-width : 600px) {
+      display: flex;
+    }
+
+    .section {
+      height: 100%;
+
+      &:nth-child(1) {
+        width: 26%;
+        flex-grow: 0.5;
+        >div{
+        border-radius: 16px 0px 0px 16px;
+        }
+        @media (max-width:768px) {
+          width: 33.33%;
+        }
+
+      }
+
+      &:nth-child(2) {
+        @media (max-width:768px) {
+          width: 33.33%;
+        }
+
+        width: 21%;
+        flex-grow: 0.5;
+      }
+
+      &:nth-child(3) {
+        @media (max-width:600px) {
+          display: none;
+        }
+
+        @media (max-width:768px) {
+          width: 33%;
+        }
+
+        width: 22.5%;
+        max-width: 220px;
+
+        .halfSection {
+          height: 50%;
+
+          .avatar {
+            max-width: 75px;
+
+          }
+
+          .avatarFull {
+            max-width: unset;
+            width: 80%;
+          }
+
+          .publish {
+            padding-top: 8px;
+            font-size: 9px;
+          }
+
+          .footer {
+            padding-bottom: 2px;
+          }
+
+          .graph {
+            bottom: 10px;
+          }
+
+          .btnGroup {
+            button {
+              font-size: 10.02px;
+              font-weight: 500;
+              line-height: 15.03px;
+              text-align: center;
+
+            }
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        width: 20.78%;
+        max-width: 230px;
+        @media (max-width:768px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(5) {
+        width: 10%;
+        >div{
+          &:nth-child(1){
+          >div{
+          border-radius: 0px 16px 0px 0px;
+          }
+          }
+          &:last-child{
+            >div{
+              border-radius: 0px 0px 16px 0px;
+            }
+          }
+        }
+        @media (max-width:768px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .tripleSection {
+    height: 33.333%;
+  }
+
+  .fullBgImg {
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    margin-top: 2px !important;
+  }
+
+  .quadSection {
+    height: 25%;
+  }
+  .swiper{
+    img{
+      width: 100%;
+    }
+  }
+}
+

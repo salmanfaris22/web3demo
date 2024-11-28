@@ -1,0 +1,335 @@
+.filterSection {
+  display: flex;
+  gap: 1em;
+  padding: 10px 10px;
+  max-width: 100vw;
+  overflow: auto;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 2px;
+    opacity: 0;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 15px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+
+  select {
+    background-image: url(../../../../public/assets/images/signal_cards/amgle_select.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 87% center !important;
+    background-color: #2f2e32;
+    width: max-content !important;
+    padding-right: 2em;
+    font-size: 0.875em;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      background: #2f2e32;
+      color: white !important;
+    }
+
+    option {
+      background: #2f2e32;
+      color: white !important;
+      font-size: 0.875em;
+    }
+  }
+}
+
+.webView {
+  display: flex;
+}
+
+.mobileView {
+  display: none;
+}
+
+ul.filterSection {
+  border-radius: 9px;
+  display: flex;
+}
+
+.filter_btn,
+.resetButton {
+  border: none;
+  font-size: 0.875em;
+  border-radius: 0.375em;
+  padding: 0.375em 0.75em;
+  background: var(--mid-dark);
+  min-width: fit-content;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(160, 160, 160, 1);
+}
+
+.resetButton {
+  color: #dbd9d9;
+  border: none;
+  padding: 0 1em;
+}
+
+.filter_btn {
+  // color: #fff;
+}
+
+.filter-section {
+  padding: 1em 0;
+}
+
+.short_long_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.long {
+  background: #05be7a;
+}
+
+.short {
+  background: #ea5954 !important;
+}
+
+.long,
+.short {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.8em;
+  width: 5.5em;
+  height: 2em;
+  line-height: 23px;
+  text-align: center;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.long {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.8em;
+  width: 5.5em;
+  height: 2em;
+  line-height: 23px;
+  text-align: center;
+  margin-left: 0;
+  cursor: pointer;
+  background: #05be7a;
+
+  &.activeLong {
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 37%);
+  }
+
+  i {
+    display: inline-block;
+    margin-right: 0.1em;
+    position: relative;
+    top: 0.3em;
+    left: -3px;
+  }
+}
+
+.short {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.8em;
+  width: 5.5em;
+  height: 2em;
+  line-height: 23px;
+  text-align: center;
+  margin-left: 0;
+  cursor: pointer;
+  background: #ea5954 !important;
+
+  &.activeShort {
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 37%);
+  }
+
+  i {
+    display: inline-block;
+    margin-right: 0.1em;
+    position: relative;
+    top: -0.1em;
+  }
+}
+
+.btcPair_wrapper {
+  border-radius: 6px;
+  background: var(--mid-dark);
+  font-size: 0.7em;
+  padding: 7px;
+  justify-content: flex-end;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.pair {
+  color: #fff;
+  padding: 0.5em 1em 0.25em;
+  border-radius: 6px;
+  background: var(--mid-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.activePair {
+  border-radius: 6px;
+  background: #ccfd50;
+  color: #000;
+}
+
+@media screen and (max-width: 830px) {
+  .webView {
+    display: none !important;
+  }
+
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0em;
+    margin: 0 0 2em 0;
+  }
+
+  .filterSection {
+    padding: 1.5em 0 0 0;
+    align-items: center;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filterRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filterElements {
+    display: flex;
+  }
+
+  .short_long_wrapper {
+    margin-left: 0;
+  }
+
+  .filter_btn {
+    padding: 1em 2em;
+    border-radius: 0.5em;
+  }
+  .resetButton {
+    padding: 0.5em 2em !important;
+    font-size: 1em;
+  }
+  .forex_filter {
+    border: 1px solid #4bbccc;
+    background: #4bbccc;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 0.7em;
+    &.selected {
+      background: #308d9a;
+    }
+  }
+
+  .spot_filter {
+    background: var(--mid-dark);
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 0.7em;
+    &.selected {
+      opacity: 0.8;
+    }
+  }
+
+  .future_filter {
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 0.7em;
+    &.selected {
+      opacity: 0.8;
+    }
+  }
+
+  .long,
+  .short {
+    width: auto;
+    height: auto;
+    font-size: 1em;
+    padding: 0.5em 2.5em;
+    font-size: 1em;
+  }
+
+  select {
+    background: #000;
+    color: #fff !important;
+    border-radius: 10px;
+    padding: 0em 3.5em 0em 1em;
+    font-size: 1.25em;
+    height: 2.5em;
+  }
+  .btcPair_wrapper {
+    font-size: 1em;
+    padding: 0.5em;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .pair {
+    padding: 0.5em 1em;
+  }
+  .filter_btn {
+    font-size: 1em;
+  }
+  .pair {
+    font-size: 0.875em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .long,
+  .short {
+    padding: 0.35em 2em;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .long,
+  .short {
+    padding: 0.5em 1.5em;
+  }
+}
+
+.spotcard {
+  select {
+    background-color: #2f2e32 !important;
+  }
+}

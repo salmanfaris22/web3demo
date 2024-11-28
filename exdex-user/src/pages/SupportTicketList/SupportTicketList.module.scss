@@ -1,0 +1,110 @@
+.container {
+  margin-top: 20px;
+  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    margin-top: 70px;
+  }
+
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* Your styles here */
+  .ticketListAdd {
+    button {
+      font-family: "Poppins-Medium";
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: left;
+      padding: 11px 20px;
+      // min-width: 140px;
+      text-align: center;
+    }
+  }
+
+  .ticketBody {
+    padding: 15px 20px;
+
+    @media (min-width : 500px) {
+      padding: 40px;
+    }
+
+    background: var(--global-dark-background);
+
+    .ticketRow {
+      padding: 25px 0px;
+      border-bottom: 1px solid rgba(80, 79, 83, 1);
+      cursor: pointer;
+
+      &:last-child {
+        border: none;
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: var(--neo-lime) !important;
+          }
+        }
+
+        .text {
+          color: var(--neo-lime) !important;
+
+        }
+      }
+
+      .title {
+        .text {
+          font-family: "Poppins-Medium";
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: left;
+          color: var(--color-white);
+          margin-bottom: 18px;
+          white-space: pre-wrap;
+          text-overflow: ellipsis;
+          width: 80%;
+          overflow: hidden;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all .4s;
+      }
+
+      .ticketDetails {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        >div {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 21px;
+          text-align: left;
+          position: relative;
+          color: var(--color-light-gray-small);
+          padding-left: 14px;
+          padding-right: 14px;
+
+          &::before {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--color-light-gray-small);
+            top: 38%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

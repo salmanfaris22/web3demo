@@ -1,0 +1,45 @@
+.container {
+  /* Your styles here */
+
+  th,
+  td {
+    font-size: 14px; /* 17.05px / 14px = 1.22rem */
+    font-weight: 400;
+    line-height: 1.83rem; /* 25.57px / 14px = 1.83rem */
+    text-align: left;
+  }
+  th {
+    &:nth-child(1) {
+      width: 10%;
+    }
+  }
+  // th {
+  //   &:nth-child(2) {
+  //     width: 10%;
+  //   }
+  // }
+  th {
+    width: 16%;
+    padding: 20px 10px;
+  }
+}
+
+.status {
+  width: 140px;
+  padding: 5px 20px;
+  border-radius: 50px;
+  text-align: center;
+  &.pending {
+    background: transparent;
+    border: 1px solid #fff;
+    color: var(--color-white);
+  }
+  &.failed {
+    background: var(--color-orange);
+    color: var(--color-black);
+  }
+  &.success {
+    background: var(--color-green);
+    color: var(--color-black);
+  }
+}

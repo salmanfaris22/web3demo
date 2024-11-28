@@ -1,0 +1,219 @@
+.container {
+  background: var(--global-dark-background);
+  padding: 45px 35px 35px 35px;
+  border-radius: 14px;
+  margin-bottom: 35px;
+  .heading {
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      margin: 0px;
+      font-family: "Poppins-SemiBold";
+      line-height: 3.5rem;
+      color: var(--color-white);
+    }
+
+    p {
+      margin: 0px;
+      margin-top: 8px;
+      font-size: 1.3rem;
+      color: rgba(144, 144, 144, 1);
+      font-family: "Poppins-Medium";
+    }
+  }
+
+  .filterBy {
+    font-size: 1.3rem;
+    color: var(--color-white);
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+    .filterByCount {
+      color: rgba(231, 231, 231, 1);
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  .itemsSection {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    .filtersSection {
+      width: 150px;
+      display: none;
+      position: sticky;
+      top: 0;
+      @media (min-width: 1024px) {
+        display: block;
+      }
+    }
+
+    .contentSection {
+      flex: 1;
+      padding: 15px;
+      @media (max-width: 768px) {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+      }
+
+      .childWrapper {
+        @media (max-width: 768px) {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none; /* Firefox */
+        }
+      }
+
+      .selectedFilters {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        // min-height: 35px;
+
+        .selectedFilter {
+          min-width: 80px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 8px;
+          font-size: 12px;
+          font-family: "Poppins-Medium";
+          border-radius: 35px;
+          padding: 5px 13px;
+          background: var(--neo-lime);
+          margin-right: 10px;
+
+          button {
+            margin-left: 12px;
+
+            svg {
+              width: 20px;
+              height: 20px;
+              vertical-align: middle;
+
+              path {
+                fill: var(--color-black);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .filter {
+    margin-bottom: 35px;
+
+    .filterCategory {
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--color-white);
+      margin-bottom: 25px;
+    }
+
+    .filterSubCat {
+      margin-bottom: 15px;
+
+      label {
+        color: rgba(167, 167, 167, 1);
+        font-size: 16px;
+        line-height: 22px;
+        span {
+          top: 2px;
+        }
+        input {
+          &:checked ~ span {
+            background-color: var(--neo-lime);
+          }
+        }
+      }
+    }
+  }
+
+  .mobileFiltrerTrigger {
+    position: fixed;
+    bottom: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 46%;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+
+    button {
+      svg {
+        width: 20px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .mobileFilters {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 11;
+    .mobileFilterOverLay {
+      position: absolute;
+      width: 100%;
+      filter: blur(1px);
+      width: 100%;
+      height: 100%;
+      background: rgb(255 255 255 / 0%);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    .filterContainer {
+      width: 80%;
+      // height: 200px;
+      z-index: 11;
+      position: relative;
+      margin: 0 auto;
+      background: rgb(31 68 79);
+      padding: 20px;
+      .filterSelectionWrap {
+        margin-bottom: 20px;
+      }
+    }
+    .filterClose {
+      text-align: right;
+      margin-bottom: 20px;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .filtersSection {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 35px 15px 35px 15px;
+  }
+}

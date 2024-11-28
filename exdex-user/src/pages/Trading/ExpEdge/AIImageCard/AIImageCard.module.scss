@@ -1,0 +1,173 @@
+.container {
+  .cardlogo{
+    width: 40%;
+    position: absolute;
+    max-width: 124px;
+    bottom: 14px;
+    right: 26px;
+
+    img{
+      width: 100%;
+    }
+  }
+  padding: 14px;
+  position: relative;
+  @media (max-width:1024px) {
+    width: 48%;
+  }
+  @media (max-width:767px) {
+    width: 100%;
+    height: 420px;
+    padding: 0px;
+  }
+  width: 25%;
+  >.theme{
+    padding: 25px 14px;
+    height: 100%;
+  border-radius: 12px;
+   position: relative;
+
+  }
+
+  .name {
+    font-family: "Poppins-Medium";
+    font-size: 1.43rem;
+    /* 20px / 14px */
+    font-weight: 500;
+    line-height: 2.14rem;
+    /* 30px / 14px */
+    text-align: left;
+    margin-bottom: 17px;
+  }
+
+  .features {
+    font-size: 1rem;
+    /* 14px / 14px */
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* 21px / 14px */
+    text-align: left;
+    padding-right:12px;
+    margin-right: 12px;
+    margin-bottom: 17px;
+  }
+
+  .price {
+    font-family: "Poppins-Medium";
+    font-size: 0.86rem;
+    /* 12px / 14px */
+    font-weight: 500;
+    line-height: 1.29rem;
+    /* 18px / 14px */
+    text-align: left;
+    margin-bottom: 17px;
+
+    .label {
+      color: rgba(68, 68, 68, 1);
+      margin-right: 20px;
+    }
+
+    .value {
+      color: rgba(0, 0, 0, 1);
+    }
+
+  }
+
+  .percentage {
+    font-family: "Poppins-SemiBold";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 67.33px;
+    text-align: left;
+
+  }
+
+  .green {
+    background-color: var(--color-green);
+    height: 100%;
+    .name {
+      color: var(--color-black);
+    }
+
+    .features {
+      color: var(--color-black);
+
+      &:nth-child(1) {
+        color: var(--color-orange);
+      }
+    }
+
+    .label {
+      color: rgba(68, 68, 68, 1);
+      margin-right: 20px;
+    }
+
+    .value {
+      color: rgba(0, 0, 0, 1);
+    }
+    .percentage{
+       color: var(--mist-blue);
+    }
+  }
+
+  .black {
+    background: rgba(47, 46, 50, 1);
+
+    .name {
+      color: var(--color-white);
+    }
+
+    .features {
+      color: var(--color-white);
+    }
+
+    .label {
+      color: rgba(220, 220, 220, 1);
+    }
+
+    .value {
+      color: var(--color-green)
+    }
+    .percentage{
+      color: var(--color-green);
+   }
+  }
+
+  .white {
+    background: var(--color-white);
+
+    .name {
+      color: var(--color-black );
+    }
+
+    .features {
+      color: var(--color-black);
+
+      &:nth-child(1) {
+        color: var(--leaf-green);
+      }
+    }
+
+    .label {
+      color: rgba(68, 68, 68, 1);
+      margin-right: 20px;
+    }
+
+    .value {
+      color: rgba(0, 0, 0, 1);
+    }
+   .percentage{
+      color: var(--leaf-green);
+   }
+  }
+}
+
+.featureWrap{
+  display: flex;
+  align-items: center;
+}
+
+.qr{
+  margin-top: 13px;
+}
+

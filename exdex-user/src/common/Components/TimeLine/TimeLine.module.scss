@@ -1,0 +1,74 @@
+.container {
+  .timeLineItem {
+    position: relative;
+    color: var(--color-white);
+    padding-left: 70px;
+    padding-bottom: 100px;
+    &:last-child{
+      padding-bottom: 50px;
+    }
+
+    &.timeLineLine{
+      &::after {
+        content: "";
+        background: white;
+        width: 2px;
+        left: 26px;
+        position: absolute;
+        height: 100%;
+        top: 8px;
+  
+      }
+    }
+
+
+
+    .timeLineTitle {
+      font-size: 2.57rem;
+      /* 36px */
+      font-weight: 600;
+      line-height: 3.39rem;
+      /* 47.52px */
+      text-align: left;
+      font-family: "Poppins-SemiBold";
+
+
+    }
+
+    .description {
+      font-size: 1.21rem;
+      /* 17px */
+      font-weight: 400;
+      line-height: 2.03rem;
+    }
+
+    .count {
+      z-index: 10;
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      border-radius: 50%;
+      top: 5px;
+      left: 7px;
+      font-size: 1.3rem;
+      text-align: center;
+      /* line-height: .6rem; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid;
+      background: transparent;
+      color: var(--color-white);
+      background: var(--global-dark-background);
+
+      &.active {
+        background: var(--color-white);
+        color: var(--color-black);
+      }
+
+
+    }
+  }
+}
+

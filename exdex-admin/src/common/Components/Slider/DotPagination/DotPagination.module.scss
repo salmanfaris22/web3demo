@@ -1,0 +1,29 @@
+.customPagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 20px;
+  height: 2px;
+  background-color: var(--background-gray2);
+  margin: 0 5px;
+  border-radius: 0%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 7px;
+}
+
+.dot.active {
+  background-color: var(--color-white);
+  opacity: 1;
+}
+
+.dotTop {
+  position: absolute;
+  width: 100%;
+  top: -35px;
+  justify-content: flex-end;
+  z-index: 1;
+}

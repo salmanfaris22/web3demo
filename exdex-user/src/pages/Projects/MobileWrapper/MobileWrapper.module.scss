@@ -1,0 +1,14 @@
+.mobileWrapper{
+    display: block;
+    padding-bottom: 4rem;
+    padding: 12px;
+    padding-bottom: 40px;
+    border-bottom: .5px solid rgba(255, 255, 255, .2);
+  }
+  
+  @media (min-width:890px) {
+    .mobileWrapper{
+      display: none;
+    }
+  }
+  

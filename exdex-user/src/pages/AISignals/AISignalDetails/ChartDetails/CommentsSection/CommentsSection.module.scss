@@ -1,0 +1,120 @@
+.tabView::-webkit-scrollbar {
+  display: none;
+}
+.tabView {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 35px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  li {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color: #a5a5a6;
+    cursor: pointer;
+    font-family: "Poppins";
+  }
+
+  .selected {
+    color: #fff;
+    border: 2px solid #ccfd50;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+
+  .popular {
+    margin-left: auto;
+  }
+
+  .popularImg {
+    padding: 0.2rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    vertical-align: middle;
+  }
+
+  .isFiltered {
+    background: #424342;
+    color: #fff;
+    border-radius: 0.5rem;
+  }
+}
+
+.commentsWraper {
+  position: relative;
+}
+
+.showMobile {
+  display: none;
+}
+
+.replyComment {
+  li,
+  h3,
+  h1,
+  h2,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .hideMobile {
+    display: none;
+  }
+
+  .tabView {
+    border: none;
+    justify-content: space-between;
+  }
+
+  .tabView li {
+    padding: 0.5rem 0.75rem;
+    color: #7e7e7e;
+    text-align: center;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .showMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .popularImg {
+    padding: 0 0.2rem;
+    height: auto;
+    width: 2.3rem;
+    vertical-align: middle;
+  }
+
+  .labelMobileMostPopular {
+    color: #b7b7b7;
+    font-size: 1.45em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35.686px;
+  }
+
+  .popular {
+    color: #b7b7b7;
+  }
+}

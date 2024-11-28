@@ -1,0 +1,169 @@
+.packageCards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 0px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.packageCard {
+  background: linear-gradient(
+    0.52deg,
+    #8cb2a4 27.1%,
+    #8a7a58 51.01%,
+    #b3ead5 92.82%,
+    #b4edd8 117.85%
+  );
+  border-radius: 30px;
+  text-align: center;
+  padding: 25px;
+  color: var(--color-white);
+  max-width: 370px;
+  min-width: 350px;
+  width: 30%;
+  &.dummy {
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+  }
+  &:nth-child(2n) {
+    background: linear-gradient(
+      0.24deg,
+      #890c78 0.6%,
+      #5f3b7d 15.92%,
+      #0f4012 44.05%,
+      #074007 52.05%,
+      rgba(172, 68, 153, 0.862637) 73.98%,
+      #9f178c 114.91%
+    );
+  }
+  &:nth-child(3n) {
+    background: linear-gradient(
+      0.52deg,
+      #1178f2 27.1%,
+      #ce2c8a 51.01%,
+      #2a61cb 81.1%,
+      #0558f8 92.82%,
+      #b4edd8 117.85%
+    );
+  }
+}
+.name {
+  font-family: "Poppins-Bold";
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  margin: 10px 0px 25px;
+}
+.nft {
+  background-image: url("https://exdex-dev.s3.ap-south-1.amazonaws.com/collections/WARRIOR_nft4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 175px;
+  height: 150px;
+  margin: auto;
+  border-radius: 3px;
+}
+.packageItem {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px;
+  .val {
+    margin-left: 5px;
+  }
+}
+.btn {
+  width: 80px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 15px;
+  background-color: var(--color-green);
+  color: var(--color-black);
+  border-radius: 30px;
+  margin: 35px auto 15px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+  }
+}
+.progressOuter {
+  width: 175px;
+  height: 11px;
+  border-radius: 8px;
+  background-color: var(--background-color);
+  margin: 20px auto;
+  overflow: hidden;
+  .progressInner {
+    width: 0%;
+    background: var(--color-pink);
+    height: 100%;
+    border-radius: 30px;
+  }
+}
+.progressText {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.37400001287460327px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 17px;
+}
+.percent {
+  font-family: Poppins-SemiBold;
+  font-size: 24.42px;
+  font-weight: 600;
+  line-height: 29.55px;
+  color: var(--background-color);
+}
+.full{
+  .progressOuter{
+    .progressInner{
+      background-color: var(--color-green);
+    }
+  }
+  .percent{
+    color: var(--color-pink);
+  }
+}
+@media only screen and (max-width: 650px) {
+  .packageCards {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .packageCards {
+    display: block;
+  }
+
+  .packageCard {
+    margin-bottom: 15px;
+    max-width: 100%;
+    min-width: auto;
+    width: 100%;
+  }
+  .name {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px 0px 15px;
+  }
+  .btn {
+    margin: 25px auto 15px;
+  }
+  .progressOuter {
+    margin: 20px auto 10px;
+  }
+}

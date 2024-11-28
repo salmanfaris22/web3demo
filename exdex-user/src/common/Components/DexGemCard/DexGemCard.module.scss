@@ -1,0 +1,132 @@
+.container {
+  padding: 13px;
+
+  .dexListcardInner {
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 1);
+    min-height: 330px;
+    position: relative;
+    border: 1px solid var(--neo-lime);
+
+    .graphWrapper {
+      // padding: 11px 0px 0px 0px;
+    }
+
+    .dexContent {
+      padding: 16px 16px 10px 16px;
+    }
+
+    .title {
+      text-align: center;
+      font-family: "Poppins-Bold";
+      font-size: 12.45px;
+      font-weight: 700;
+      line-height: 15.56px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: var(--color-white);
+      margin-bottom: 15px;
+    }
+
+    .thumbNail {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+      }
+    }
+
+    .graphValue {
+      font-size: 1.2rem;
+      font-family: "Poppins-SemiBold";
+      text-align: center;
+    }
+
+    .profile {
+      background: var(--fluro-green);
+      padding: 6px 14px;
+      border-radius: 4.8px;
+      height: auto;
+    }
+
+    .valueLabel {
+      font-family: "Poppins-Medium";
+    }
+
+    .graphLabel {
+      ul {
+        margin: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        li {
+          width: 20%;
+          height: auto;
+          font-size: 7.2px;
+        }
+      }
+    }
+
+    .valueLabel {
+      font-family: "Poppins-Medium";
+      font-size: 12px;
+    }
+
+    .profileDown {
+      top: 25%;
+      display: none;
+      border-top: 0.8em solid var(--fluro-green);
+    }
+
+    .graphLine {
+      border: 1px dotted var(--fluro-green);
+      opacity: 1;
+      bottom: 30%;
+      height: 37%;
+    }
+
+    .topBall {
+      min-width: 7px;
+      min-height: 7px;
+    }
+
+    .graphContainer {
+      height: auto;
+    }
+  }
+
+  .publishedOn {
+    text-align: center;
+    padding: 10px;
+    color: var(--color-white);
+    font-size: 8.93px;
+    font-weight: 400;
+    line-height: 11.16px;
+    letter-spacing: 0.03391537070274353px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  &.big {
+    .dexContent {
+      padding: 45px 16px 54px 16px;
+    }
+    .publishedOn {
+      font-size: 13px;
+      padding: 18px 0px;
+    }
+    .graphLabel {
+      ul {
+        li {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

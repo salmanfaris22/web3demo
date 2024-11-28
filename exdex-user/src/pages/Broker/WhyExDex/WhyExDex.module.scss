@@ -1,0 +1,39 @@
+.container {
+ padding:0px 20px;
+  @media (min-width:768px) {
+    font-size: 24.77rem;
+    font-weight: 700;
+    padding: 0px;
+    h2 {
+     display: none;
+    }
+  }
+  @media (min-width:768px) {
+    display: flex;
+  }
+  .bigText{
+  font-family: 'Inter-Bold';
+  color: var(--color-white);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+  h2 {
+    font-family: 'Inter-Bold';
+    font-size: 6.5rem;
+    font-weight: 700;
+    line-height: 6.8rem;
+    text-align: center;
+    color: var(--color-white);
+    margin: 0px;
+
+  }
+
+}
+
+.marqueTxt {
+  display: none;
+  @media (min-width:768px) {
+    display: flex;
+  }
+}

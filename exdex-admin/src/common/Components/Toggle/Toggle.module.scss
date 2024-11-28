@@ -1,0 +1,58 @@
+.toggle {
+  width: 50px;
+  height: 24px;
+  border-radius: 16px;
+  background: rgba(244, 249, 255, 0.4);
+  position: relative;
+  cursor: pointer;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  &.mini{
+    width: 22px;
+    height: 13px;
+    .toggleDot{
+      // left: 2px;
+      top: 2px;
+      width: 8px;
+      height: 8px;
+    }
+    &.dark{
+      .toggleDot{
+         left: 11px;
+      }
+    }
+  }
+}
+.toggleDot {
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.12);
+  background: rgba(37, 37, 37, 1);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  z-index: 5;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.togImage {
+  position: absolute;
+  left: 35px;
+  top: 6px;
+}
+
+.dark {
+  background: rgba(98, 167, 74, 1);
+  .toggleDot {
+    background-color: var(--color-white);
+    left: 27px;
+  }
+  .togImage {
+    left: 8px;
+  }
+}

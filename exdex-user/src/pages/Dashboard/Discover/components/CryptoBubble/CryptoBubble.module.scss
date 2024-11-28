@@ -1,0 +1,87 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--global-dark-background);
+  border-radius: 10px;
+  padding: 15px 30px 15px 10px;
+  color: var(--color-white);
+  position: absolute;
+  right: 0px;
+}
+.image {
+  min-width: 80px;
+  width: auto;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: Poppins-SemiBold;
+  background-color: var(--color-green);
+  color: var(--global-dark-background);
+}
+.name {
+  font-family: "Poppins-Medium";
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 25.05px;
+  text-align: left;
+}
+.num {
+  font-size: 13.03px;
+  line-height: 19.54px;
+  text-align: left;
+  margin-bottom: 3px;
+  margin-top: 2px;
+}
+.earning {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14.66px;
+  text-align: left;
+  white-space: no-wrap;
+  width: 130px;
+}
+.noPointer {
+  pointer-events: none;
+}
+.havePointer {
+  pointer-events: all;
+}
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    padding: 10px 20px 10px 10px;
+  }
+  .name {
+    font-size: 17px;
+  }
+  .image {
+    min-width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .wrapper {
+    display: block;
+    padding: 10px;
+  }
+  .name {
+    font-size: 17px;
+    text-align: center;
+  }
+  .image {
+    min-width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  .earning,
+  .num {
+    text-align: center;
+  }
+}

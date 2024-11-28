@@ -1,0 +1,54 @@
+.container {
+  h2 {
+    color: var(--color-white);
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 1.55rem; /* Converted from 21.66px */
+    font-weight: 500;
+    line-height: 0.68rem; /* Converted from 9.46px */
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 0.93rem; /* Converted from 13px */
+    font-weight: 500;
+    line-height: 1.39rem; /* Converted from 19.49px */
+    text-align: left;
+    color: var(--steel-gray);
+    margin-bottom: 30px;
+  }
+
+  .graphWrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .cardWrapper {
+      width: 12%;
+
+      @media (max-width: 1200px) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+
+        & > div {
+          min-width: 190px;
+          margin-right: 20px;
+        }
+      }
+
+      @media (max-width: 700px) {
+        display: block;
+      }
+    }
+  }
+
+  .graph {
+    width: 88%;
+    height: 320px;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+}

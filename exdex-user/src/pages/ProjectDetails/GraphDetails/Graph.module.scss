@@ -1,0 +1,118 @@
+.graph {
+  overflow-y: hidden;
+  hr {
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 0.25;
+  }
+  width: 100%;
+  margin: 0 auto;
+  height: 15em;
+  max-height: 207px;
+  position: relative;
+  max-width: 420px;
+  @media screen and (max-width: 820px) {
+    margin-top: 0px;
+  }
+  .lineContainer {
+    position: absolute;
+    bottom: 22%;
+    left: 10%;
+    // transform: translateX(-50%);
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .topBall {
+    min-height: 15px;
+    min-width: 15px;
+    border: 1px solid var(--neo-lime);
+    border-radius: 50%;
+  }
+  .horizontalLine {
+    width: 2px;
+    height: 100%;
+    flex: 1;
+    border-left: 5px dotted var(--neo-lime);
+    margin: 0;
+  }
+
+  .graphImg {
+    width: 100%;
+    height: 80%;
+  }
+
+  .profitImg {
+    position: absolute;
+    height: auto;
+    // top: 5em;
+    left: 0;
+    background: var(--neo-lime);
+    border-radius: 9.96px;
+    padding: 10px 20px;
+    color: var(--color-black);
+    width: max-content;
+
+    .totProf {
+      font-size: 2em;
+      font-family: "Poppins";
+      overflow: hidden;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .perMon {
+      font-size: 0.75em;
+    }
+
+    .totMem {
+      font-size: 0.8em;
+      font-family: "Poppins";
+      overflow: hidden;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+  }
+
+  .levelData {
+    ul {
+      padding-left: 0px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  li {
+    width: 4em;
+    height: 2em;
+    display: block;
+    border-radius: 2.8em;
+    line-height: 1;
+    border: 0.76px solid #484848;
+    color: #d6d6d6;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 5px 7px;
+    &.activeListItem {
+      background-color: var(--neo-lime);
+      color: #000;
+    }
+  }
+}
+
+.downArrow {
+  top: 29%;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 0.8em solid transparent;
+  border-right: 0.8em solid transparent;
+  border-top: 0.8em solid #ccfc50;
+  // transform: translateX(-50%);
+  @media screen and (max-width: 768px) {
+    top: 30%;
+  }
+}

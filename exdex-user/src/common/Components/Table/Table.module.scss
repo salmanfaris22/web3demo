@@ -1,0 +1,35 @@
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  &.noCollapse{
+    border-spacing: 0 0px !important;
+  }
+}
+
+.table th,
+.table td {
+  border: 0px;
+  padding: 5px 10px;
+  text-align: left;
+}
+.table th {
+  background-color: var(--dark-color2);
+  color: var(--color-green);
+  &:first-child {
+    border-radius: 30px 0px 0px 30px;
+  }
+  &:last-child {
+    border-radius: 0px 30px 30px 0px;
+  }
+}
+.table td {
+  background-color: var(--dark-color2);
+  color: var(--color-white);
+  &:first-child {
+    border-radius: 25px 0px 0px 25px;
+  }
+  &:last-child {
+    border-radius: 0px 25px 25px 0px;
+  }
+}

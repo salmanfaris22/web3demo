@@ -1,0 +1,51 @@
+.container {
+  color: var(--color-white);
+
+  .infoWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      font-family: "Poppins-Bold";
+      font-size: 3.2rem;
+      /* 50px */
+      font-weight: 700;
+      line-height: 4.71rem;
+      /* 66px */
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.25rem;
+      /* 17px */
+      font-weight: 400;
+      line-height: 2.03rem;
+      max-width: 600px;
+    }
+
+    margin-bottom: 90px;
+  }
+
+  .timeLineContainer {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .timeLine {
+    @media (min-width: 768px) {
+      width: 50%;
+      flex-shrink: 0;
+    }
+  }
+
+  .timeLineBg {
+    max-width: 600px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

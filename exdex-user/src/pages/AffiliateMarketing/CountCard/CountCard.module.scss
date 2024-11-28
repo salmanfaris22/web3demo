@@ -1,0 +1,68 @@
+.container {
+  position: relative;
+  height: 500px;
+  background: var(--color-green);
+  padding: 0px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  .countCardInner {
+    padding-top: 25px;
+    text-align: center;
+    color: var(--medium-gray);
+    img {
+      width: 115px;
+    }
+  }
+  h2,
+  p {
+    text-align: center;
+    margin-top: 0px;
+  }
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 4.77rem;
+    text-align: center;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  p {
+    font-size: 1.4479rem;
+    font-weight: 400;
+    line-height: 2.0443rem;
+    margin-bottom: 70px;
+  }
+
+  img {
+    position: absolute;
+  }
+}
+
+.container > img:nth-child(1) {
+  width: 13%;
+  max-width: 190px;
+  right: 0;
+  bottom: 0;
+}
+.container > img:nth-child(2) {
+  width: 20%;
+  max-width: 107px;
+  left: calc(50% - 10%);
+  margin: 0 auto;
+  bottom: 18%;
+}
+.container > img:nth-child(3) {
+  bottom: 0;
+  right: 60px;
+  max-width: 80px;
+}
+.container > img:nth-child(4) {
+  width: 24%;
+  max-width: 140px;
+  left: 10%;
+  bottom: 76px;
+}

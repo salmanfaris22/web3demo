@@ -1,0 +1,162 @@
+.autoWrapOut {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 100%;
+  &.opacityLoading {
+    opacity: 0.5;
+  }
+}
+.autoWrap {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.legendBox {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background-color: var(--color-green);
+  margin-right: 7px;
+  &.legendOld {
+    background-color: var(--btn-color);
+  }
+}
+.legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+.totalRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 11px;
+  color: var(--color-white);
+}
+.totalHead {
+  font-size: 17px;
+  color: var(--color-white);
+}
+.totalTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrowWrap {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &:after {
+    background-color: var(--color-pink);
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0px;
+    top: 0px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  &.arrowGreen {
+    &:after {
+      background-color: var(--color-green2);
+    }
+  }
+}
+.percent {
+  font-family: "Poppins-Medium";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 42.82px;
+  text-align: left;
+  color: var(--color-green);
+  margin-left: 5px;
+  &.red {
+    color: var(--color-percent-red);
+  }
+}
+.totalAmount {
+  font-family: "Poppins-Medium";
+  color: var(--color-white);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+}
+
+.autoOverview {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.balanceWrap {
+  margin: 30px 0px;
+  .totalRight {
+    color: var(--light-green);
+  }
+  .totalHead {
+    color: var(--light-green);
+  }
+  .totalAmount {
+    color: var(--light-green);
+  }
+  .percent {
+    color: var(--light-green);
+    &.red {
+      color: var(--color-percent-red);
+    }
+  }
+  .arrow {
+    &.arrowGreen {
+      &:after {
+        background-color: var(--light-green);
+      }
+    }
+  }
+}
+.legends {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+.legendItem {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: left;
+  color: var(--color-white);
+  margin-left: 20px;
+  &:nth-child(1) {
+    .legendBox {
+      background-color: var(--color-green);
+    }
+  }
+  &:nth-child(2) {
+    .legendBox {
+      background-color: var(--light-green);
+    }
+  }
+}
+.legendBox {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  margin-right: 15px;
+}

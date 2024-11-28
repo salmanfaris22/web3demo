@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  max-width: 400px;
+
+  .typeOfChange {
+    border-radius: 3px;
+    text-align: center;
+    width: 45px;
+    flex-shrink: 0;
+    padding: 6.5px 4.5px;
+    font-size: 0.93rem; /* Converted from 13px */
+    font-weight: 500;
+    line-height: 0.68rem; /* Converted from 9.46px */
+    text-align: center;
+    background: var(--dark-gray);
+    color: var(--color-white);
+    &.heightLight {
+      background: var(--neo-lime);
+      color: var(--color-black);
+    }
+  }
+
+  .reportContent {
+    padding-left: 18px;
+    .marketName{
+    color: var(--color-white);
+    font-size: 1.24rem; /* 17.33px */
+    font-weight: 400;
+    line-height: 0.68rem; /* 9.46px */
+    margin-bottom: 12px;
+    }
+    .reportDescription{
+      color: var(--steel-gray);
+      font-size: 0.93rem; /* 13px */
+      font-weight: 500;
+      line-height: 1.39rem; 
+      &.heightLight {
+        color: var(--neo-lime);
+      }
+    }
+
+
+  }
+}

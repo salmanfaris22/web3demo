@@ -1,0 +1,111 @@
+@media (max-width:890px) {
+    .container {
+        height: 14em !important;
+        .cardsFooter{
+            margin-top: 10px !important;
+        }
+        .cardsFooter{
+            flex-wrap: wrap;
+        }
+        .infoContainer{
+            padding: 15px  !important;
+        }
+
+        .title{
+            max-width: 100%;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+ 
+}
+
+.container {
+    height: 24em;
+    border-bottom: 7px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover{
+        img{
+         transform: scale(1.1);
+        }
+     }
+    .linerdBg {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: linear-gradient(180deg, #000000 6.47%, rgba(0, 0, 0, 0) 106.56%);
+        transform: rotate(180deg);
+    }
+    .infoContainer{
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end   ;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .info{
+           .title{
+            font-size: 1.1em;
+            font-family: "Poppins-Medium";
+            color: var(--color-white);
+           }
+        }
+    }
+
+    .imageWrap {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 15px;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        border-radius: 7px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            transition: all .3s ease-in-out 0s;
+        }
+
+    }
+
+    .cardsFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .89em;
+        color: #c9c9c9;
+        margin-top: 40px;
+
+    .cardFooterEelements {
+        display: flex;
+        align-items: center;
+        gap: .4em;
+        span{
+           margin-right: 20px;
+        }
+        button{
+            padding: 0px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    }
+
+}
+

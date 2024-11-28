@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    position: relative;
+    input {
+        width: 100%;
+        border: none;
+        padding: 14px 50px;
+        background: var(--light-green);
+        border-radius: 3px;
+        overflow: hidden;
+        width: 100%;
+    }
+    img{
+        position: absolute;
+        top: 33%;
+        left: 20px;
+    
+    }
+    .suggestions {
+        z-index: 100;
+        background: var(--background-color);
+        position: absolute;
+        width: 100%;
+        top: 109%;
+        max-height: 200px;
+        border-radius: 5px;
+        overflow-y: auto;
+        color: var(--light-green);
+        border-radius: 10px ;
+        border: 1px solid var(--global-dark-background);
+      
+        .lisItem {
+          padding: 15px;
+          padding: 15px;
+          border-bottom: 1px solid var(--global-dark-background);
+          cursor: pointer;
+          transition: all .2s;
+          text-align: left;
+          &:hover {
+            background: var(--light-green);
+            color: var(--color-black);
+          }
+        }
+      }
+}

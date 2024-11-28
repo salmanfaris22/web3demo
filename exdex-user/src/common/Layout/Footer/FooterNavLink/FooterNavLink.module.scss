@@ -1,0 +1,18 @@
+.container {
+width: 100%;
+font-size: 1.1rem;
+padding: 10px;
+text-align: center;
+display: block;
+text-decoration: none;
+border-radius: 50px;
+color: var(--color-black);
+
+&.light {
+     background: var(--color-green);
+}
+&.dark {
+    background: var(--light-green);
+}
+}
+

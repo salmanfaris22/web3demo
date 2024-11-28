@@ -1,0 +1,204 @@
+.wrapOut {
+  font-size: 16px;
+  @media (max-width: 1500px) {
+    font-size: 15px;
+  }
+  @media (max-width: 1300px) {
+    font-size: 14px;
+  }
+  @media (max-width: 650px) {
+    font-size: 13px;
+  }
+}
+.arrowBtn.disabledIcon {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.menuWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  @media (max-width: 650px) {
+    padding: 12px;
+  }
+
+  .arrowBtn {
+    min-width: 14px;
+    cursor: pointer;
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+  .arrowBtn.disabledIcon {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  .disabledIcon {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .itemsWrapper {
+    gap: 20px;
+    overflow: auto;
+    margin: 0 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    
+    .eachItem{
+      .selections{
+        min-width: 170px;
+        text-align: center;
+        border: 2px solid trans;
+      }
+      &:nth-child(5n + 1){
+        background-color: var(--neo-lime);
+      }
+      &:nth-child(5n + 2){
+        background-color: var(--coffee-brown);
+        color: var(--color-white);
+      }
+      &:nth-child(5n + 3){
+        background-color: var(--color-white);
+        color: var(--color-black);
+      }
+      &:nth-child(5n + 4){
+        background-color: var(--commodity-blue);
+        color: var(--color-white);
+      }
+      &:nth-child(5n + 5){
+        background-color: rgba(250, 228, 81, 1);
+        color: var(--color-black);
+      }
+      &:nth-child(5n + 6){
+        background-color: rgba(149, 204, 237, 1);
+        color: var(--color-black);
+      }
+      &.active{
+        border: 2px solid var(--color-green);
+      }
+      &:nth-child(1){
+        &.active{
+          border: 2px solid var(--color-white);
+        }
+      }
+    }
+
+    @media (max-width: 650px) {
+      margin: 0 0px;
+    }
+  }
+  .itemsWrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .itemsWrapper .eachItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 15px 10px;
+    font-size: 1.27rem;
+    font-family: "Poppins-SemiBold";
+    @media (max-width: 650px) {
+      border-radius: .53rem;
+      font-size: 1.62rem;
+      height: 65px;
+      &:last-child {
+        padding-right: 10px;
+      
+      }
+    }
+    .icon {
+      width: 4em;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .name {
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 5px;
+      display: none;
+    }
+    &:hover .icon {
+      background-color: #222421;
+    }
+    &.active .icon {
+      background-color: #222421;
+    }
+  }
+}
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  .name {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.9em;
+    line-height: 1em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+  .description {
+    color: #fff;
+    font-weight: 400;
+    line-height: 148%;
+    text-align: center;
+    font-size: 1em;
+    max-width: 1150px;
+    padding: 0px 20px;
+  }
+  .followBtn {
+    width: 7.5em;
+    height: 2.8em;
+    border-radius: 2.8em;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color: #ccfc51;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1em;
+    cursor: pointer;
+    transition-duration: 100ms;
+    border: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .mobile {
+    display: block !important;
+  }
+  .web {
+    display: none;
+  }
+}
+
+
+.actnBtns{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 12px;
+  button{
+    &:nth-child(2){
+      border: 1px solid var(--neo-lime);
+      background: none;
+      color: var(--neo-lime);
+     
+    }
+  }
+}

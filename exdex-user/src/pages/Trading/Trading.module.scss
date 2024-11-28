@@ -1,0 +1,238 @@
+.container {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 0px;
+  margin-top: -24px;
+  // &::before {
+  //   content: "";
+  //   left: 0px;
+  //   top: 0px;
+  //   width: 100%;
+  //   height: 150vh;
+  //   position: absolute;
+  //   background:url('../../../public/assets/images/colorBg.png');
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: 100% 100%;
+  //   z-index: 1;
+  // }
+  // &::after {
+  //   content: "";
+  //   left: 0px;
+  //   top: 300px;
+  //   width: 100%;
+  //   height: 200vh;
+  //   position: absolute;
+  //   background: linear-gradient(
+  //     0deg,
+  //     #3c707f 0%,
+  //     #164c5a 14.2%,
+  //     #0d3a45 28.39%,
+  //     #022733 46.13%,
+  //     #01212b 60.08%,
+  //     #011116 75.93%,
+  //     #000000 100%
+  //   );
+  // }
+}
+.tradeViewWrap {
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   left: 0px;
+  //   top: 0px;
+  //   width: 100%;
+  //   height: 300px;
+  //   position: absolute;
+  //   background: linear-gradient(
+  //     180deg,
+  //     #3c707f 0%,
+  //     #164c5a 14.2%,
+  //     #0d3a45 28.39%,
+  //     #022733 46.13%,
+  //     #01212b 60.08%,
+  //     #011116 75.93%,
+  //     #000000 100%
+  //   );
+  // }
+}
+.allInViewWrap {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  @media (min-width: 1200px) {
+    padding: 0px 90px 120px;
+  }
+
+  position: relative;
+}
+
+.glitterContainer {
+  margin-top: -15px;
+  position: relative;
+  // @media (max-width: 600px) {
+  //   margin-bottom: 0px;
+  // }
+  margin-bottom: 160px;
+
+  .glitterWrap {
+    z-index: 10;
+    position: absolute;
+    top: -85px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    @media (max-width: 1200px) {
+      top: -30px;
+    }
+    @media (max-width: 600px) {
+      left: 0px;
+      overflow-x: hidden;
+      top: -13px;
+      width: 100%;
+    }
+
+    .glitter {
+      background: url("../../../public/assets/images/trade/glitter2.png");
+      background-size: 100% 100%;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      animation: fadeInOut 2.5s ease-in-out infinite;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 11;
+  padding-top: 0px;
+
+  @media (max-width: 768px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.gradWrap {
+  background: linear-gradient(
+    180deg,
+    #3c707f 0%,
+    #164c5a 14.2%,
+    #0d3a45 28.39%,
+    #022733 46.13%,
+    #01212b 60.08%,
+    #011116 75.93%,
+    #000000 100%
+  );
+  padding-bottom: 50px;
+  @media (max-width: 650px) {
+    padding-bottom: 50px;
+  }
+}
+.gradWrap2 {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(
+    0deg,
+    #3c707f 0%,
+    #164c5a 14.2%,
+    #0d3a45 28.39%,
+    #0d3a45 46.13%,
+    #0d3a45 60.08%,
+    #0d3a45 75.93%,
+    #0d3a45 100%
+  );
+}
+.whale {
+  position: relative;
+  &::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    background: linear-gradient(
+      180deg,
+      #3c707f 0%,
+      #164c5a 14.2%,
+      #0d3a45 28.39%,
+      #022733 46.13%,
+      #01212b 60.08%,
+      #011116 75.93%,
+      #000000 100%
+    );
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+    top: 0%;
+    background: linear-gradient(
+      0deg,
+      #3c707f 0%,
+      #164c5a 14.2%,
+      #0d3a45 28.39%,
+      #022733 46.13%,
+      #01212b 60.08%,
+      #011116 75.93%,
+      #000000 100%
+    );
+  }
+}
+.gemWrap {
+  background: linear-gradient(
+    0deg,
+    #3c707f 0%,
+    #164c5a 14.2%,
+    #0d3a45 28.39%,
+    #022733 46.13%,
+    #01212b 60.08%,
+    #011116 75.93%,
+    #000000 100%
+  );
+  padding: 60px 0px 100px;
+}
+.gemWrap2 {
+  background: linear-gradient(
+    180deg,
+    #3c707f 0%,
+    #164c5a 14.2%,
+    #0d3a45 28.39%,
+    #022733 46.13%,
+    #01212b 60.08%,
+    #011116 75.93%,
+    #000000 100%
+  );
+  padding: 60px 0px 50px;
+}
+.gemWrap3 {
+  background: linear-gradient(
+    0deg,
+    #3c707f 0%,
+    #164c5a 14.2%,
+    #0d3a45 28.39%,
+    #022733 46.13%,
+    #01212b 60.08%,
+    #011116 75.93%,
+    #000000 100%
+  );
+  height: 150px;
+}
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.5;
+    /* Start and end with a subtle visibility */
+  }
+
+  50% {
+    opacity: 1;
+    /* Fully visible at the midpoint */
+  }
+}

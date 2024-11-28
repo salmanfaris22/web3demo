@@ -1,0 +1,151 @@
+.container {
+  /* Your styles here */
+  // border-radius: 22px;
+  // border: 1px solid var(--light-green);
+  overflow: hidden;
+  height: calc(100vh - 180px);
+
+  @media (min-width: 1250px) {
+    height: 330px;
+  }
+}
+
+.widgetHolder {
+  height: calc(100% + 39px);
+  width: calc(100% + 53px);
+  margin-left: -53px;
+  margin-top: -39px;
+}
+
+.graphsContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px;
+  padding: 0px 30px 50px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: -3%;
+    top: -2%;
+    width: 105%;
+    height: 106%;
+    background-image: url('../../../../public/assets/images/trade/around.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .monitorStand {
+    width: 75px;
+    position: absolute;
+    left: calc(50% - 37.5px);
+    background: var(--color-black);
+    height: 100%;
+    top: 50px;
+    z-index: 10;
+  }
+
+  .graphWrapper {
+    padding: 7px;
+    width: 33.33%;
+    min-height: 350px;
+    z-index: 11;
+
+    .graphBg {
+      padding: 12px;
+      background: rgba(31, 34, 44, 1);
+      border-radius: 6px;
+    }
+  }
+}
+
+.pageContainer {
+  max-width: unset !important;
+  margin-bottom: 60px;
+
+  @media (min-width: 1250px) {
+    margin-bottom: 0px;
+  }
+
+  overflow: hidden;
+}
+
+.desktopSwiper {
+  @media (max-width: 1250px) {
+    display: none;
+  }
+}
+
+.mobileSwiper {
+  display: none;
+
+  @media (max-width: 1250px) {
+    display: block;
+  }
+}
+
+.swiperPaginationBulletActive {
+  background: var(--color-green) !important;
+}
+
+.swiperPaginationBullet {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(191, 191, 191, 1);
+}
+
+.graphBg {
+  padding: 12px;
+  background: rgba(31, 34, 44, 1);
+  border-radius: 6px;
+}
+
+.blurBg {
+  filter: blur(35.0106px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.loader {
+  background-image: url("../../../../public/assets/images/trade/loaderGraph.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  filter: blur(4px);
+  height: 100%;
+  animation: fadeInOut 2s ease-in-out infinite;
+
+}
+
+
+
+
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.2;
+    /* Start slightly visible */
+  }
+
+  50% {
+    opacity: 0.6;
+    /* More visible at the midpoint */
+  }
+
+  100% {
+    opacity: 0.2;
+    /* End slightly visible */
+  }
+}

@@ -1,0 +1,258 @@
+.similar {
+  &Container {
+    &Wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3.3rem;
+    }
+
+    &Content {
+      width: 48%;
+      background: transparent;
+      border-radius: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      h3 {
+        padding-bottom: 2.3rem;
+      }
+    }
+
+    &Header {
+      display: flex;
+    }
+
+    &Heading {
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      cursor: pointer;
+    }
+
+    &Title {
+      font-size: 1.3em;
+      font-weight: 600;
+      font-family: "Poppins-SemiBold";
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    &Symbol {
+      font-size: 0.8em;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      color: var(--color-white);
+      font-family: "Poppins-Medium";
+    }
+
+    &CurrPrice {
+      padding: 0.8rem;
+      color: #a6a6a6;
+    }
+
+    &CurrPosition {
+      border-radius: 0.2rem;
+      padding: 0.8rem;
+
+      .long {
+        display: block;
+        color: #fff;
+        background: #009860;
+        border-radius: 4px;
+        width: 4.3rem;
+        line-height: 1.6rem;
+        text-align: center;
+
+        i {
+          display: inline-block;
+          margin-right: 0.1em;
+          position: relative;
+          left: -3px;
+        }
+      }
+
+      .short {
+        display: block;
+        color: #fff;
+        background: #ea5954 !important;
+        border-radius: 4px;
+        width: 4.3rem;
+        line-height: 1.6rem;
+        text-align: center;
+
+        i {
+          display: inline-block;
+          margin-right: 0.4rem;
+          position: relative;
+          top: -0.1em;
+        }
+      }
+    }
+
+    &Watchlist {
+      padding: 1.3rem;
+    }
+
+    &Chart {
+      min-height: 8.3rem;
+      
+    }
+
+    &Info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &Hours {
+      color: var(--color-white);
+      font-family: "Poppins-Medium";
+    }
+
+    &LikeComment {
+      display: flex;
+
+      span {
+        padding: 0.5rem;
+        color: var(--color-white);
+      }
+    }
+
+    &Like {
+      display: flex;
+      padding: 1em;
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    &Comment {
+      display: flex;
+      padding: 1em;
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    &Desc {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: rgba(220, 220, 220, 0.8);
+
+      &SeeMore {
+        cursor: pointer;
+        overflow-y: auto;
+        -webkit-line-clamp: initial;
+        max-height: 12.3rem;
+      }
+    }
+
+    &ReadMore {
+      cursor: pointer;
+      padding: 0.8rem;
+      float: right;
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .similar {
+    &Title {
+      margin-bottom: 2.3rem;
+    }
+
+    &Container {
+      &Heading {
+        gap: 1.3rem;
+        margin-bottom: 1.3rem;
+        padding: 0;
+      }
+
+      &Wrapper {
+        display: flex;
+        gap: 2rem;
+      }
+
+      &Wrapper::-webkit-scrollbar {
+        display: none;
+      }
+
+      &Content {
+        width: 100%;
+        padding: 2.3rem;
+        border-radius: 20px;
+        border: 1px solid #7d7d7d;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      &Title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        -webkit-line-clamp: 2 !important;
+      }
+
+      &Symbol {
+        font-size: 1.3rem;
+        color: #969696;
+        gap: 1.3rem;
+      }
+
+      &CurrPosition {
+        .long {
+          width: 5.3rem;
+          padding: 2px 2px;
+
+          i {
+            top: 4px;
+          }
+        }
+
+        .short {
+          width: 5.3rem;
+          padding: 2px 2px;
+        }
+      }
+
+      &Hours {
+        color: #c0c0c0;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+
+      &Info {
+        margin-bottom: 1.3rem;
+      }
+
+      &Desc {
+        display: none;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 400;
+        -webkit-line-clamp: 4;
+      }
+
+      &LikeComment {
+        gap: 1.3rem;
+      }
+
+      &Like,
+      &Comment {
+        padding: 0;
+      }
+    }
+
+    .heartLogo,
+    .commentLogo {
+      width: 2rem !important;
+    }
+  }
+}

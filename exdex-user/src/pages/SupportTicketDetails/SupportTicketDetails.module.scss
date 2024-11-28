@@ -1,0 +1,160 @@
+.container {
+  margin-top: 20px;
+  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    margin-top: 70px;
+  }
+
+  .qnTitle {
+    width: 90%;
+
+    h2 {
+      white-space: pre-wrap;
+      text-overflow: ellipsis;
+      width: 90%;
+      overflow: hidden;
+    }
+  }
+
+  .messages {
+    padding: 15px 20px;
+
+    @media (min-width: 500px) {
+      padding: 30px 40px;
+    }
+
+    background-color: var(--global-dark-background);
+
+    .messageRow {
+      position: relative;
+      min-height: 65px;
+      margin-bottom: 30px;
+
+      &.userMessage {
+        border-bottom: 1px solid rgba(80, 79, 83, 1);
+
+        .textContainer {
+          border-bottom: none;
+
+          @media (min-width: 768px) {
+            width: 88%;
+          }
+        }
+      }
+
+      .messageContent {
+        padding-left: 60px;
+        position: relative;
+
+        .userName {
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    .textContainer {
+      border-bottom: 1px solid rgba(80, 79, 83, 1);
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      position: absolute;
+      top: 0%;
+      left: 0;
+    }
+
+    .attchments {
+      margin-bottom: 30px;
+
+      .attchment {
+        cursor: pointer;
+        max-width: 190px;
+        display: flex;
+        align-items: center;
+        background: rgba(58, 58, 58, 1);
+        align-items: center;
+        font-family: "Poppins-Medium";
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1;
+        text-align: left;
+        padding: 10px 14px;
+        border-radius: 8px;
+        color: var(--color-white);
+
+        @media (max-width: 500px) {
+          width: 100%;
+        }
+
+        span {
+          width: 80%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      row-gap: 15px;
+      flex-wrap: wrap;
+
+      @media (max-width: 500px) {
+        margin-left: -60px;
+      }
+
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .commentIp {
+    padding-left: 60px;
+
+    textarea {
+      margin-bottom: 25px;
+    }
+  }
+
+  .closed {
+    > div {
+      color: var(--color-orange);
+    }
+
+    ::before {
+      background: var(--color-orange);
+    }
+  }
+
+  .date {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-align: right;
+  }
+
+  .userContent {
+    color: var(--color-white);
+    padding-bottom: 30px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .commentIp {
+    width: 88%;
+  }
+}

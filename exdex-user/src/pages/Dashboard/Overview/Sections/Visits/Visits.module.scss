@@ -1,0 +1,65 @@
+.visitWrap {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 100%;
+}
+.head {
+  font-size: 16px;
+  line-height: 30.71px;
+  text-align: left;
+  color: var(--color-white);
+  margin-bottom: 30px;
+}
+.visitInner {
+  padding: 20px;
+}
+.map {
+  height: 200px;
+}
+.name{
+  text-transform: capitalize;
+}
+.statItem {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  color: var(--color-white);
+  opacity: 0.95;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7px;
+  padding-top: 15px;
+  border-bottom: 0.57px solid rgba(255, 255, 255, 0.1);
+}
+.statDetails {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.statCount {
+  width: 60px;
+  text-align: right;
+}
+.statPercent {
+  width: 55px;
+}
+.statPercentIcon {
+  width: 20px;
+  height: 20px;
+  background: rgba(246, 28, 122, 0.09);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  border-radius: 50%;
+  &.statPercentIconUp {
+    background: rgba(204, 253, 81, 0.09);
+  }
+}
+@media only screen and (max-width:1340px){
+  .map{
+    height: 350px;
+  }
+}

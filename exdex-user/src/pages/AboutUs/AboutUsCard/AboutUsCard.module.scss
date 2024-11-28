@@ -1,0 +1,83 @@
+.container {
+  @media (max-width:1300px) {
+    position: relative;
+    padding-left: 40px;
+  }
+  h2 {
+    font-family: "Poppins-Semibold";
+    font-size: 1.6314rem;
+    font-weight: 600;
+    line-height: 1rem;
+    margin-bottom: 0px;
+    text-align: left;
+    color: var(--neo-lime);
+    margin-top: 0px;
+  }
+
+  p,
+  h3 {
+    font-family: "Poppins";
+    font-size: 1.2686rem;
+    font-weight: 300;
+    line-height: 2.9rem;
+    text-align: left;
+    color: var(--color-white);
+  }
+
+  h3 {
+    margin-bottom: 0px;
+
+  }
+
+  p {
+    margin-top: 0px;
+  }
+
+  .heighLight {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -15px;
+    left: -15px;
+    @media (min-width:1300px) {
+      width: 60px;
+      height: 60px;
+      left: -30px;
+      bottom: -30px;
+      top: unset;
+    }
+
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: var(--neo-lime);
+
+    .beam {
+      width: 20px;
+      height: 20px;
+      @media (min-width:1300px) {
+      width: 30px;
+      height: 30px;
+      }
+      background: var(--neo-lime);
+      border-radius: 50%;
+    }
+  }
+  .first{
+    @media (min-width:1300px) {
+    left: -60px;
+    }
+  }
+
+  .last {
+    @media (min-width:1300px) {
+    left: 0;
+    }
+  }
+
+  .first , .last {
+    background: var(--color-black);
+  }
+}

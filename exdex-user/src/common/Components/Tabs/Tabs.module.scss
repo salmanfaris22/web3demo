@@ -1,0 +1,28 @@
+.tabWrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 1.8em;
+
+  @media (max-width: 890px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .tab {
+    border-radius: 60px;
+    background: #2e2c31;
+    color: var(--color-white);
+    margin-right: 0.6em;
+    font-size: 0.85em;
+    padding: 0.7em 0.9em;
+    font-weight: 500;
+    font-family: "Poppins-Medium";
+    white-space: nowrap;
+    margin-bottom: 0.6em;
+    cursor: pointer;
+    border: none;
+    &.selected {
+      background: var(--neo-lime);
+      color: var(--color-black);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.quilWrap {
+  width: 100%;
+  padding: 10px;
+}
+
+.customQuil {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.lightEditor {
+  background-color: #fff;
+  color: #000;
+}
+
+.darkEditor {
+  background-color: #0b2634;
+  color: #a1a19c;
+
+  .ql-toolbar {
+    background-color: #1c1f22;
+    border-color: #333;
+  }
+
+  .ql-container {
+    background-color: #0b2634;
+    border-color: #333;
+  }
+
+  .ql-editor {
+    color: #a1a19c;
+  }
+
+  .ql-picker-options {
+    background-color: #1c1f22;
+    border-color: #333;
+  }
+
+  .ql-picker-item {
+    color: #a1a19c;
+  }
+}

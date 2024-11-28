@@ -1,0 +1,161 @@
+.container {
+  /* Your styles here */
+  background-color: var(--global-dark-background);
+  border-radius: 16px;
+  padding: 20px;
+  .logoBg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .headerWrap {
+    padding: 20px 0px;
+    @media (min-width: 768px) {
+      padding: 20px;
+    }
+  }
+
+  .agreementHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+    span {
+      font-family: "Inter";
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      text-align: left;
+      color: var(--color-green);
+    }
+  }
+
+  .body {
+    position: relative;
+
+    .contetnt {
+      position: relative;
+      z-index: 11;
+
+      ul {
+        padding-left: 0px;
+        list-style: none;
+        margin-bottom: 28px;
+      }
+
+      p,
+      li {
+        // font-family: "Inter";
+        margin-top: 0px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2rem;
+        text-align: left;
+        color: var(--color-white);
+
+        &:nth-child(1) {
+          margin-bottom: 28px;
+        }
+
+        &.strong {
+          font-family: "Poppins-Bold";
+        }
+      }
+
+      li {
+        margin-bottom: 20px;
+
+        > div {
+          font-family: "Poppins-Bold";
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      padding: 60px;
+    }
+  }
+
+  .signature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    z-index: 10;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      padding: 20px;
+    }
+
+    .signatureWrap {
+      @media (max-width: 768px) {
+        order: 2;
+        padding: 0px;
+      }
+
+      padding-right: 20px;
+
+      .signatureContainer {
+        height: 300px;
+      }
+    }
+
+    .terms {
+      @media (max-width: 768px) {
+        order: 1;
+      }
+
+      h3 {
+        font-family: "Poppins-Bold";
+        margin-top: 0px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2rem;
+        text-align: left;
+        color: var(--color-white);
+      }
+
+      p {
+        color: var(--color-orange);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+      }
+    }
+
+    .signatureBtn {
+      margin-top: 13px;
+      display: flex;
+      column-gap: 10px;
+
+      button {
+        width: calc(100% / 3 - 5px);
+        text-align: center;
+        border-radius: 22px;
+        padding: 2px 8px;
+
+        &:nth-child(2) {
+          background: var(--light-blue);
+        }
+      }
+    }
+  }
+}
+
+.pageWrap {
+  margin: 20px 0px 0px 0px;
+  @media (min-width: 768px) {
+    margin: 60px 0px 0px 0px;
+  }
+}

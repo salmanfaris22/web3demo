@@ -1,0 +1,146 @@
+.container {
+}
+
+.filterOut {
+  position: relative;
+  z-index: 10;
+}
+
+.helpSectionWrapper {
+  margin: 0px -20px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0px -10px;
+  }
+
+  padding-top: 50px;
+}
+
+.helpCard {
+  &:hover {
+    .delete {
+      img {
+        opacity: 1;
+        user-select: auto;
+      }
+    }
+  }
+
+  padding: 20px;
+
+  @media (min-width: 1024px) {
+    padding: 10px;
+    width: 33.33%;
+  }
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  .helpCardInner {
+    cursor: pointer;
+    padding: 40px;
+    color: rgba(222, 222, 222, 1);
+    background: var(--global-dark-background);
+    font-family: "Poppins_Regular", sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 2.72rem;
+    text-align: left;
+    height: 220px;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    img {
+      transition: margin-left 0.3s ease;
+    }
+
+    &:hover {
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.category {
+  margin-bottom: 30px !important;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Poppins-Medium";
+
+  img {
+    width: 25px;
+    opacity: 0;
+    user-select: none;
+    transition: all 0.5s;
+  }
+}
+
+.popHead {
+  font-family: "Poppins-SemiBold";
+  font-size: 1.9rem;
+  line-height: 3rem;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--color-white);
+  max-width: 400px;
+}
+.description {
+  color: var(--color-light-gray);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+  width: 415px;
+  max-width: 100%;
+  margin-top: 15px;
+}
+.btnOuter {
+  margin: 40px 0px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.authBtn {
+  background-color: var(--color-green);
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  border-radius: 30px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+}
+.dangerBtn {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  border-radius: 30px;
+  height: 37px;
+  color: var(--color-white);
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

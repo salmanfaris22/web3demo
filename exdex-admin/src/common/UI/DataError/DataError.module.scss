@@ -1,0 +1,29 @@
+.container {
+  /* Your styles here */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 250px);
+  width: 100%;
+
+  svg {
+    width: 125px;
+    background: var(--color-dark-blue-font);
+    border-radius: 50%;
+    padding: 35px;
+  }
+
+  > div {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  button {
+    padding: 10px 19px;
+    font-size: 15px;
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,63 @@
+.relative {
+  position: relative;
+}
+.swiperArrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+.left {
+  padding: 10px 5px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.swiperOut2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftArr {
+  min-width: 70px;
+  min-height: 70px;
+  background: var(--light-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  img {
+    width: 16px;
+  }
+  &.rightArr {
+    transform: rotate(180deg);
+  }
+  @media (max-width: 1000px) {
+    min-width: 40px;
+    min-height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    z-index: 10;
+    &.rightArr {
+      left: auto;
+      right: 0px;
+    }
+    img {
+      width: 12px;
+    }
+  }
+}
+.center {
+  padding: 10px 5px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+img.rotate {
+  transform: rotate(180deg);
+}

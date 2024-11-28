@@ -1,0 +1,111 @@
+.projectCardWrap {
+    .cardNameContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cardName{
+        font-size: .9em;
+        font-weight: 500;
+        color: #f3f3f3;
+        margin-bottom: .5rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .imageWrap {
+        position: relative;
+        height: 13.5em;
+        margin-bottom: 20px;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        border-radius: 7px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            transition: all .3s ease-in-out 0s;
+        }
+
+        &:hover{
+            img{
+             transform: scale(1.1);
+            }
+         }
+    }
+
+    h6 {
+        font-size: 1.1em;
+        font-weight: 500;
+        font-family: "Poppins-Medium";
+        color: #f3f3f3;
+        margin-bottom: .5em;
+        text-transform: capitalize;
+        cursor: pointer;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: .8em;
+        font-weight: 400;
+        color: #f2f2f2;
+        margin-bottom: .7em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 0px;
+    }
+
+    .cardsFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .8em;
+        color: #c9c9c9;
+
+        .cardFooterEelements {
+            display: flex;
+            align-items: center;
+            gap: .4em;
+            button{
+                padding: 0px;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+        }
+    }
+    .loading, .loading2 {
+        height: 5px;
+        border-radius: 4px;
+    }
+    .loading2{
+        margin-top: 10px;
+        width: 60%;
+    }
+}
+
+.waveLoader{
+    position: relative;
+    z-index: 12;
+    background-color: #222421;
+
+}
+

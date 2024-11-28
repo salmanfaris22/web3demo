@@ -1,0 +1,133 @@
+.gemOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  gap: 150px;
+  padding-top: 60px;
+  @media (max-width: 1150px) {
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
+  }
+  @media (max-width: 650px) {
+    display: block;
+    text-align: center;
+    padding: 0px 10px;
+  }
+}
+.gemLeft {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 89px;
+  letter-spacing: -1.5985534191px;
+  text-align: right;
+  padding-left: 10px;
+  max-width: 480px;
+  font-family: "Poppins-Bold";
+  margin-bottom: 30px;
+  margin-top: 10px;
+  @media (max-width: 1150px) {
+    max-width: 100%;
+    text-align: center;
+  }
+  @media (max-width: 750px) {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+}
+.gemRight {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31.6px;
+  letter-spacing: 0.2920131981px;
+  max-width: 480px;
+  padding-right: 10px;
+  font-family: "Poppins-Bold";
+  @media (max-width: 1150px) {
+    max-width: 100%;
+    text-align: center;
+  }
+  @media (max-width: 750px) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+.cardOuter {
+  background-color: var(--color-black);
+  border-radius: 30px;
+  padding: 0px;
+  border: 1px solid var(--color-light-white);
+  width: 350px;
+  margin: auto;
+  max-width: 90%;
+  min-width: 300px;
+}
+.swiperContent {
+  padding-top: 100px;
+  max-width: 85vw;
+  margin: auto;
+  @media (max-width: 400px) {
+    max-width: 95vw;
+  }
+}
+.swiperOut{
+  max-width: 1200px;
+  margin: auto;
+}
+.liveTop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: var(--color-white);
+  margin-bottom: 25px;
+  .live {
+    background: rgba(6, 6, 6, 0.4);
+    border-radius: 30px;
+    font-family: "Poppins-Medium";
+    border: 1px solid var(--color-red);
+    position: relative;
+    padding: 0px 20px 0px 30px;
+    margin-right: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      left: 15px;
+      top: 10px;
+      border-radius: 50%;
+      background-color: var(--color-red);
+    }
+  }
+}
+.catTitle {
+  font-family: "Inter-Medium";
+  font-size: 12.13px;
+  font-weight: 500;
+  line-height: 14.68px;
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+.catVal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--color-white);
+  font-family: Inter;
+  font-size: 16px;
+  font-family: "Inter-SemiBold";
+  line-height: 26.11px;
+  text-align: left;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.catVal2 {
+  margin-left: 15px;
+  color: var(--color-green);
+}

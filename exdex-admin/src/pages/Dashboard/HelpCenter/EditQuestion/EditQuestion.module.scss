@@ -1,0 +1,68 @@
+.container {
+  /* Your styles here */
+  max-width: 1250px;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.58rem;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.qnInput {
+  margin-bottom: 38px;
+
+  input {
+    width: 100%;
+    padding: 10px 27px;
+    background: var(--light-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.58rem;
+    text-align: left;
+
+  }
+}
+
+.btnWrap {
+  margin-top: 35px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  button {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+
+    &:nth-child(1) {
+      border-color: var(--color-green);
+      border: 1px solid;
+      color: var(--color-green);
+      background: transparent;
+      margin-right: 12px;
+
+    }
+
+    &:nth-child(2) {
+      background: var(--color-green);
+      border: 1px solid;
+      color: var(--color-black);
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.editorWrap {
+  background: var(--light-blue);
+  border-radius: 10px;
+}

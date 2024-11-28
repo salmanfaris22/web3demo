@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/exdex-admin/node_modules
+/exdex-user/node_modules
+/exdex-user/.env.development
+/exdex-admin/.env.development
+/exdex-user/.env.production
+/exdex-admin/.env.production
+
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/exdex-admin/build
+/exdex-user/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,48 @@
+.container {
+  /* Your styles here */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .sections{
+
+   width: 50%;
+  }
+}
+
+
+.legendWrap{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  .legend{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+    .legendIcon{
+      width: 10px;
+      height: 10px;
+      margin-right: 15px;
+    }
+    .data{
+      font-family: "Poppins";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      color: #A0A0A0;
+      margin-right: 25px;
+    }
+    .value{
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      color: #fff;
+      
+    }
+  }
+}

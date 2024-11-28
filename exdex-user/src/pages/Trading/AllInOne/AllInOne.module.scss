@@ -1,0 +1,63 @@
+.wRow {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  .warriorContainer {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    img {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+    @media (max-width: 500px) {
+      height: 350px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        &:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(2) {
+          left: -12px;
+          width: calc(100vw + 12px);
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.floatText {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 12;
+  h2 {
+    font-family: Arial;
+    font-weight: 700;
+    line-height: 10.3rem;
+    text-align: center;
+    color: var(--color-white);
+    font-size: 3.9rem;
+    line-height: 5rem;
+    @media (min-width: 425px) {
+      font-size: 4.9rem;
+      line-height: 6rem;
+    }
+    @media (min-width: 1024px) {
+      white-space: nowrap;
+      font-size: 7.8rem;
+    }
+  }
+}
+
+

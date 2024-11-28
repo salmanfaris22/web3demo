@@ -1,0 +1,144 @@
+.detailsPackage{
+    .export {
+        margin-top: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .btnWrap {
+        background-color: var(--neo-lime);
+        border-radius: 30px;
+        color: var(--background-color);
+        width: 150px;
+        height: 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          margin-left: 20px;
+        }
+      }
+    .bottomWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .bottomLeft {
+        width: 450px;
+      }
+      .packageHead {
+        font-family: "Poppins-Medium";
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 47.6px;
+        text-align: left;
+        margin-bottom: 30px;
+      }
+      .packageItem {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24.61px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .contractImage {
+        background-image: url("../../../../../../public/assets/images/contract.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 500px;
+        height: 350px;
+        background-color: var(--background-color);
+        border-radius: 9px;
+      }
+      .progressWrap {
+        background-color: var(--light-blue);
+        border-radius: 12px;
+        width: 100%;
+        height: 15px;
+        overflow: hidden;
+        margin-top: 30px;
+        .progressInner {
+          height: calc(100% - 4px);
+          border-radius: 12px;
+          background-color: var(--background-color);
+          margin: 2px;
+          .progressVal {
+            width: 100%;
+            text-align: center;
+            min-width: 70px;
+            &.darkPercent {
+              color: var(--color-font-gray);
+            }
+          }
+        }
+      }
+
+
+      @media only screen and (max-width: 1400px) {
+        .detailsWrap {
+          max-width: 1100px;
+        }
+      }
+      @media only screen and (max-width: 1300px) {
+        .bottomLeft {
+          width: 390px;
+        }
+        .contractImage {
+          width: 450px;
+        }
+        .detailsWrap {
+          max-width: 1020px;
+        }
+      }
+      @media only screen and (max-width: 1150px) {
+        .bottomWrap {
+          display: block;
+        }
+        .bottomLeft {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        .contractImage {
+          width: 500px;
+          max-width: 100%;
+          margin: 20px auto;
+        }
+        .detailsWrap {
+          max-width: 100%;
+        }
+      }
+      @media only screen and (max-width: 650px) {
+        .imageName {
+          display: block;
+          max-width: 100%;
+          padding-top: 20px;
+          margin-top: 10px;
+        }
+        .nftImage {
+          margin: 0px auto 25px;
+        }
+        .name {
+          font-size: 33px;
+          font-weight: 700;
+          line-height: 38.02px;
+        }
+        .packageHead {
+          font-size: 22px;
+          line-height: 40.6px;
+          text-align: left;
+          margin-bottom: 30px;
+          margin-top: 40px;
+        }
+        .packageItem {
+          font-size: 13px;
+        }
+        .export {
+          margin-top: 40px;
+        }
+      }
+
+}

@@ -1,0 +1,27 @@
+/* Breadcrumb.module.css */
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  background: none;
+  font-size: 16px;
+}
+
+.breadcrumbItem {
+  margin-right: 5px;
+  color: var(--color-gray-font);
+  font-family: 'Poppins-Medium'; 
+  font-size: 14px;
+  font-weight: 500; 
+  line-height: 21px;
+  text-align: left; 
+}
+
+.link {
+  text-decoration: none; 
+  cursor: pointer;
+}
+
+.active {
+  color:var(--color-white);
+}

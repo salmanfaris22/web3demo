@@ -1,0 +1,67 @@
+.search {
+  input {
+    background-color: var(--color-background-header);
+    width: 100%;
+    color: var(--color-white);
+    border: 1px solid var(--dark-color3);
+    border-radius: 10px;
+    background-image: url("../../../../public/assets/images/header/search.png");
+    background-position: 18px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 5px 20px;
+    padding-left: 47px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+  input::placeholder {
+    color: var(--color-white);
+  }
+  &.dark {
+    input {
+      // background-color: transparent;
+      // background-image: url("../../../../public/assets/images/search.png");
+      &::placeholder {
+        // color: var(--background-color);
+      }
+    }
+  }
+  &.tradeSignal {
+    width: 46%;
+    margin: 0 auto;
+    padding: 14px 0px;
+    padding-bottom: 20px;
+    input {
+      border-radius: 30px;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 400;
+      padding-top: 0.28rem;
+      padding-bottom: 0.28rem;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background-color: #2f2e32;
+      color: #fff;
+    }
+  }
+  &.lightcard {
+    input {
+      background-color: var(--light-blue);
+      background-image: url("../../../../public/assets/images/search.png");
+      border-radius: 30px;
+      color: var(--background-color);
+      &::placeholder {
+        color: var(--background-color);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .search {
+    input {
+      font-size: 1.3rem;
+      line-height: 25px;
+    }
+  }
+}

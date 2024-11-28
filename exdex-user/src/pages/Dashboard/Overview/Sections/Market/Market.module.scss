@@ -1,0 +1,98 @@
+.binWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.binaryWrap {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 100%;
+}
+.abs {
+  .binaryWrap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: visible;
+    width: 100%;
+  }
+}
+.head {
+  font-size: 16px;
+  line-height: 30.71px;
+  text-align: left;
+  color: var(--color-white);
+  margin-bottom: 30px;
+}
+.binaryInner {
+  padding: 20px;
+}
+.marketItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  font-family: Poppins-SemiBold;
+  margin-bottom: 35px;
+  &:last-child {
+    margin-bottom: 10px;
+  }
+  .marketDetails {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .marketDet {
+    margin-left: 12px;
+  }
+  .abb,
+  .price {
+    font-size: 14px;
+  }
+  .name,
+  .percent {
+    font-family: Poppins;
+    color: var(--color-light-gray);
+    margin-top: 3px;
+  }
+  .percent {
+    font-size: 12px;
+    color: var(--color-percent-green);
+    &.red {
+      color: var(--color-percent-red);
+    }
+  }
+  .marketImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .marketChart {
+    height: 32px;
+    width: 100px;
+  }
+}
+.marketRight {
+  width: 70px;
+}
+.compare {
+  .marketImage {
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+    &:nth-child(2) {
+      margin-left: 6px;
+      margin-top: -10px;
+    }
+  }
+}
+@media only screen and (max-width: 1340px) {
+  .abs {
+    .binaryWrap {
+      position: relative;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.container {
+  margin-top: 65px;
+}
+
+
+.tradeCardRow {
+  @media (min-width : 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -20px;
+  }
+
+  .tradeCard {
+    img {
+      width: 100%;
+    }
+
+    @media (min-width : 768px) {
+      width: 50%;
+      padding: 20px;
+    }
+
+  }
+}

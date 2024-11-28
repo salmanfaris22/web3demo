@@ -1,0 +1,10 @@
+.commentsLoader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 12;
+    background-color: #0b0d0a;
+}

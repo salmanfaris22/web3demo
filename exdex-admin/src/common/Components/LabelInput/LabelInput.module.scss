@@ -1,0 +1,94 @@
+.labelInputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: var(--color-tag-background);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  color: var(--color-white);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  padding: 6px 10px;
+  outline: none;
+  transition: border-color 0.3s;
+  border: 0.56px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--background-color2);
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* Remove default arrow in Safari */
+  &:focus {
+    border-color: var(--color-green);
+  }
+
+  &::placeholder {
+    color: var(--color-input-placeholder);
+  }
+  &:disabled {
+    color: var(--color-gray-font);
+  }
+}
+select.input {
+  background-image: url("../../../../public/assets/images/arrowWhite.png");
+  background-position: 96%;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.tag {
+  background-color: var(--border-gray);
+  border-radius: 30px;
+  padding: 4px 8px 4px 19px;
+  margin: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.removeTagButton {
+  background: none;
+  border: none;
+  box-shadow: none;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  img {
+    width: 10px;
+  }
+}
+
+.inputWrapper {
+  position: relative;
+}
+.eyeIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  img {
+    width: 17px;
+    opacity: 0.5;
+  }
+  .cross {
+    opacity: 0.5;
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: var(--color-white);
+    transform: rotate(45deg);
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}

@@ -1,0 +1,151 @@
+.gemWrap {
+  max-width: 85vw;
+  margin: auto;
+  @media (max-width: 1150px) {
+    padding: 0px 20px;
+    max-width: 100vw;
+  }
+  @media (max-width: 650px) {
+    padding: 0px 10px;
+  }
+}
+.cardOuter {
+  background-color: var(--color-black);
+  border-radius: 30px;
+  padding: 0px;
+  border: 1px solid var(--color-light-white);
+  width: 350px;
+  margin: auto;
+  max-width: 90%;
+  min-width: 300px;
+}
+.swiperContent {
+  padding-top: 100px;
+  max-width: 85vw;
+  margin: auto;
+}
+.liveTop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: var(--color-white);
+  margin-bottom: 25px;
+  .live {
+    background: rgba(6, 6, 6, 0.4);
+    border-radius: 30px;
+    font-family: "Poppins-Medium";
+    border: 1px solid var(--color-red);
+    position: relative;
+    padding: 0px 20px 0px 30px;
+    margin-right: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      left: 15px;
+      top: 10px;
+      border-radius: 50%;
+      background-color: var(--color-red);
+    }
+  }
+}
+.catTitle {
+  font-family: "Inter-Medium";
+  font-size: 12.13px;
+  font-weight: 500;
+  line-height: 14.68px;
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+.catVal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--color-white);
+  font-family: Inter;
+  font-size: 16px;
+  font-family: "Inter-SemiBold";
+  line-height: 26.11px;
+  text-align: left;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.catVal2 {
+  margin-left: 15px;
+  color: var(--color-green);
+}
+.aiTitle {
+  font-family: "Poppins-Bold";
+  color: var(--color-white);
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 95px;
+  letter-spacing: -3px;
+  text-align: left;
+  @media (max-width: 1150px) {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  @media (max-width: 750px) {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .aiSmall {
+    font-size: 31px;
+    line-height: 60px;
+    letter-spacing: -0.2800000011920929px;
+    text-align: left;
+    @media (max-width: 750px) {
+      font-size: 3rem;
+      line-height: 5rem;
+    }
+  }
+  .accu {
+    margin-left: 50px;
+  }
+}
+.swiperContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @media (max-width: 1250px) {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+}
+.cardWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: calc(100% - 290px);
+  margin-left: 30px;
+  @media (max-width: 1250px) {
+    gap: 30px;
+  }
+}
+.cardOut {
+  width: 31%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  @media (max-width: 1250px) {
+    min-width: 250px;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .swiperContent::-webkit-scrollbar {
+    display: none;
+  }
+}

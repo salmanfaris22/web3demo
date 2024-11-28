@@ -1,0 +1,37 @@
+:root {
+  --announcement-card-height: 440px;
+}
+
+.container {
+  /* Your styles here */
+  position: relative;
+  z-index: 1;
+
+  .announcementsRow {
+    display: flex;
+    height: var(--announcement-card-height);
+
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+      height: auto;
+    }
+
+  }
+
+  .scrollEnd {
+    height: 10px;
+    width: 100%;
+  }
+}
+
+.mainTitle {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 10px;
+  color: var(--color-white);
+}

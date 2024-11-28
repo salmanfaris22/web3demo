@@ -1,0 +1,26 @@
+.container {
+  padding: 70px 0px;
+  color: var(--color-white);
+  width: 70%;
+  margin: 0 auto;
+  @media (max-width: 900px) {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  h2 {
+    font-family: "Poppins-Semibold";
+    font-size: 3.0714rem;
+    font-weight: 700;
+    line-height: 3.6429rem;
+    text-align: left;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+  p {
+    font-family: "Poppins";
+    font-size: 1.2543rem;
+    font-weight: 400;
+    line-height: 1.9379rem;
+    text-align: center;
+  }
+}

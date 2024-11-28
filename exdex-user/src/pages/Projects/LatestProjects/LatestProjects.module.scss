@@ -1,0 +1,72 @@
+.container {
+
+  /* Your styles here */
+
+  .mobileProjectCard{
+    justify-content: unset;
+    gap: 1em;
+  }
+
+  .mainWrapper {
+    @media (min-width:890px) {
+      display: flex;
+      gap: 2rem 3rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2rem;
+      padding: 1rem;
+    }
+
+
+    .tabWrap{
+      margin-bottom: 2rem;
+      &::-webkit-scrollbar {
+        width: 2px;
+        opacity: 0;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 15px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: transparent;
+    }
+    }
+
+    .content {
+      max-width: 100%;
+      flex: 1;
+      overflow: auto;
+      &:nth-child(2){
+        position: sticky;
+        top: 0;
+        height: 100%;
+      }
+    }
+
+    
+  }
+
+  .viewMore{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    button{
+    padding: 9px 18px;
+    color: var(--color-green);
+    transform: none !important;
+    }
+  }
+
+
+}
+

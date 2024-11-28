@@ -1,0 +1,36 @@
+.tabWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  .navLinks {
+    display: flex;
+    align-items: center;
+
+    .navLink {
+      padding: 10px 20px;
+      border: 1px solid #808080;
+      color: gray;
+      text-decoration: none;
+      transition: border-color 0.3s, color 0.3s;
+      font-size: 1.1rem;
+      font-family: "Poppins-Medium";
+      cursor: pointer;
+
+      &:nth-child(1) {
+        border-radius: 10px 0 0 10px;
+      }
+
+      &:nth-child(2) {
+        border-radius: 0px 10px 10px 0px;
+      }
+      &.selected {
+        border-color: var(--neo-lime);
+        color: var(--neo-lime);
+      }
+      @media (max-width:650px){
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

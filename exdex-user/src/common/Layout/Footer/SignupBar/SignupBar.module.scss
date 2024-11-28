@@ -1,0 +1,41 @@
+.signupBar {
+  background: var(--light-green);
+  border-radius: 16px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 30px;
+
+  @media (min-width: 786px) {
+    display: flex;
+  }
+  .signupBarInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media (min-width: 786px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background: #fff;
+    color: var(--color-black);
+    border-radius: 50px;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-left: 16px;
+    width: 130px;
+    @media (min-width: 600px) {
+      margin-left: 50px;
+      width: 200px;
+    }
+  }
+}
+
+.signupBar span {
+  font-size: 1.5rem;
+}

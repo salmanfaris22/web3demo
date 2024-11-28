@@ -1,0 +1,48 @@
+.topImage {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-green);
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+.popHead {
+  font-family: "Poppins-SemiBold";
+  font-size: 1.9rem;
+  line-height: 3rem;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--color-white);
+}
+.description {
+  color: var(--color-light-gray);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+  width: 415px;
+  max-width: 100%;
+  margin-top: 15px;
+}
+.btnOuter {
+  margin: 40px 0px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.authBtn {
+  background-color: var(--color-green);
+  color: var(--color-black);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 27px;
+  border-radius: 30px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 204px;
+}

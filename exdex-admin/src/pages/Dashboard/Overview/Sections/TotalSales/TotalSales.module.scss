@@ -1,0 +1,133 @@
+.totalWrapOut {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 100%;
+  &.opacityLoading {
+    opacity: 0.5;
+  }
+}
+.totalWrap {
+  padding: 20px;
+}
+.legendBox {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background-color: var(--color-green);
+  margin-right: 7px;
+  &.legendOld {
+    background-color: var(--btn-color);
+  }
+}
+.legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+.totalRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 11px;
+  color: var(--color-white);
+}
+.totalHead {
+  font-size: 17px;
+  color: var(--color-white);
+}
+.totalTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 42px;
+}
+.saleTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+}
+.saleRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.arrowWrap {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &:after {
+    background-color: var(--color-pink);
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0px;
+    top: 0px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  &.arrowGreen {
+    &:after {
+      background-color: var(--color-green2);
+    }
+  }
+}
+.amount {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.percent {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.red {
+    color: var(--color-percent-red);
+  }
+}
+.saleLeft {
+  font-size: 14px;
+  text-align: left;
+}
+.saleRight {
+  font-size: 13px;
+}
+.saleItem {
+  margin-bottom: 15px;
+}
+.saleDetails {
+  margin-top: 30px;
+}
+
+.saleProgress {
+  width: 100%;
+  border-radius: 30px;
+  height: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.progressInner {
+  height: 100%;
+  background-color: var(--color-green);
+  border-radius: 30px;
+}
+.user {
+  .saleProgress {
+    background-color: var(--light-green);
+  }
+}

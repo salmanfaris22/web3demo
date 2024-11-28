@@ -1,0 +1,17 @@
+.teamOuter {
+  background-color: var(--background-color);
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px;
+  min-height: 300px;
+}
+@media only screen and (max-width: 1000px) {
+  .teamOuter {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .teamOuter {
+    padding: 15px;
+  }
+}

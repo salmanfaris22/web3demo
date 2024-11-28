@@ -1,0 +1,104 @@
+.userOuter {
+  max-width: 1250px;
+}
+.body {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.head {
+  color: var(--color-white);
+  font-family: "Poppins-Medium";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 30px;
+}
+.formWrap {
+  padding: 30px;
+  color: var(--color-white);
+}
+.formHead {
+  margin-bottom: 20px;
+  font-family: "Poppins-SemiBold";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formOuter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.formField {
+  width: 47.5%;
+  margin-bottom: 25px;
+  position: relative;
+}
+.permissionOut {
+  margin-top: 20px;
+}
+.permissionHead {
+  font-family: "Poppins-SemiBold";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  margin: 0px 0px 25px;
+}
+.checkBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 178px;
+  flex-wrap: wrap;
+}
+.checkBoxItem {
+  margin-bottom: 22px;
+}
+
+.permissionWrapper {
+  margin: 30px 0px 50px;
+}
+.btnItem {
+  width: 145px;
+  height: 37px;
+  border-radius: 30px;
+  border: 1px solid var(--color-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-color);
+  background-color: var(--color-green);
+  &.cancel {
+    background-color: transparent;
+    color: var(--color-green);
+  }
+}
+.btnWrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+.selectAllWrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  padding: 6px 15px;
+  .checkBoxWrap {
+    margin-top: -19px;
+    margin-right: -3px;
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  padding: 14px;
+  width: 25%;
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+  @media (max-width: 767px) {
+    opacity: 1 !important;
+    transform: none !important;
+    max-width: 450px;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 0px;
+  }
+
+  > div {
+    // background-color: var(--global-dark-background);
+    background-color: var(--background-color2);
+    border-radius: 12px;
+    padding: 40px 24px;
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+  }
+}

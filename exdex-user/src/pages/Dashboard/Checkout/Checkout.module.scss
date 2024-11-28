@@ -1,0 +1,346 @@
+.checkboxOuter {
+  padding: 30px;
+}
+.checkboxInner {
+  border-radius: 16px;
+  padding: 30px 50px;
+  background-color: var(--global-dark-background);
+  max-width: 1400px;
+  margin: auto;
+}
+.innerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+.left {
+  width: 100%;
+}
+.right {
+  min-width: 425px;
+}
+.count {
+  color: var(--color-offwhite2);
+  font-family: "Poppins-Medium";
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.cartItems {
+  border: 1px solid var(--light-green);
+  border-radius: 6px;
+}
+.cartItem {
+  padding: 26px;
+  border-bottom: 1px solid var(--light-green);
+  &:last-child {
+    border-bottom: 0px;
+  }
+}
+
+.sumHead {
+  color: var(--color-light-gray);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  font-family: "Poppins-Medium";
+  font-size: 1.4rem;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.price {
+  font-family: "Poppins-SemiBold";
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 4rem;
+  text-align: left;
+  color: var(--color-white);
+}
+.priceLabels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-gray-font);
+  .exBal {
+    color: var(--light-green);
+    font-family: "Poppins-Medium";
+  }
+}
+.referralBox {
+  margin-top: 30px;
+}
+.couponWrap {
+  position: relative;
+  padding-right: 20px;
+  margin: 20px 0px;
+  color: var(--light-green);
+  img {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+  }
+  span {
+    font-family: "Poppins-Medium";
+    color: var(--color-light-gray);
+  }
+}
+.couponBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: var(--color-offwhite);
+    width: 100%;
+    border-right: 0px;
+    height: 41px;
+    padding: 20px;
+  }
+  input::placeholder {
+    color: var(--color-input-placeholder);
+  }
+  .apply {
+    color: var(--color-black);
+    background-color: var(--color-green);
+    border-radius: 0px 5px 5px 0px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-left: -5px;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--light-green);
+    }
+  }
+}
+
+.dexWrap {
+  margin-top: 40px;
+  .dexHead {
+    font-size: 1.4rem;
+    color: var(--color-light-gray);
+    font-family: "Poppins-Medium";
+  }
+  .dexBox {
+    padding: 15px 15px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    background-color: var(--light-green);
+  }
+  .dexSubHead {
+    color: var(--color-orange);
+    font-family: "Poppins-Medium";
+    margin-bottom: 10px;
+  }
+  .coin {
+    color: var(--background-color);
+    font-family: "Poppins-Bold";
+    font-size: 32px;
+    line-height: 48px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+  .dexDes {
+    color: var(--background-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    margin: 15px 0px;
+    max-width: 380px;
+  }
+  .dexBtn {
+    background-color: var(--background-color);
+    font-family: "Poppins-Medium";
+    color: var(--color-white);
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    &.dexBtnApplied{
+      background-color: var(--global-dark-background);
+    }
+  }
+}
+.confirmBtn {
+  font-family: "Poppins-Medium";
+  color: var(--color-black);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-green);
+  height: 41px;
+  border-radius: 30px;
+  &:hover {
+    background-color: var(--light-green);
+  }
+}
+.btnWrapConfirm {
+  margin-top: 35px;
+}
+.privacyTerms {
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  color: var(--color-gray-font);
+  font-size: 1.2rem;
+  max-width: 90%;
+
+  a {
+    color: var(--color-green);
+  }
+}
+.mobShow {
+  display: none;
+}
+@media only screen and (max-width: 1360px) {
+  .right {
+    min-width: 370px;
+  }
+  .innerWrap {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .checkboxInner {
+    padding: 30px 35px;
+  }
+  .priceLabels {
+    font-size: 1.1rem;
+  }
+  .couponWrap {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 1210px) {
+  .right {
+    min-width: 320px;
+  }
+  .cartItem {
+    padding: 20px;
+  }
+  .checkboxInner {
+    padding: 20px;
+  }
+  .dexWrap {
+    margin-top: 28px;
+  }
+  .innerWrap {
+    gap: 30px;
+  }
+  // .left {
+  //   width: auto;
+  // }
+}
+@media only screen and (max-width: 1000px) {
+  .innerWrap {
+    display: block;
+    background-color: var(--global-dark-background);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .checkboxInner {
+    padding: 0px;
+    background-color: transparent;
+  }
+  .mobHide {
+    display: none;
+  }
+  .referralBox {
+    padding: 0px 20px;
+  }
+  .dexWrap {
+    .dexBox {
+      border-radius: 0px;
+    }
+  }
+  .cartItem {
+    border: 0px;
+    padding: 20px 0px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      left: 0%;
+      background-color: var(--color-light-border);
+      height: 1px;
+    }
+  }
+  .cartItems {
+    padding: 0px 20px;
+    border: 0px;
+  }
+  .btnWrapConfirm {
+    margin-top: 30px;
+    padding: 0px 20px 30px;
+  }
+  .count {
+    color: var(--color-offwhite);
+    font-family: Poppins-Medium;
+    font-size: 1.35rem;
+  }
+  .mobShow {
+    display: block;
+  }
+  .priceWrapper {
+    padding: 20px 0px;
+    margin: 0px 20px;
+    color: var(--color-offwhite);
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      left: 0%;
+      background-color: var(--color-light-border);
+      height: 1px;
+    }
+    .priceBox {
+      display: flex;
+      font-size: 1.5rem;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-family: "Poppins-SemiBold";
+    }
+    .exBal {
+      color: var(--light-green);
+      font-family: "Poppins-Medium";
+      margin-top: 15px;
+      text-align: right;
+      font-size: 1.2rem;
+    }
+    .priceVal {
+      text-align: right;
+    }
+  }
+
+  .sumHead {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .right {
+    width: 100%;
+    min-width: auto;
+  }
+  .privacyTerms {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .checkboxOuter {
+    padding: 20px;
+  }
+}

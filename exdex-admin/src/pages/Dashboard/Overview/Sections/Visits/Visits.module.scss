@@ -1,0 +1,118 @@
+.visitWrap {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 100%;
+}
+.visitInner {
+  padding: 20px;
+}
+.head {
+  color: var(--color-white);
+  margin-bottom: 30px;
+  font-family: "Poppins-Medium";
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 27.8px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.zoomOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.zoomBtn {
+  background-color: var(--light-green);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.85;
+  }
+  img {
+    width: 20px;
+  }
+}
+.bodyWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+.insights {
+  width: 180px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: var(--light-green);
+  .overviewItem {
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+  .overviewHead {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: var(--color-dark-blue-font);
+    margin-bottom: 0px;
+  }
+  .overviewVal {
+    font-family: "Poppins-Medium";
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 47.52px;
+    color: var(--color-orange);
+  }
+}
+.map {
+  height: 600px;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+.mapOpt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--color-option);
+  color: var(--color-white);
+  font-size: 14.73px;
+  line-height: 22.09px;
+  text-align: left;
+  border-radius: 4px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  .opt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 9px 15px;
+    position: relative;
+    font-size: 12px;
+    &:first-child {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0.5px;
+        height: 60%;
+        top: 19%;
+        background-color: var(--color-white);
+        opacity: 0.3;
+        right: 0px;
+      }
+    }
+    img {
+      margin-right: 7px;
+    }
+  }
+}

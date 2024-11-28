@@ -1,0 +1,23 @@
+.priceDisWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Poppins-Medium";
+}
+.price {
+  color: var(--color-green);
+}
+.discount {
+  margin-left: 15px;
+  position: relative;
+  color: var(--color-orange);
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 45%;
+    width: 102%;
+    height: 2px;
+    background-color: var(--color-orange);
+  }
+}

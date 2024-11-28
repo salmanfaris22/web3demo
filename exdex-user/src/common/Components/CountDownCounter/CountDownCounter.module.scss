@@ -1,0 +1,21 @@
+.container {
+  font-family: "Poppins";
+  font-size: 3.3rem;
+  font-weight: 400;
+  line-height: 5.28rem;
+  text-align: center;
+  color: var(--neo-lime);
+  margin-bottom: 30px;
+  @media (min-width:768px) {
+margin-bottom: 0px;
+    };
+
+  .info {
+    font-family: 'Poppins-Medium';
+    font-size: 1.3571rem;
+    font-weight: 500;
+    line-height: 1.7143rem;
+    text-align: center;
+     color: var(--color-white);
+  }
+}

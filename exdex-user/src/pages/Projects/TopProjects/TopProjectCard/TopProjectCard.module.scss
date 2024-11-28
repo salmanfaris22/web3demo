@@ -1,0 +1,88 @@
+.container {
+    height: 17em;
+    border-bottom: 7px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    max-height: 215px;
+    cursor: pointer;
+    &:hover{
+        img{
+         transform: scale(1.1);
+        }
+     }
+
+    .linerdBg {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        transform: rotate(180deg);
+    }
+    .infoContainer{
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end   ;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .info{
+           .title{
+            font-size:.85em;
+            // font-family: "Poppins-Medium";
+            color: var(--color-white);
+           }
+        }
+    }
+
+    .imageWrap {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        border-radius: 7px;
+
+        img {
+            transition: all .3s ease-in-out 0s;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+        }
+
+    }
+
+    .cardsFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .89em;
+        color: #c9c9c9;
+        margin-top: 20px;
+
+    .cardFooterEelements {
+        display: flex;
+        align-items: center;
+        gap: .4em;
+        span{
+           margin-right: 20px;
+        }
+        button{
+            padding: 0px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    }
+
+}

@@ -1,0 +1,86 @@
+.calculatorWrap {
+  background: var(--global-dark-background);
+  border-radius: 25px;
+  padding: 55px;
+  width: 100%;
+  @media (max-width: 650px) {
+    border-radius: 5px;
+    padding: 40px 20px;
+  }
+  @media (max-width: 425px) {
+    padding: 40px 20px;
+  }
+}
+.topContent {
+  color: var(--color-green);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27.33px;
+  letter-spacing: -0.453786700963974px;
+  text-align: left;
+
+  span {
+    color: var(--light-blue);
+    margin-left: 6px;
+    display: inline-block;
+  }
+}
+.selectOut {
+  margin: 15px 0px 30px;
+
+  select {
+    height: 45px;
+    text-align: left;
+    width: 200px;
+    padding: 0px 15px;
+    padding-left: 50px;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    color: var(--color-white);
+    border: 1px solid var(--light-blue);
+    font-size: 16px;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("../../../../public/assets/images/arrowWhite.png");
+    background-position: 18px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+  }
+}
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  @media (max-width: 1024px) {
+    max-height: 0px;
+    overflow: hidden;
+  }
+}
+.container {
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .calculator {
+    @media (min-width: 1024px) {
+      width: 41%;
+    }
+  }
+
+  .graph {
+    @media (min-width: 1024px) {
+      width: 50%;
+      max-width: 450px;
+    }
+    position: relative;
+  }
+
+  .btnWraps {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,129 @@
+.container {
+  position: relative;
+  z-index: 2;  
+    .cardRow {
+      margin-left: -12px;
+      margin-right: -12px;
+      padding-bottom: 70px;
+      @media (min-width: 768px) {
+        display: flex;
+      }
+      .card {
+        padding: 12px;
+        overflow: hidden;
+        position: relative;
+  
+        > svg {
+          display: none;
+  
+          @media (min-width: 768px) {
+            position: absolute;
+            bottom: 10%;
+            left: 45%;
+            display: block;
+          }
+        }
+  
+        .cardInner {
+          background: var(--global-dark-background);
+          box-shadow: 0 4.88px 4.88px rgba(0, 0, 0, 0.25);
+          border-radius: 8px;
+          @media (min-width: 768px) {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+          }
+  
+          .titleInfo {
+            padding: 24px 0;
+  
+            .titleArrow {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+  
+              svg {
+                margin-top: 20px;
+              }
+  
+              @media (min-width: 768px) {
+                padding: 0;
+                > svg {
+                  display: none;
+                }
+              }
+            }
+          }
+  
+          .titleInfo,
+          .descriptionInfo {
+            color: var(--color-green);
+            font-family: "Poppins-Bold";
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 54px;
+            text-align: center;
+  
+            @media (min-width: 768px) {
+              writing-mode: vertical-rl;
+              transform: rotate(180deg);
+              font-size: 5.17rem;
+              line-height: 7.75rem;
+            }
+          }
+  
+          .account {
+            font-family: "Poppins-Bold";
+            font-size: 1.39rem;
+            font-weight: 700;
+            line-height: 2.09rem;
+            text-align: center;
+          }
+  
+          .descriptionInfo {
+            writing-mode: unset;
+            transform: none;
+            padding: 40px;
+             @media (min-width:760px) {
+            padding: 70px;
+             }
+            .description {
+              margin-top: 20px;
+              color: var(--light-green);
+              font-family: "Poppins-Medium";
+              font-size: 1.39rem;
+              font-weight: 500;
+              line-height: 2.09rem;
+              text-align: center;
+              margin-bottom: 40px;
+            }
+  
+            .btnGrp {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+  
+            button {
+              margin-top: 19px;
+              padding: 10px 40px;
+              color: var(--color-black);
+              font-family: Poppins;
+              font-size: 1.2rem;
+              font-weight: 500;
+              line-height: 1.8rem;
+              text-align: left;
+  
+              @media (min-width: 768px) {
+                padding: 12px 55px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

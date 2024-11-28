@@ -1,0 +1,290 @@
+.topOuter {
+  // background-color: var(--background-color2);
+  background-color: var(--global-dark-background);
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 16px;
+}
+.topItemLeftWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: -moz-calc(100% - 430px);
+  width: -webkit-calc(100% - 430px);
+  width: -o-calc(100% - 430px);
+  width: calc(100% - 430px);
+}
+.topItem {
+  position: relative;
+  padding-right: 10px;
+  width: 23%;
+  // width: 20%;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 1px;
+    height: 80%;
+    top: 10%;
+    opacity: 0.3;
+    background-color: var(--color-splitter);
+  }
+}
+.topItemHead {
+  color: var(--color-tag-background);
+  white-space: nowrap;
+  margin-right: 10px;
+}
+.topItemVal {
+  color: var(--color-white);
+  opacity: 0.95;
+  font-family: "Poppins-Medium";
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-right: 5px;
+  width: 135px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.orangeNum {
+  color: var(--color-orange2);
+  height: 46px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.topItemValWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.chart {
+  height: 46px;
+  // width: 150px;
+  width: -moz-calc(100% - 145px);
+  width: -webkit-calc(100% - 145px);
+  width: -o-calc(100% - 145px);
+  width: calc(100% - 145px);
+}
+.teamGraph {
+  background-color: var(--color-white);
+  height: 1px;
+  width: 100%;
+  position: relative;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .teamFirst {
+    position: relative;
+    .greenDot {
+      background-color: var(--color-green2);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      position: absolute;
+      top: -2px;
+      left: -2.5px;
+    }
+    .firstItem {
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(141, 236, 44, 0.3) 0%,
+        rgba(141, 236, 44, 0) 100%
+      );
+      border: 0.44px solid var(--color-green);
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      top: -22px;
+      left: -22px;
+    }
+    .firstInfo {
+      position: absolute;
+      bottom: -50px;
+      left: -35px;
+      font-family: "Poppins-Medium";
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      text-align: left;
+      color: var(--color-white);
+      width: 100px;
+      span {
+        font-family: "Poppins";
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14.86px;
+        text-align: left;
+        color: var(--color-green);
+      }
+    }
+    &:nth-child(2) {
+      .greenDot {
+        background-color: var(--color-orange2);
+      }
+      .firstItem {
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(240, 110, 34, 0.3) 0%,
+          rgba(240, 110, 34, 0) 100%
+        );
+        width: 36px;
+        height: 36px;
+        top: -18px;
+        left: -18px;
+        border: 0.44px solid var(--color-orange2);
+      }
+      .firstInfo {
+        span {
+          color: var(--color-orange2);
+        }
+      }
+    }
+    &:nth-child(3) {
+      .greenDot {
+        background-color: var(--color-blue);
+      }
+      .firstItem {
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(0, 140, 255, 0.3) 0%,
+          rgba(0, 140, 255, 0) 100%
+        );
+        // width: 30px;
+        // height: 30px;
+        // top: -15px;
+        // left: -15px;
+        border: 0.44px solid var(--color-blue);
+      }
+      .firstInfo {
+        // bottom: auto;
+        // top: -37px;
+        // left: auto;
+        // right: -24px;
+        span {
+          color: var(--color-blue);
+        }
+      }
+    }
+  }
+}
+.teamBeh {
+  width: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 30px;
+  margin-top: -25px;
+}
+@media only screen and (max-width: 1400px) {
+  .teamBeh {
+    min-width: 300px;
+    width: 100%;
+    background-color: var(--background-color2);
+    padding: 30px 30px 30px 20px;
+    border-radius: 16px;
+    margin-top: 0px;
+    padding-bottom: 57px;
+    width: 100%;
+    padding-right: 60px;
+  }
+  .topOuter {
+    padding: 0px;
+    display: block;
+    background-color: transparent;
+  }
+  .topItemLeftWrap {
+    background-color: var(--background-color2);
+    padding: 20px;
+    border-radius: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .topItem {
+    .topItemVal {
+      width: 105px;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+    .chart {
+      height: 46px;
+      width: -moz-calc(100% - 110px);
+      width: -webkit-calc(100% - 110px);
+      width: -o-calc(100% - 110px);
+      width: calc(100% - 110px);
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .topItemLeftWrap {
+    background-color: transparent;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    gap: 10px;
+    .topItem {
+      width: -moz-calc(50% - 5px);
+      width: -webkit-calc(50% - 5px);
+      width: -o-calc(50% - 5px);
+      width: calc(50% - 5px);
+      background-color: var(--background-color2);
+      padding: 20px;
+      border-radius: 16px;
+      margin-bottom: 0px;
+    }
+  }
+  .teamBeh {
+    margin-top: 10px;
+    display: block;
+    padding-bottom: 70px;
+    padding-right: 76px;
+    margin-right: 0px;
+    overflow: hidden;
+  }
+  .teamGraph {
+    margin-top: 31px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .topItemLeftWrap {
+    background-color: transparent;
+    gap: 0px;
+    .topItem {
+      width: 100%;
+      background-color: var(--background-color2);
+      padding: 20px;
+      border-radius: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  .teamBeh {
+    min-width: 100%;
+    padding: 40px 30px 70px 20px;
+    margin-top: 0px;
+  }
+  .teamGraph {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .teamGraph {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .teamGraph {
+    width: 85%;
+  }
+}

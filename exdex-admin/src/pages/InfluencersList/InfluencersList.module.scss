@@ -1,0 +1,57 @@
+.container {
+  /* Your styles here */
+
+  th {
+    padding: 20px 10px !important;
+
+    &:nth-child(1) {
+      font-size: 13px;
+      padding-left: 30px !important;
+    }
+  }
+
+  tr {
+    td {
+      &:nth-child(1),  &:nth-child(2) ,  &:nth-child(3) ,  &:nth-child(4) ,   &:nth-child(5){
+        width: 19%;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .filterOut{
+    position: relative;
+    z-index: 11;
+    padding-bottom: 20px;
+  }
+
+  .userName{
+    text-decoration: underline;
+    color: var(--color-green);
+    cursor: pointer;
+  }
+}
+
+
+.actnBtn {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  button {
+    padding: 8px 22px;
+
+    &.rejBtn{
+      color: var(--color-orange);
+      border: 1px sollid;
+      border-color: var(--color-orange);
+    }
+
+   &.accBtn {
+      color: var(--color-green);
+      border: 1px sollid;
+      border-color: var(--color-green);
+    }
+  }
+}
+

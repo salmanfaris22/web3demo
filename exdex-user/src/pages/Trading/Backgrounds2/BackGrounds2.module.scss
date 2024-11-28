@@ -1,0 +1,29 @@
+.bgImg1 {
+  position: relative;
+  .gradSvg {
+    position: absolute;
+    top: 3.2%;
+    width: 100%;
+    transition: all .6s ;
+    // opacity: .7;
+  }
+}
+
+.topBlur {
+  height: 28%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, #356978 0%, #164C5A 14.2%, #0D3A45 28.39%, #022733 46.13%, #01212B 60.08%, #011116 75.93%, #000000 100%)
+
+}
+.bottomBlur{
+  background: linear-gradient(180deg, #3C707F 0%, #164C5A 14.2%, #0D3A45 28.39%, #022733 46.13%, #01212B 60.08%, #011116 75.93%, #000000 100%);
+  top: 27%;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  transform: rotate(180deg);
+
+}

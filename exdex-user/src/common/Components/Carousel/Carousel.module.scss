@@ -1,0 +1,45 @@
+.container {
+   overflow: hidden;
+   background: var(--color-black);
+   .carouselWrapper {
+      width: 100%;
+      height: 400px;
+      @media (min-width:768px) {
+         height: 560px;
+      }
+      display: flex;
+      justify-content: space-between;
+      transition: all 0.5s;
+        padding:  35px 0px 0px 0px;
+      .carouselSlide {
+         height: 100%;
+         width: 60%;
+         margin-right: 55px;
+         flex-shrink: 0;
+         border-radius: 18px;
+      }
+   }
+
+   .carouselNav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 14px;
+      padding: 25px;
+      padding-bottom: 10px;
+      .carouselBtn{
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         border: none;
+         outline: none;
+         padding: 0px;
+         transition: all .5s ease-in;
+         cursor: pointer;
+      }
+
+   }
+   .active{
+      background: var(--color-white);
+   }
+}

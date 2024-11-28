@@ -1,0 +1,47 @@
+.customPagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none; // IE and Edge
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari, and Opera
+  }
+}
+
+.innerContainer {
+  display: flex;
+  max-width: 100%;
+  min-width: 5px; // Ensures the container doesn't shrink below its minimum content size
+}
+
+.dotTop {
+  position: absolute;
+  width: 100%;
+  top: -35px;
+  z-index: 1;
+
+  .innerContainer {
+    margin-left: auto; // Pushes the content to the right
+  }
+}
+
+.dot {
+  flex-shrink: 0;
+  width: 20px;
+  height: 2px;
+  background-color: var(--background-gray2);
+  margin: 0 5px;
+  border-radius: 0%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 7px;
+}
+
+.dot.active {
+  background-color: var(--color-white);
+  opacity: 1;
+}

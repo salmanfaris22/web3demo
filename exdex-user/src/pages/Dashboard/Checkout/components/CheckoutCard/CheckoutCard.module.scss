@@ -1,0 +1,154 @@
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.image {
+  width: 160px;
+  background-color: var(--color-black);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 14px;
+  height: 115px;
+  margin-right: 25px;
+  position: relative;
+  overflow: hidden;
+  .tag {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    img {
+      width: 25px;
+    }
+  }
+  .tagName {
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    color: white;
+    font-family: "Poppins-SemiBold";
+  }
+}
+
+.name {
+  color: var(--color-light-white);
+  position: relative;
+  padding-right: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  .close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+  }
+}
+.details {
+  width: -moz-calc(100% - 160px);
+  width: -webkit-calc(100% - 160px);
+  width: -o-calc(100% - 160px);
+  width: calc(100% - 160px);
+}
+.priceWrap {
+  font-size: 1.6rem;
+}
+.disPercent {
+  color: var(--color-dark-green);
+  font-size: 1rem;
+  margin-left: 20px;
+}
+.high {
+  color: var(--color-light-gray);
+  width: 64%;
+}
+.highText {
+  max-width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.save {
+  color: var(--color-gray-font);
+  cursor: pointer;
+}
+.discount {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Poppins-Medium";
+  margin-bottom: 10px;
+}
+.high {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    margin-right: 7px;
+  }
+}
+.hightlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.mobShow {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .mobShow {
+    display: block;
+  }
+  .save {
+    position: absolute;
+    right: 26px;
+    top: 2px;
+  }
+  .mobHide {
+    display: none;
+  }
+  .name {
+    padding-right: 50px;
+  }
+  .disPercent {
+    display: none;
+  }
+  .image {
+    width: 111px;
+    height: 80px;
+  }
+  .high {
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+    width: 100%;
+    font-size: 1.35rem;
+  }
+  .card {
+    padding-bottom: 30px;
+  }
+  .details {
+    width: -moz-calc(100% - 137px);
+    width: -webkit-calc(100% - 137px);
+    width: -o-calc(100% - 137px);
+    width: calc(100% - 137px);
+  }
+}
+@media only screen and (max-width: 390px) {
+  .card {
+    display: block;
+  }
+  .image {
+    margin-bottom: 15px;
+  }
+  .details {
+    width: 100%;
+  }
+  .name {
+    margin-bottom: 15px;
+  }
+  .discount {
+    margin-bottom: 0px;
+  }
+}

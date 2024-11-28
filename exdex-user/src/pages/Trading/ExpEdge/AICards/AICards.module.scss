@@ -1,0 +1,22 @@
+.container {
+  /* Your styles here */
+}
+
+.desktopSlider{
+  display: none;
+  @media (min-width:768px) {
+     display: flex;
+     width: 100%;
+  }
+  @media (max-width:1024px) {
+    flex-wrap: wrap;
+  }
+}
+
+.mobileSlider{
+  display: block;
+  width: 100%;
+  @media (min-width:768px) {
+     display: none !important;
+  }
+}

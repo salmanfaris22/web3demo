@@ -1,0 +1,166 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background-color: var(--global-dark-background);
+  border-radius: 16px;
+  color: var(--color-white);
+  padding-bottom: 10px;
+
+  .orderDetails {
+    margin-top: 15px;
+  }
+  .header {
+    font-size: 18px;
+    margin-bottom: 20px;
+    background: var(--dark-gray-background);
+    padding: 50px 70px 17px;
+    margin-top: 35px;
+    border-radius: 16px 16px 0px 0px;
+
+    .headerTable {
+      width: 100%;
+    }
+
+    .headerLeft {
+      vertical-align: top;
+    }
+
+    .headerRight {
+      vertical-align: top;
+      text-align: right;
+    }
+
+    .headerGreeting {
+      .greetingText {
+        font-size: 1.2rem;
+
+        .userName {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          font-size: 1.6rem;
+        }
+      }
+
+      .purchaseInfo {
+        color: var(--color-font-gray);
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .item {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0px 70px;
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+
+      .th {
+        text-align: left;
+        padding: 8px 0px;
+        border-bottom: 0px solid #ddd;
+        color: var(--color-offwhite3);
+      }
+
+      .td {
+        padding: 8px 0px;
+        border-bottom: 0px solid #ddd;
+        text-align: right;
+        color: var(--color-tag-background);
+      }
+
+      .td2 {
+        padding: 8px 0px;
+        border-bottom: 0px solid #ddd;
+        text-align: right;
+        color: var(--color-white);
+      }
+    }
+  }
+
+  .footerLeft {
+    .footerCompany {
+      font-family: "Poppins-Medium";
+    }
+
+    .footerLocation {
+      color: var(--color-tag-background);
+      margin: 4px 0px;
+    }
+
+    .footerLink {
+      color: var(--color-green);
+      text-decoration: none;
+    }
+  }
+
+  .footerRight {
+    text-align: right;
+
+    .footerLogo {
+      img {
+        /* Styles for logo */
+      }
+    }
+  }
+
+  .button {
+    display: block;
+    width: 50%;
+    padding: 8px 0;
+    margin: 41px auto;
+    background-color: var(--color-green);
+    color: var(--color-black);
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .orderDetails {
+    font-size: 1.3rem;
+
+    .orderImage {
+      display: inline-block;
+      vertical-align: middle;
+      width: 110px;
+      height: 78px;
+      background-color: var(--color-black);
+      border-radius: 4px;
+    }
+
+    .orderName {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: auto;
+    max-width: none;
+    margin: 0px 20px;
+    border-radius: 8px;
+    .button {
+      margin: 41px 20px 20px;
+      width: auto;
+    }
+    .header {
+      padding: 25px 20px 21px;
+      margin-top: 25px;
+      border-radius: 8px 8px 0px 0px;
+    }
+    .item {
+      padding: 0px 20px;
+    }
+  }
+}

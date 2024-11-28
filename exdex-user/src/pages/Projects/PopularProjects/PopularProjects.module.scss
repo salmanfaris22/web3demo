@@ -1,0 +1,16 @@
+.popularProjectsWrap {
+    display: flex;
+    align-items: center;
+    // overflow: hidden;
+    // overflow-x: scroll;
+    // scroll-snap-type: x mandatory;
+    // scroll-behavior: smooth;
+    flex: 1;
+
+    .cardWrap {
+        width: 25%;
+        padding: 1.1rem;
+
+
+    }
+}

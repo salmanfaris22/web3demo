@@ -1,0 +1,91 @@
+.container {
+  > h2 {
+    font-family: "Poppins-Bold";
+    font-size: 4.36rem;
+    font-weight: 700;
+    line-height: 6.04rem;
+    text-align: left;
+    color: var(--color-white);
+    text-align: center;
+    margin: 0px;
+    @media (max-width: 500px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  > p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.97rem;
+    text-align: center;
+    margin: 0px;
+    color: var(--light-green);
+  }
+
+  .tabWrapper {
+    @media (min-width: 1340px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media (min-width: 1450px) {
+      max-width: 90vw;
+      margin: auto;
+    }
+    align-items: center;
+    .nav {
+      @media (min-width: 1340px) {
+        width: 210px;
+        display: block;
+      }
+      @media (max-width: 768px) {
+        margin: 0px -10px;
+      }
+      .navOuter {
+        @media (max-width: 1340px) {
+          width: 33%;
+          padding: 0px 14px;
+        }
+        @media (max-width: 768px) {
+          width: 50%;
+        }
+      }
+      padding-bottom: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      button {
+        font-family: "Poppins-Medium";
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 2rem;
+        text-align: left;
+        padding: 8px 15px;
+        color: var(--color-black);
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+        text-align: center;
+        margin-bottom: 16px;
+        width: 100%;
+      }
+    }
+
+    .cardsRow {
+      @media (min-width: 1340px) {
+        width: calc(100% - 250px);
+        overflow: auto;
+      }
+      display: flex;
+    }
+  }
+}
+
+.pageWrapper {
+  @media (max-width: 1200px) {
+    padding: 45px 10px 45px 10px;
+  }
+}
+
+.active {
+  background-color: var(--color-green) !important;
+}

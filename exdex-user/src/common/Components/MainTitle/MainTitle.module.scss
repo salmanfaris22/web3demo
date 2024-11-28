@@ -1,0 +1,11 @@
+.container {
+  & > * {
+    font-family: "Poppins-SemiBold";
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.23rem;
+    text-align: center;
+
+    color: var(--color-white);
+  }
+}

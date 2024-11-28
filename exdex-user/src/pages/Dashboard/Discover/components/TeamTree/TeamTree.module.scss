@@ -1,0 +1,243 @@
+.treeNode {
+  position: relative;
+  // padding-left: 20px;
+  margin-bottom: 20px;
+  // max-height: 140px;
+
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     bottom: 0;
+  //     width: 2px;
+  //     background-color: #ccc;
+  //   }
+
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 20px;
+  //     left: 0;
+  //     width: 20px;
+  //     height: 2px;
+  //     background-color: #ccc;
+  //   }
+
+  //   &:last-child::before {
+  //     height: 20px;
+  //   }
+}
+
+.childNodes {
+  margin-left: 20px;
+  padding-left: 28%;
+  position: relative;
+  .treeNode {
+    margin-bottom: 40px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(30%);
+    background-color: var(--color-green);
+    height: 1px;
+    top: 23px;
+    left: -3px;
+  }
+  &.hasBefore {
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(16%);
+      border-left: 1px solid var(--color-green);
+      height: calc(100% - 55px);
+      top: 23px;
+      left: calc(14%);
+      border-bottom: 1px solid var(--color-green);
+    }
+  }
+  &.childNodePos {
+    &::before {
+      border-bottom: 0px;
+    }
+    &:last-child {
+      .treeNode {
+        &:last-child {
+          &::before {
+            content: "";
+            position: absolute;
+            width: calc(21%);
+            border-left: 0px solid var(--color-green);
+            height: calc(100% - 55px);
+            top: 24px;
+            left: calc(-20% - 3px);
+            border-top: 1px solid var(--color-green);
+            background: var(--background-color);
+          }
+        }
+        &:first-child {
+          &::before {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &.childNodePos2 {
+    &:last-child {
+      .treeNode {
+        &:last-child {
+          &::before {
+            content: "";
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+.childNodeWrap {
+  position: relative;
+  margin-left: 277px;
+}
+.childNodeWrapPos {
+  .childNodes {
+    .treeNode {
+      // padding-left: 20px;
+      &:first-child {
+        margin-top: -55px;
+      }
+    }
+    &:last-child {
+      .treeNode {
+        &:first-child {
+          margin-top: -55px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .childNodeWrap {
+    margin-left: 235px;
+  }
+  .childNodes {
+    padding-left: 25%;
+  }
+  .childNodes {
+    &.childNodePos {
+      &:last-child {
+        .treeNode {
+          &:last-child {
+            &::before {
+              width: 18%;
+              left: calc(-16% - -2px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .childNodeWrap {
+    margin-left: 170px;
+  }
+  .childNodes {
+    padding-left: 25%;
+    &::after {
+      content: "";
+      width: 21%;
+      left: 60px;
+    }
+    &.hasBefore {
+      &::before {
+        width: 7%;
+        left: 20%;
+      }
+    }
+  }
+  .childNodes {
+    &.childNodePos {
+      &:last-child {
+        .treeNode {
+          &:last-child {
+            &::before {
+              width: 11%;
+              left: calc(-8% + 3px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .childNodePos2 {
+    padding-left: 0px;
+    margin-left: 110px;
+    &.childNodes {
+      &::after {
+        display: none;
+      }
+      &.hasBefore {
+        &::before {
+          border-bottom: 0pc;
+          left: -14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .childNodeWrap {
+    margin-left: -72px;
+  }
+  .childNodeWrapPos {
+    .childNodes {
+      .treeNode {
+        // padding-left: 20px;
+        &:first-child {
+          margin-top: 0px;
+        }
+      }
+      &:last-child {
+        .treeNode {
+          &:first-child {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  }
+  .childNodes {
+    &::after {
+      display: none;
+    }
+  }
+  .childNodes {
+    &.childNodePos {
+      &:last-child {
+        .treeNode {
+          &:last-child {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .childNodePos2 {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .childNodePos2 {
+    padding-left: 10px;
+  }
+}

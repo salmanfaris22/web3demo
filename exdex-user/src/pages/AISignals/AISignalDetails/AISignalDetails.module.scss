@@ -1,0 +1,228 @@
+@import "../../../exdextypography.scss";
+.smartCard {
+  position: relative;
+  z-index: 11;
+  @include responsive-font-size();
+
+  &__container {
+    font-size: 16px;
+      margin-left: 1rem;
+      overflow-y: auto;
+      border-radius: 2rem;
+      overflow-x: hidden;
+      color: #fff;
+  }
+  &__contentWrapper{
+      margin: 0 0rem 0 0rem;
+      padding: 3rem;
+      background:  var(--background-color4);
+  }
+
+  &__disclaimer {
+      background: #CCFD50;
+      border: 1px solid #CCFD50;
+      border-radius: 7px;
+      color: #000;
+      display: flex;
+      padding: 1em;
+      gap: 1em;
+      margin: 1em 0;
+
+      &__icon {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+
+          img {
+              width: 1.8rem;
+              height: 1.8rem;
+          }
+
+          h5 {
+              // padding: 0.25rem;
+              @media screen and (max-width: 820px) {
+                font-size: 1.25em !important;
+                font-family: "Poppins" !important;
+              }
+          }
+      }
+
+      a {
+          color: #000;
+          text-decoration: underline;
+      }
+
+      &__content {
+        h5{
+          font-size: 1.25em;
+          margin: 0px;
+          font-family: "Poppins-Medium";
+        }
+        span{
+          max-width: unset;
+          font-size: 1em;
+          display: block;
+          font-family: "Poppins";
+          // margin: 1rem 0;
+          @media screen and (min-width: 790px) {
+          margin-left: 2.8rem;
+          }
+        }
+          .terms {
+              text-decoration: underline;
+              cursor: pointer;
+          }
+      }
+      
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .smartCard {
+      &__container {
+          // padding: 1rem;
+          border-radius: 0.5rem;
+          width: 100vw;
+          height: 100vh;
+          margin: 0;
+          // margin-top: 1rem;
+
+      }
+      &__contentWrapper{
+          margin: 0;
+          background: #151515;
+      }
+      &__disclaimer {
+          margin: 4rem 0;
+
+          img {
+              height: auto;
+              width: 2.25rem;
+              margin-right: 0.5rem;
+          }
+
+          &__content {
+              span {
+                  color: #000;
+                  font-family: 'Poppins-Medium';
+                  font-size: 1.15em;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  margin: 1rem 0;
+                  display: block;
+              }
+          }
+
+          &__tradingBorder {
+              padding: 10px;
+              margin: 2rem 0;
+              border-radius: 14px;
+              border: 1px solid #444;
+              background: #151515;
+
+          }
+
+          &__icon {
+              h5 {
+                  color: #000;
+                  font-family: 'Poppins-Bold';
+                  font-size: 16px;
+              }
+          }
+      }
+
+      &__icon {
+          display: flex;
+
+
+      }
+  }
+}
+
+
+.detail_popup_close_btn{
+  position: fixed;
+  right: 21px;
+  top: 15px;
+  background: transparent;
+  border: none;
+  z-index: 111;
+  right: 20px;
+  img{
+    width: 1.1em;
+    min-width: 17px;
+  }
+}
+.progress-bar-container {
+  width: 3.5px;
+  height: 100%;
+  background-color: #ddd;
+  max-height: 10rem;
+  min-height: 0;
+  position: absolute;
+  right: 28px;
+  top: 60px;
+  z-index: 99;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #00E08E;  
+  height: 0; /* Initial height of the progress bar (0% progress) */
+}
+.smartcardPopup{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 780px) {
+  .detail_popup_close_btn{
+    float: right;
+    position: fixed;
+  //   right: 0;
+  right: 0;
+    margin: auto;
+    top: 1em;
+    img{
+      width: 1em;
+      min-width: auto
+    }
+  }
+  .progress-bar-container{
+    display: none;
+  }
+}
+
+.mobilecards{
+  display: none;
+}
+
+.desktopCards{
+  display: block;
+  hr{
+    margin: 1em 0px;
+    color: #fff;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+}
+}
+
+.mobilecards{
+  display: none;
+}
+
+@media only screen and (max-width: 790px) {
+  .desktopCards{
+    display: none;
+  }
+
+  .mobilecards{
+    display: block !important;
+  }
+}

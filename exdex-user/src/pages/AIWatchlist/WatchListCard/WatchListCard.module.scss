@@ -1,0 +1,143 @@
+.container {
+    padding: 13px;
+
+    .watchListcardInner {
+        border-radius: 16px;
+        padding: 16px;
+        background: rgba(2, 32, 41, 1);
+        min-height: 350px;
+        position: relative;
+        .heading {
+            font-family: "Poppins-Medium";
+            font-size: 17.38px;
+            line-height: 26.08px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            text-transform: uppercase;
+            color: var(--color-white);
+            margin-bottom: 10px;
+        }
+
+        .coin {
+            font-size: 11.7px;
+            font-weight: 400;
+            line-height: 17.56px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: var(--color-white);
+            margin-bottom: 10px;
+        }
+
+
+        .priceInfo {
+            margin-bottom: 12px;
+            .pricePair {
+                font-family: "Poppins-Medium";
+                font-size: 10.47px;
+                font-weight: 500;
+                line-height: 12.7px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: var(--color-white);
+
+                .price {
+                    color: var(--neo-lime);
+                    margin-left: 12px;
+                }
+            }
+        }
+
+        .percentage {
+            font-size: 2.5rem;
+            color: var(--neo-lime);
+            text-align: center;
+            line-height: 3rem;
+            font-family: "Poppins-Medium";
+            margin-bottom: 15px;
+
+        }
+
+        .qrCodeInfo {
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+
+            .qrCode {
+                width: 48px;
+                height: 48px;
+                position: relative;
+                padding: 3px;
+           
+                svg {
+                    border: 1px solid #fff;
+                    width: 48px;
+                    height: 48px;
+                    position: absolute;
+                    object-fit: CONTAIN;
+                }
+            }
+
+            .refferalCode {
+                font-family: "Poppins-Medium";
+                font-size: 10.47px;
+                font-weight: 500;
+                line-height: 12.7px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: rgba(186, 186, 186, 1);
+                text-transform: uppercase;
+                margin-left: 8px;
+
+                .code {
+                    color: var(--color-white);
+
+                }
+
+            }
+        }
+    }
+
+    .gaphBackGround {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        max-height: 202px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .footerLogo {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .footerUrl {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        font-family: "Poppins-Medium";
+        color: var(--neo-lime);
+        font-size: 8.69px;
+        font-weight: 500;
+        line-height: 13.04px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+}

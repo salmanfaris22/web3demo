@@ -1,0 +1,34 @@
+.container {
+  width: 97vw;
+
+  background: var(--global-dark-background);
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  padding: 30px 25px 80px ;
+  @media (min-width : 1024px) {
+    padding: 30px 80px 80px;
+    width: 90vw;
+  }
+
+  h1 {
+    font-family: "Poppins-Bold";
+    font-size: 2.29rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 45px;
+  }
+
+  p {
+    // font-family: "Poppins-SemiBold";
+    padding: 16px;
+    font-size: 1.43rem;
+    font-weight: 500;
+    line-height: 2.14rem;
+    color: var(--color-white);
+    margin-bottom: 35px;
+  }
+}

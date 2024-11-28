@@ -1,0 +1,124 @@
+.binaryWrap {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 100%;
+}
+.head {
+  font-size: 16px;
+  line-height: 30.71px;
+  text-align: left;
+  color: var(--color-white);
+  margin-bottom: 30px;
+}
+.binaryInner {
+  padding: 20px;
+}
+.directionWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+}
+.direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  .directionInner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-green2);
+    opacity: 0.09;
+  }
+}
+.color {
+  width: 19px;
+  height: 17px;
+  border-radius: 3px;
+  background-color: var(--color-purple);
+  margin-right: 10px;
+  &.color2 {
+    background-color: var(--color-green3);
+  }
+  &.color3 {
+    background-color: var(--color-violet);
+  }
+  &.color4 {
+    background-color: var(--color-purple2);
+  }
+  &.color5 {
+    background-color: var(--color-pink2);
+  }
+}
+.levelItem,
+.levelLeft,
+.levelRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.levelItem {
+  margin: 0px 0px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.62px;
+  text-align: left;
+  color: var(--color-white);
+}
+.chartOuter {
+  height: 290px;
+}
+.salesDetails {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.62px;
+  text-align: center;
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  .salesItem {
+    width: 25%;
+    margin-bottom: 10px;
+    &:last-child {
+      .salesVal {
+        padding-right: 0px;
+        border: 0px;
+      }
+    }
+  }
+  .salesHead {
+    height: 40px;
+  }
+  .salesVal {
+    width: 100%;
+    padding: 10px 0px;
+    padding-right: 5px;
+    border-right: 0.5px solid var(--color-white);
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .salesDetails {
+    .salesItem {
+      width: 50%;
+      &:nth-child(2) {
+        .salesVal {
+          padding-right: 0px;
+          border: 0px;
+        }
+      }
+    }
+    .salesHead {
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+}

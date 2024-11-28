@@ -1,0 +1,16 @@
+.discoverWrap {
+  padding: 30px 30px 0px 30px;
+  @media (min-width: 1450px) {
+    max-width: calc(90vw + 60px);
+    margin: auto;
+  }
+}
+.disItemWrap {
+  padding-bottom: 15px;
+  // margin-bottom: 15px;
+}
+@media only screen and (max-width: 1200px) {
+  .discoverWrap {
+    padding: 25px 10px 0px 10px;
+  }
+}

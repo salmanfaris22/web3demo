@@ -1,0 +1,35 @@
+.bodyWrap {
+  min-height: 100vh;
+  overflow: auto;
+  // background-image: url("../../../public/assets/images/bgexdex.jpeg");
+  // background-repeat: repeat-y;
+  // background-size: 100% auto;
+  &.overflowHidden {
+    overflow: hidden;
+  }
+}
+.dashboard {
+  // background: var(--background-color);
+  z-index: 111;
+  // width: -moz-calc(100% - 84px);
+  // width: -webkit-calc(100% - 84px);
+  // width: -o-calc(100% - 84px);
+// width: calc(100% - 84px)
+  position: relative;
+  // left: 84px;
+}
+.dashSide {
+  position: relative;
+  z-index: 100;
+}
+.headerWrap {
+  position: relative;
+  z-index: 120;
+}
+@media only screen and (max-width: 1200px) {
+  .dashboard {
+    width: calc(100%);
+    position: relative;
+    left: 0px;
+  }
+}

@@ -1,0 +1,69 @@
+.profielWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.profile {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-image: url("../../../../public/assets/images/userDefault.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.profileName {
+  position: relative;
+  padding-right: 20px;
+  color: var(--color-white);
+  font-family: "Poppins-SemiBold";
+  margin-left: 10px;
+  max-width: 105px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  img {
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    width: auto;
+    height: auto;
+  }
+}
+.dropDownOuter {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 100px;
+  color: var(--light-green);
+  border-radius: 5px;
+  z-index: 10;
+  display: none;
+  padding-top: 30px;
+  top: 3px;
+  .dropDownItem {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 12px;
+    background: var(--color-background-header);
+    border-bottom: 1px solid var(--background-color);
+    &:hover {
+      background-color: var(--color-black);
+    }
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+}
+.profielWrap:hover .dropDownOuter,
+.dropDownOuter:hover {
+  display: block;
+}
+
+@media only screen and (max-width: 1250px) {
+  .profileName {
+    display: none;
+  }
+}

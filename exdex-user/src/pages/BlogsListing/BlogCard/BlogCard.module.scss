@@ -1,0 +1,72 @@
+.blogCardWrap {
+  padding: 25px;
+  @media (max-width: 768px) {
+    padding: 12px;
+  }
+
+  .blogInner {
+    cursor: pointer;
+    .blogImage {
+      height: 250px;
+      position: relative;
+      border-radius: 13px;
+      overflow: hidden;
+
+      @media (max-width: 768px) {
+        height: 220px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .dateTypeWrap {
+      display: flex;
+      align-items: center;
+      margin: 18px 0px;
+
+      .type,
+      .date {
+        background: var(--neo-lime);
+        font-family: "Poppins-Medium";
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 27.7px;
+        text-align: left;
+        color: var(--color-black);
+        padding: 0px 12px;
+        border-radius: 5px;
+        width: fit-content;
+      }
+
+      .date {
+        color: rgba(255, 255, 255, 0.6);
+        background: transparent;
+        margin-left: 15px;
+        padding-left: 0px;
+      }
+    }
+
+    .description {
+      font-family: "Poppins-Semibold";
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2.5rem;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: rgba(199, 199, 199, 1);
+    }
+  }
+}

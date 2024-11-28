@@ -1,0 +1,57 @@
+.container {
+  border-radius: 3px;
+  position: relative;
+  button {
+    padding: 14px 25px;
+    background: var(--light-green);
+    border-radius: 3px;
+    font-size: 1.2rem;
+    // font-family: "Poppins-SemiBold";
+    // font-weight: 500;
+    border: none;
+    width: 100%;
+    text-align: left;
+    color: var(--color-black);
+    position: relative;
+    cursor: pointer;
+    transform: none;
+    line-height: 1.6669rem;
+  }
+
+  .dropDownCaret {
+    top: 32%;
+    right: 25px;
+    position: absolute;
+    transition: all .4s;
+  }
+
+  .lisBox {
+    z-index: 100;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 109%;
+    max-height: 200px;
+    border-radius: 5px;
+    overflow-y: auto;
+  }
+
+  .lisItem {
+    padding: 15px;
+    padding: 15px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+      background: var(--light-green);
+    }
+  }
+
+  .selectedListItem {
+    background: var(--light-green);
+  }
+  
+  .openCaret{
+    transform: rotate(180deg);
+  }
+}

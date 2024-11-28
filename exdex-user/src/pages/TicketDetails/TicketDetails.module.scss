@@ -1,0 +1,46 @@
+.container {
+  /* Your styles here */
+
+  .inforWrapper {
+    margin: 55px 0px;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    .title {
+      flex-shrink: 0;
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+
+      @media (min-width: 1024px) {
+        width: 34%;
+      }
+
+      padding-right: 20px;
+
+      h1 {
+        color: var(--color-white);
+        font-family: "Poppins-SemiBold";
+        font-size: 4.2rem;
+        /* 73.95px */
+        font-weight: 500;
+        line-height: 7.92rem;
+        /* 110.93px */
+        text-align: left;
+      }
+    }
+
+
+    .videoWrapper {
+      @media (min-width: 768px) {
+        width: 80%;
+      }
+
+      max-width: 740px;
+    }
+
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .gaugeWrapper {
+    position: relative;
+    width: 80%;
+    max-height: 100px;
+    position: relative;
+    .valueWrapper{
+        position: absolute;
+        color: var(--neo-lime);
+        font-size: 1.6rem;
+        font-family: "Poppins-SemiBold";
+        line-height: 27px;
+        left: calc(50% - .8rem);
+        bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+
+  color: var(--color-white);
+  margin-top: 45px;
+  @media (min-width:1024px) {
+    display: flex;
+  }
+}
+
+.container .title {
+
+  @media (min-width:1024px) {
+    width: 23%;
+  }
+
+  h2 {
+    font-family: "Poppins-SemiBold";
+    font-size: 3.48rem;
+    font-weight: 600;
+    line-height: 4.995rem;
+    text-align: left;
+  }
+}
+
+.container .questions {
+
+  @media (min-width:1024px) {
+    width: 77%;
+  }
+}
+
+.container .question {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--light-green);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.54rem;
+  text-align: left;
+  cursor: pointer;
+}

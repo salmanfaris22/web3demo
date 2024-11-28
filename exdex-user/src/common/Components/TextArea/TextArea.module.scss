@@ -1,0 +1,19 @@
+.textAreaWrap {
+    width: 100%;
+
+    textarea {
+        width: 100%;
+        background: var(--light-green);
+        border-radius: 5px;
+        padding: 15px;
+    }
+    .warningText {
+        font-family: "Poppins-Medium";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+        color: var(--color-orange);
+        margin-bottom: 10px;
+      }
+}

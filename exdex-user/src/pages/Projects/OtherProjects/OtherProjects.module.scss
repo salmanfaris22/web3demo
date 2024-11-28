@@ -1,0 +1,40 @@
+.container {
+  padding: 1.3rem;
+
+  .tabWrap {
+    margin-bottom: 2rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+  .tabWrap::-webkit-scrollbar {
+    display: none;
+  }
+
+  h4 {
+    margin-top: 0pc;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: "Poppins-Medium";
+    @media (max-width: 890px) {
+      margin-left: 12px;
+      padding-top: 2.3rem;
+    }
+  }
+}
+
+.desktopLoaderWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .loader {
+    width: 23%;
+  }
+}
+
+@media (max-width: 890px) {
+  .deskTopWrapper {
+    display: none;
+  }
+}

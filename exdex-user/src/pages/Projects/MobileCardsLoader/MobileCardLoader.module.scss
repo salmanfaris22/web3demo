@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+    .singles {
+        width: 48%;
+
+    }
+
+    @media (min-width:890px) {
+
+        display: none;
+
+    }
+
+}

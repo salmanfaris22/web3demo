@@ -1,0 +1,134 @@
+.title {
+    font-family: 'Poppins-Bold';
+    font-size: 1.36rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    letter-spacing: 0.00516rem;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.container {
+    border: 1px solid var(--color-green);
+    height: 100%;
+    position: relative;
+
+    .sectionPadding {
+        padding: 14px;
+    }
+
+    background: var(--color-black);
+
+
+
+    .avatar {
+        margin-top: 18px;
+        max-width: 170px;
+        margin: 12px auto;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .graph {
+        width: 100%;
+        margin-top: -65px;
+        position: absolute;
+        bottom: 90px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .btnGroup {
+        justify-content: space-between;
+
+        button {
+            width: calc(100%/4 - 13px);
+            font-family: "Poppins-Medium";
+            font-size: 12.02px;
+            font-weight: 500;
+            line-height: 18.02px;
+            text-align: center;
+
+        }
+    }
+
+    .publishedOn {
+        text-align: center;
+        font-size: 13.66px;
+        font-weight: 400;
+        line-height: 17.07px;
+        letter-spacing: 0.051862578839063644px;
+        color: var(--color-white);
+        padding-top: 20px;
+    }
+
+    .nftFooter {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+
+.bgImgContainer {
+    position: relative;
+    padding: 14px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-green);
+    background: var(--color-black);
+
+    .bgDiv {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 44%;
+        height: 60%;
+        margin: 0 auto;
+    }
+
+    .graphBg {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .footerTextWrap{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 7px;
+    .footerText {
+
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 9.93px;
+        text-align: left;
+        padding: 2px 14px;
+        background: var(--neo-lime);
+        border-radius: 15px;
+        margin: 0 auto;
+        >span {
+            font-family: "Poppins-SemiBold";
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 14.9px;
+            text-align: left;
+
+        }
+    }
+    }
+}

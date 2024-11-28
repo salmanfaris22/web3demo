@@ -1,0 +1,132 @@
+.container {
+  margin-top: 20px;
+  @media (min-width: 768px) {
+    margin-top: 70px;
+  }
+  .mainContainer {
+    background: var(--global-dark-background);
+    border-radius: 8px;
+    // margin-top: 20px;
+    @media (min-width: 768px) {
+      padding: 60px 35px;
+      // margin-top: 70px;
+    }
+
+    padding:  30px 15px;
+    margin-bottom: 30px;
+  }
+
+  .topSection {
+    padding: 0px 16px;
+  }
+
+  .formContainer {
+    @media (min-width: 768px) {
+
+      width: 90%;
+    }
+  }
+
+  .formElementWrapper {
+    padding: 16px;
+    width: 100%;
+
+    label {
+      font-family: "Poppins-Medium";
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: left;
+      color: rgba(185, 185, 185, 1);
+    }
+
+    @media(min-width : 768px) {
+      width: 50%;
+    }
+  }
+
+  .formWrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .textAreaWrap {
+    padding: 0px 16px;
+    width: 100%;
+  }
+
+
+
+  .chooseFile {
+    width: 100%;
+    width: 160px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins-Medium";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: var(--color-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+    padding: 12px;
+
+    input {
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .chosenFiles {
+    padding: 16px;
+    font-family: "Poppins-Medium";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: var(--color-white);
+
+    >div {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+
+      button {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .formFooter {
+    padding: 0px 16px;
+  }
+
+  .checkBoxWrap {
+    margin-top: 35px;
+    label{
+      span {
+        top: 3px;
+      }
+    }
+  }
+
+  button {
+    min-width: unset !important;
+  }
+}

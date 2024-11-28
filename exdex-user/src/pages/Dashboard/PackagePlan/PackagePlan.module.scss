@@ -1,0 +1,547 @@
+.planOuter {
+  padding: 30px 30px 35px;
+  @media (min-width: 1450px) {
+    max-width: calc(90vw + 60px);
+    margin: auto;
+  }
+}
+.planInner {
+  background-color: var(--global-dark-background);
+  border-radius: 16px;
+  padding: 60px 50px 30px;
+  // max-width: 1700px;
+  margin: auto;
+}
+.imgName {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Poppins-Light";
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 4.8rem;
+  text-align: left;
+  color: var(--color-offwhite);
+  margin-bottom: 20px;
+  img {
+    margin-top: -10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+  .name {
+    text-transform: uppercase;
+    margin-right: 12px;
+  }
+  .imgNameWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.sectionHead {
+  color: var(--color-green);
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: -0.453786700963974px;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.headItem {
+  margin-left: 25px;
+}
+.nftSlider {
+  margin-top: 3rem;
+}
+
+.sectionTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section {
+  margin-top: 50px;
+}
+.sectionToggle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  span {
+    font-family: "Poppins";
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-right: 25px;
+    color: var(--color-white);
+  }
+  .discountPercent {
+    color: var(--color-orange);
+  }
+}
+
+.coinSection {
+  margin-right: 20px;
+  width: 30%;
+}
+.depositSection {
+  margin-top: 30px;
+  background-color: var(--light-green);
+  border: 1px solid var(--background-dark-blue);
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+.depositTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.depositSectionLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 60%;
+  &.depositSectionLeftSmall {
+    width: 30%;
+    .coinSection {
+      width: 100%;
+    }
+  }
+}
+.depositSectionRight {
+  width: 40%;
+  margin-bottom: 5px;
+  height: 23px;
+  position: relative;
+  &.depositSectionRight2 {
+    width: 65%;
+  }
+  .totamount {
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    color: var(--light-blue);
+  }
+}
+.deposit {
+  background-color: var(--color-btn-green);
+  color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-family: "Poppins-SemiBold";
+  font-size: 1.2rem;
+  margin-left: 10px;
+  img {
+    margin-left: 10px;
+  }
+}
+.coinHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--btn-color);
+  font-size: 1.6rem;
+  height: 35px;
+  margin-bottom: 30px;
+  font-family: Poppins-SemiBold;
+}
+.notes {
+  color: var(--color-orange);
+  margin-top: 30px;
+}
+.signalWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 80px;
+  .signalItem {
+    width: 260px;
+    max-width: 650px;
+    height: 367px;
+    margin: 0px 15px;
+  }
+  .signalItem2 {
+    width: 280px;
+    max-width: 650px;
+    height: 400px;
+    margin: 0px 20px;
+  }
+}
+.termsContent {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: -0.5633400082588196px;
+  text-align: left;
+  color: var(--color-white);
+  margin-top: 30px;
+  word-break: break-word;
+  margin-right: 60px;
+  .termsTop {
+    margin-bottom: 15px;
+  }
+  span {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+  }
+}
+.readBtn {
+  font-family: "Poppins-Light";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-align: left;
+  padding: 4px 10px;
+}
+.signatureOuter {
+  display: flex;
+  justify-content: flex-end;
+}
+.signatureInnerWrap {
+  width: 380px;
+  height: 280px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.signatureBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+
+  .signBtn {
+    width: 33%;
+    .signButton {
+      color: var(--color-black);
+    }
+  }
+  .signButton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+.termSig {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.agreeBtn {
+  border-radius: 30px;
+  &.checked {
+    background-color: var(--color-btn-green);
+  }
+}
+.confirmWrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.confirmButton {
+  font-size: 1.1rem;
+  padding: 12px 100px;
+}
+.warning {
+  margin-bottom: 50px;
+  border-radius: 7px;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: left;
+  padding: 15px 30px;
+  span {
+    font-family: "Poppins-Medium";
+  }
+}
+.signalHead {
+  font-family: "POPPINS-MEDIUM";
+  font-weight: 500;
+  line-height: 4rem;
+  letter-spacing: -1.4864602088928223px;
+  text-align: left;
+  color: var(--color-white);
+  font-size: 3rem;
+  margin-top: 40px;
+}
+.signalDes {
+  color: var(--light-green);
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.5964053869247437px;
+  text-align: left;
+  max-width: 670px;
+  margin-top: 20px;
+}
+.signalPackage {
+  margin-top: 30px;
+}
+.signalPackageItems {
+  border: 1px solid var(--light-green);
+  border-radius: 6px;
+  font-size: 1.2rem;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.signalPackages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.signalPackages2 {
+  justify-content: center;
+}
+.priceVal {
+  margin-left: 15px;
+}
+@media only screen and (max-width: 1000px) {
+  .planOuter {
+    padding: 20px 20px 0px;
+  }
+  .planInner {
+    padding: 20px 0px 30px;
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sectionHead2 {
+    color: var(--color-orange);
+  }
+  .sectionMobWrap {
+    background-color: var(--light-green);
+    border-radius: 7px;
+    .sectionHead {
+      padding: 20px 20px 0px;
+    }
+    .depositSection {
+      padding: 20px;
+      border: 0px;
+      margin-top: 25px;
+      padding-bottom: 30px;
+    }
+    .depositTop {
+      flex-direction: column-reverse;
+    }
+    .depositSectionLeft {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: 100%;
+      &.depositSectionLeftSmall {
+        width: 100%;
+        .coinSection {
+          width: 100%;
+          margin-right: 0px;
+        }
+      }
+    }
+    .depositSectionRight {
+      width: 100%;
+      margin-bottom: 5px;
+      height: 23px;
+      &.depositSectionRight2 {
+        width: 100%;
+      }
+    }
+  }
+  .termsContent {
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+  .termSig {
+    display: block;
+  }
+  .signatureOuter {
+    width: 100%;
+    display: block;
+  }
+  .signatureInnerWrap {
+    width: 100%;
+  }
+  .bottomWrapper {
+    border: 1px solid var(--light-green);
+    border-radius: 8px;
+    background-color: var(--global-dark-background);
+    padding: 0px 20px;
+  }
+  .section {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .imgName {
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    img {
+      width: 60px;
+    }
+  }
+  .signalHead {
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+  }
+  .signalPackages {
+    margin-top: 25px;
+    display: block;
+  }
+  .signalPackageItems {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .priceVal {
+    position: absolute;
+    right: 45px;
+    top: 15px;
+  }
+  .signalWrap {
+    display: block;
+    margin: 50px 0px;
+    .signalItem,
+    .signalItem2 {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+  .confirmWrap {
+    justify-content: center;
+  }
+  .confirmButton {
+    padding: 12px 96px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .planOuter {
+    padding: 20px 20px 0px;
+  }
+  .planInner {
+    padding: 10px 0px 30px;
+    background-color: transparent;
+  }
+  .imgName {
+    .name {
+      margin-right: 7px;
+    }
+  }
+  // .sigToggleLabel {
+  //   display: none;
+  // }
+}
+@media only screen and (max-width: 600px) {
+  .nftSlider {
+    padding: 0px 0px 0px 10px;
+  }
+  .planOuter {
+    padding: 20px 0px 0px;
+  }
+  .bottomWrapper {
+    border: 1px solid var(--global-dark-background);
+    border-radius: 0px;
+    padding: 0px 10px;
+  }
+  .planInner {
+    padding: 10px 0px 30px;
+    background-color: transparent;
+  }
+  .imgName {
+    img {
+      width: 50px;
+    }
+    .des {
+      display: none;
+    }
+  }
+  .signalHead {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .sectionHead {
+    font-size: 1.3rem;
+  }
+  .sectionToggle {
+    span {
+      font-size: 1.2rem;
+      margin-right: 14px;
+    }
+  }
+  .nftSlider {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 530px) {
+  // .imgName {
+  //   font-size: 1.7rem;
+  //   line-height: 1.7rem;
+  //   img {
+  //     width: 45px;
+  //   }
+  // }
+
+  .signalHead {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+  }
+  .signalDes {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .signatureBtns {
+    .signBtn {
+      &:nth-child(1) {
+        width: 26%;
+      }
+      &:nth-child(2) {
+        width: 48%;
+      }
+      &:nth-child(3) {
+        width: 26%;
+      }
+    }
+  }
+  .imgName {
+    display: block;
+  }
+  .sectionToggle {
+    .discountPercent {
+      position: absolute;
+      display: inline-block;
+      width: 180px;
+      right: -9px;
+      bottom: -23px;
+      margin-right: 0px;
+      color: var(--background-light-gray);
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .sectionHead {
+    font-size: 1.4rem;
+  }
+  .sectionDes {
+    line-height: 2.9rem;
+    font-size: 1.4rem;
+  }
+}

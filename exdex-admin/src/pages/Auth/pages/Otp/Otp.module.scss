@@ -1,0 +1,45 @@
+.otpInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  margin: auto;
+  input {
+    border: 1px solid var(--border-gray);
+    border-radius: 5px;
+    width: 57px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--otp-input);
+  }
+}
+.expires {
+  margin: 20px auto 0px;
+  width: 150px;
+  text-align: center;
+  color: var(--otp-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    margin-left: 5px;
+  }
+}
+.back {
+  display: block;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .otpInput {
+    width: 225px;
+    input{
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

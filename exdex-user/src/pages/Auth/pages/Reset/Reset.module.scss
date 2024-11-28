@@ -1,0 +1,23 @@
+.wrap2 {
+  .fieldWrap2 {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    .label {
+      margin-bottom: 3px;
+    }
+  }
+  .subHead2 {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrap2 {
+    .fieldWrap2 {
+      margin-bottom: 30px;
+    }
+    .subHead2 {
+      margin-bottom: 30px;
+    }
+  }
+}

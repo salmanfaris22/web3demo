@@ -1,0 +1,183 @@
+.numWrap {
+  width: 100%;
+}
+
+.label {
+  color: var(--color-orange);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  text-align: left;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.numberOut {
+  border: 1px solid var(--background-dark-blue);
+  background-color: var(--light-green);
+  border-radius: 15px;
+  color: var(--btn-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0px 20px;
+
+  .inputWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    position: relative;
+
+    span {
+      color: var(--btn-color);
+      background-color: var(--light-green);
+    }
+  }
+  .actualVal {
+    color: var(--btn-color);
+    min-height: 25px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 25px;
+  }
+
+  input {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    max-width: 100%;
+    min-width: 100px;
+    width: 100%;
+    color: var(--btn-color);
+    &:focus {
+      opacity: 1;
+      text-align: center;
+      background-color: var(--light-green);
+      font-size: 1.3rem;
+      font-family: "Poppins-SemiBold";
+    }
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .minus {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 12px 0px;
+  }
+
+  .plus {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 12px 0px;
+    margin-top: -1px;
+  }
+}
+.noMin {
+  input {
+    min-width: auto;
+  }
+}
+.whiteTheme {
+  .minus,
+  .plus,
+  .numberOut .inputWrap input,
+  .numberOut .inputWrap span {
+    color: var(--color-white);
+  }
+  .numberOut {
+    background-color: var(--btn-color);
+    span {
+      font-family: "Poppins-SemiBold";
+      background-color: var(--btn-color);
+    }
+  }
+  input {
+    &:focus {
+      opacity: 1;
+      text-align: center;
+      background: var(--background-color);
+      font-size: 1.3rem;
+      font-family: "Poppins-SemiBold";
+    }
+  }
+}
+.unit {
+  .inputWrap {
+    max-width: 80%;
+  }
+  .numberOut {
+    span {
+      font-size: 1.3rem;
+      font-family: "Poppins-SemiBold";
+    }
+    .actualVal {
+      max-width: 100%;
+      font-size: 1.3rem;
+      font-family: "Poppins-SemiBold";
+      color: var(--color-white);
+      line-height: 2.5rem;
+      margin-right: 5px;
+    }
+  }
+}
+.disabled {
+  .minus,
+  .plus {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.fontWeight {
+  font-family: Poppins-Medium;
+  font-size: 17px;
+  .numberOut {
+    height: 50px;
+  }
+  input {
+    font-family: Poppins-Medium;
+  }
+}
+.unit {
+  &.fontWeight {
+    .numberOut {
+      .actualVal {
+        font-size: 17px;
+        font-family: "Poppins-Medium";
+        color: var(--btn-color);
+        margin-right: 1px;
+      }
+      span {
+        font-size: 17px;
+        line-height: 17px;
+        font-family: "Poppins-Medium";
+      }
+    }
+  }
+}
+.revunit {
+  line-height: 17px;
+}
+@media only screen and (max-width: 900px) {
+  .numberOut {
+    border-radius: 10px;
+  }
+  .label {
+    margin-bottom: 7px;
+  }
+}

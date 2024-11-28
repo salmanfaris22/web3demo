@@ -1,0 +1,25 @@
+.container {
+  /* Your styles here */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  button {
+    font-family: "Poppins-Medium";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    padding: 11px 20px;
+    min-width: 140px;
+    text-align: center;
+    &:nth-child(1) {
+      color: var(--color-green);
+      margin-right: 20px;
+    }
+
+
+
+  }
+}
+

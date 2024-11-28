@@ -1,0 +1,252 @@
+@import "../../exdextypography.scss";
+.container {
+  min-height: 100vh;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 1584px;
+  margin: 0 auto;
+
+  > * {
+    @include responsive-font-size();
+  }
+
+  .contentDiv {
+    position: relative;
+    z-index: 11;
+    padding: 1rem 30px;
+    // margin-bottom: -35px;
+    @media (max-width: 650px) {
+      padding: 1rem 10px;
+    }
+  }
+  .rows {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+  .rows::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cardHolder {
+    flex: 0 0 auto;
+    padding: 0.6rem;
+  }
+
+  .scrollEnd {
+    height: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .scrollEnd {
+    height: 100%;
+    width: 10px;
+  }
+  .cardHolder {
+    max-width: 25em;
+    padding: 0 !important;
+  }
+
+  .mobileSmartCard {
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    overflow: auto;
+    margin: 0;
+    padding-bottom: 1rem;
+
+    // /* width */
+    // &::-webkit-scrollbar {
+    //   width: 2px;
+    //   opacity: 0;
+    // }
+
+    // /* Track */
+    // &::-webkit-scrollbar-track {
+    //   background: transparent;
+    // }
+
+    // /* Handle */
+    // &::-webkit-scrollbar-thumb {
+    //   background: transparent;
+    //   border-radius: 15px;
+    // }
+
+    // /* Handle on hover */
+    // &::-webkit-scrollbar-thumb:hover {
+    //   background: transparent;
+    // }
+  }
+}
+
+.cardHolder {
+  width: 100%; /* Default for xs (small screens) */
+}
+
+@media (min-width: 576px) {
+  /* Small screens (sm) */
+  .cardHolder {
+    width: 66.6667%; /* Equivalent to col-sm-8 */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium screens (md) */
+  .cardHolder {
+    width: 50%; /* Equivalent to col-md-12 */
+  }
+}
+
+@media (min-width: 1150px) {
+  /* Large screens (lg) */
+  .cardHolder {
+    width: 33%; /* Equivalent to col-lg-8 */
+  }
+}
+
+// @media (min-width: 1200px) {
+//   /* Extra large screens (xl) */
+//   .cardHolder {
+//     width: 33%; /* Equivalent to col-xl-6 */
+//   }
+// }
+
+@media (min-width: 1400px) {
+  /* Extra extra large screens (xxl) */
+  .cardHolder {
+    width: 25%; /* Equivalent to col-xxl-6 */
+  }
+}
+
+.cryptoSpot {
+  .searcherMob {
+    input {
+      background-color: #fff !important;
+    }
+  }
+  .searcher {
+    @media (min-width: 600px) {
+      input {
+        background-color: #1a1b1f !important;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+      }
+    }
+  }
+}
+.futureMarket {
+  .searcher {
+    @media (min-width: 600px) {
+      input {
+        background-color: #1a1b1f !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.forexMarket {
+  @media (min-width: 600px) {
+    .searcher {
+      input {
+        background-color: #2f2e32;
+        color: #fff;
+        border: 1px solid #e6e6e6 !important;
+      }
+    }
+  }
+}
+.dataCardError {
+  height: 100% !important;
+  padding-top: 30px;
+}
+
+.comingSoon {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+  img {
+    width: 100%;
+    filter: blur(2px);
+    &:nth-child(1) {
+      display: none;
+      @media (min-width: 600px) {
+        display: block;
+      }
+    }
+    &:nth-child(2) {
+      display: none;
+      @media (max-width: 600px) {
+        display: block;
+      }
+    }
+  }
+  .textDiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    font-size: 4rem;
+    font-family: Poppins-Bold;
+    color: #fff;
+    @media (max-width: 600px) {
+      font-size: 3rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.blackText {
+  color: var(--color-black) !important;
+}
+
+.searcherDeskTop {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.searcherMob {
+  @media (min-width: 600px) {
+    display: none;
+  }
+  width: 100% !important;
+  input {
+    background: #fff;
+    background-image: url("../../../public/assets/images/search.png") !important;
+    background-size: 12px 12px !important;
+    background-repeat: no-repeat !important;
+    background-position: 18px;
+    &::placeholder {
+      color: #454343 !important;
+    }
+  }
+}
+
+.cardSectionWrapper {
+  padding: 1em;
+  border-radius: 16px;
+  // background: rgba(21, 37, 42, 1);
+}
+
+.bgs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  // background: url("../../../public/assets/images/backgrounds/gradientBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

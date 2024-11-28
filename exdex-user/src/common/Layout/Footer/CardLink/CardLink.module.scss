@@ -1,0 +1,34 @@
+.container {
+  padding: 20px;
+  background: var(--light-green);
+  text-align: center;
+  border-radius: 14px;
+  height: 100%;
+  a , span {
+    text-decoration: none;
+    display: block;
+    color: var(--color-black);
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+    &:hover {
+      color: var(--background-color);
+      transform: scale(1);
+    }
+    &:disabled {
+      &:hover {
+        color: var(--color-black);
+        transform: scale(1);
+      }
+    }
+  }
+  .title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: "Inter-Bold";
+    margin-bottom: 25px;
+  }
+}

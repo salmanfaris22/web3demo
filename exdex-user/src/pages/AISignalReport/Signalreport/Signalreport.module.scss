@@ -1,0 +1,43 @@
+.container {
+
+  /* Your styles here */
+  h1 {
+    text-align: left;
+    @media (min-width:768px) {
+      margin-bottom: 45px;
+    }
+
+  }
+
+  .aiRportContainer {
+    @media (min-width:768px) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+  }
+
+  .reports {
+    p {
+      color: var(--steel-gray);
+      font-size: 0.93rem;
+      /* Converted from 13px */
+      font-weight: 500;
+      margin-bottom: 45px;
+      line-height: 1.39rem;
+    }
+  }
+
+  .marketGraph {
+    @media (min-width:768px) {
+      width: 45%;
+    }
+ 
+    max-width: 700px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  /* Your styles here */
+  p {
+    font-family: "Poppins";
+    font-size: 1.2543rem;
+    font-weight: 400;
+    line-height: 1.9379rem;
+    text-align: center;
+
+  }
+
+  h1,
+  h2,
+  h2 {
+    font-family: "Poppins-Semibold";
+    font-size: 3.0714rem;
+    font-weight: 700;
+    line-height: 3.6429rem;
+    text-align: left;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+
+  .about {
+    @media (min-width : 1024px) {
+      width: 70%;
+    } 
+    margin-bottom: 50px;
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      border-radius: 24px;
+      width: 240px;
+      border: none;
+      color: var(--btn-color);
+      background: var(--neo-lime);
+      font-family: "Poppins-Semibold";
+      font-size: 1.143rem;
+      font-weight: 500;
+      line-height: 1.7143rem;
+      text-align: left;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}
